@@ -1,0 +1,5 @@
+.wp-block-cover{
+    &.page-title{
+        min-height:clamp(8rem, 4rem + 20vw, 16rem);
+    }
+}

@@ -1,0 +1,9 @@
+
+$prefix: "custom";
+$sizes: 0, 1, xs, sm, md, lg, xl, 2-xl, 3-xl;
+
+@each $size in $sizes {
+    .has-#{$prefix}-#{$size}-line-height {
+        line-height:var(--wp--#{$prefix}--line-height--#{$size});
+    }
+}
