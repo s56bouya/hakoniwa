@@ -2,18 +2,21 @@
 <div class="wp-block-group">
 <!-- wp:cover {"useFeaturedImage":true,"dimRatio":50,"overlayColor":"tertiary","isDark":false,"className":"alignfull"} -->
 <div class="wp-block-cover is-light alignfull page-title"><span aria-hidden="true" class="wp-block-cover__background has-tertiary-background-color has-background-dim"></span><div class="wp-block-cover__inner-container">
-    <!-- wp:group {"layout":{"inherit":true}} -->
+    <!-- wp:group {"layout":{"type":"constrained"}} -->
     <div class="wp-block-group">
         <!-- wp:post-title {"level":1,"align":"wide"} /-->
-        <!-- wp:group -->
+
+        <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"0"}},"layout":{"type":"flex","orientation":"vertical"}} -->
         <div class="wp-block-group alignwide">
             <!-- wp:post-date {"className":"has-2-xs-font-size has-custom-xs-line-height"} /-->
-        </div>
-        <!-- /wp:group -->            
-        <!-- wp:group {"style":{"spacing":{"blockGap":"1.5em"}},"layout":{"type":"flex"}} -->
-        <div class="wp-block-group alignwide">
-            <!-- wp:post-terms {"term":"category","className":"has-2-xs-font-size has-custom-xs-line-height"} /-->
-            <!-- wp:post-terms {"term":"post_tag","className":"has-2-xs-font-size has-custom-xs-line-height"} /-->
+
+            <!-- wp:group {"style":{"spacing":{"blockGap":"1.5em"}},"layout":{"type":"flex"}} -->
+            <div class="wp-block-group">
+                <!-- wp:post-terms {"term":"category","className":"has-2-xs-font-size has-custom-xs-line-height"} /-->
+            
+                <!-- wp:post-terms {"term":"post_tag","className":"has-2-xs-font-size has-custom-xs-line-height"} /-->
+            </div>
+            <!-- /wp:group -->                    
         </div>
         <!-- /wp:group -->
     </div>
@@ -36,7 +39,7 @@
         </div>
         <!-- /wp:column -->
     
-        <!-- wp:column {"width":"300px"} -->
+        <!-- wp:column {"width":"300px","style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"className":"sidebar"} -->
         <div class="wp-block-column sidebar" style="flex-basis:300px">
             <!-- wp:image {"sizeSlug":"large"} -->
                 <figure class="wp-block-image size-large"><img src="https://placehold.jp/300x300.png" alt=""/></figure>

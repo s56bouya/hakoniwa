@@ -1,7 +1,7 @@
 <?php
  /**
-  * Title: abc-Main
-  * Slug: fse/main
+  * Title: Hakoniwa Main
+  * Slug: hakoniwa/main
   * Categories: main
   * Block Types: core/template-part/abc-main
   */

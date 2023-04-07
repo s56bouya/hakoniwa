@@ -3,7 +3,7 @@ use hakoniwa\theme\init\Define;
 
  /**
   * Title: Footer Social
-  * Slug: fse/footer-social
+  * Slug: hakoniwa/footer-social
   * Categories: footer
   * Block Types: core/template-part/footer
   */

@@ -1,7 +1,7 @@
 <?php
  /**
   * Title: Footer Two Columns
-  * Slug: fse/footer-two-columns
+  * Slug: hakoniwa/footer-two-columns
   * Categories: footer
   * Block Types: core/template-part/footer
   */
