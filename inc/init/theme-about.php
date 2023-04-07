@@ -1,9 +1,9 @@
 <?php
-namespace fse\theme\init;
+namespace hakoniwa\theme\init;
 
-use fse\theme\init\Define;
-use fse\theme\util\CreateForm;
-use fse\theme\util\Auth;
+use hakoniwa\theme\init\Define;
+use hakoniwa\theme\util\CreateForm;
+use hakoniwa\theme\util\Auth;
 
 class ThemeAbout {
 
@@ -46,7 +46,7 @@ class ThemeAbout {
 	 */
 	public function about_page_notice() {
 
-		$theme_data = wp_get_theme( 'fse-test' );
+		$theme_data = wp_get_theme( Define::value( 'theme_name' ) );
 
 		/* translators: %1$s: theme name %2$s: about page url */
 		$message = sprintf( wp_kses( __( 'Welcome and thanks for choosing %1$s theme. Please visit our <a href="%2$s">about page</a>.', Define::value( 'theme_name' ) ), array( 'a' => array( 'href' => array() ) ) ), esc_attr( $theme_data->name ), esc_url( admin_url( 'themes.php?page=about' ) ) );
@@ -96,7 +96,7 @@ class ThemeAbout {
 	 * Theme Page Info
 	 */
 	public function theme_info_page() {
-		$theme_data = wp_get_theme( 'fse-test' );
+		$theme_data = wp_get_theme( Define::value( 'theme_name' ) );
 		$theme_name = $theme_data->name;
 		?>
 			<style>
@@ -337,5 +337,5 @@ class ThemeAbout {
 
 }
 
-use fse\theme\init;
+use hakoniwa\theme\init;
 new ThemeAbout();

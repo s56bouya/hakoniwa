@@ -1,7 +1,7 @@
 <?php
-namespace fse\theme\blocks;
+namespace hakoniwa\theme\blocks;
 
-use fse\theme\init\Define;
+use hakoniwa\theme\init\Define;
 
 /**
  * ブロックカテゴリー登録
@@ -37,5 +37,5 @@ class Categories {
     }
 }
 
-use fse\theme\blocks;
+use hakoniwa\theme\blocks;
 new Categories();

@@ -1,5 +1,5 @@
 <?php
-namespace fse\theme\init;
+namespace hakoniwa\theme\init;
 
 class Define {
 

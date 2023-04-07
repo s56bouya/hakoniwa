@@ -1,14 +1,14 @@
 <?php
-namespace fse\theme\options;
+namespace hakoniwa\theme\options;
 
-use fse\theme\util\Functions;
+use hakoniwa\theme\util\Functions;
 
-use fse\theme\init\Define;
-use fse\theme\util\CreateForm;
+use hakoniwa\theme\init\Define;
+use hakoniwa\theme\util\CreateForm;
 
-use fse\theme\util\OGP;
-use fse\theme\util\TwitterCard;
-use fse\theme\util\Facebook;
+use hakoniwa\theme\util\OGP;
+use hakoniwa\theme\util\TwitterCard;
+use hakoniwa\theme\util\Facebook;
 
 class Meta {
 
@@ -196,5 +196,5 @@ class Meta {
 
 }
 
-use fse\theme\options;
+use hakoniwa\theme\options;
 new Meta();

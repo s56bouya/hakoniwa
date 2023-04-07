@@ -1,7 +1,7 @@
 <?php
-namespace fse\theme\options;
+namespace hakoniwa\theme\options;
 
-use fse\theme\init\Define;
+use hakoniwa\theme\init\Define;
 
 class Menu {
 
@@ -127,5 +127,5 @@ class Menu {
 	}
 }
 
-use fse\theme\options;
+use hakoniwa\theme\options;
 new Menu();

@@ -1,7 +1,7 @@
 <?php
-namespace fse\theme\init;
+namespace hakoniwa\theme\init;
 
-use fse\theme\init\Define;
+use hakoniwa\theme\init\Define;
 
 class Update {
 
@@ -117,5 +117,5 @@ class Update {
 
 }
 
-use fse\theme\init;
+use hakoniwa\theme\init;
 new Update();

@@ -1,7 +1,7 @@
 <?php
-namespace fse\theme\init;
+namespace hakoniwa\theme\init;
 
-use fse\theme\init\Define;
+use hakoniwa\theme\init\Define;
 
 class Scripts {
 	/**
@@ -11,7 +11,6 @@ class Scripts {
 		add_action( 'wp_enqueue_scripts', [ $this, 'read_scripts' ] );
 		add_action( 'admin_enqueue_scripts', [ $this, 'admin_read_scripts' ] );
 
-		add_action( 'after_setup_theme', [ $this, 'add_tailwind_editor_styles' ], 1 );
 		add_action( 'after_setup_theme', [ $this, 'add_editor_styles' ], 100 );
 	}
 
@@ -34,33 +33,19 @@ class Scripts {
 
 		// Add Style
 
-		// tailwind
-		$tailwind_css = apply_filters( Define::value( 'theme_name' ) . '_enqueue_tailwind_css', get_template_directory_uri() . '/assets/css/tailwind.css' );
-
-		wp_register_style( 'tailwind', $tailwind_css, array(), '1.0.0', 'all' );
-		wp_enqueue_style( 'tailwind' );
-
 		// front
 		$front_end_css = apply_filters( Define::value( 'theme_name' ) . '_enqueue_front_end_css', get_template_directory_uri() . '/assets/css/front-end.css' );
 
 		$theme_version  = wp_get_theme()->get( 'Version' );
 		$version_string = is_string( $theme_version ) ? $theme_version : false;
 
-		wp_register_style( Define::value( 'theme_name' ) . '-front-end', $front_end_css, array( 'tailwind' ), $version_string, 'all' );
+		wp_register_style( Define::value( 'theme_name' ) . '-front-end', $front_end_css, array(), $version_string, 'all' );
 		wp_enqueue_style( Define::value( 'theme_name' ) . '-front-end' );
 	}
 
 	// Admin Style & Script
 	public function admin_read_scripts() {
 		$current_screen = get_current_screen();
-
-		// About Page
-		$get_page = ! empty( $_GET['page'] ) ? htmlspecialchars( $_GET['page'] ) : '';
-			
-		if ( Define::value( 'theme_name' ) . '-options.php' === $get_page ) {
-			wp_register_style( Define::value( 'theme_name' ) . '-admin', get_template_directory_uri() . '/assets/css/tailwind.css', array(), '1.0.0', 'all' );
-			wp_enqueue_style( Define::value( 'theme_name' ) . '-admin' );
-		}
 
 		// Add Localize
 		$localize_data = array( 
@@ -82,15 +67,6 @@ class Scripts {
 	}
 
 	/**
-	 * Enqueue Tailwind CSS(Back End)
-	 */
-	public function add_tailwind_editor_styles() {
-		$stylesheet_path = './assets/css/tailwind.css';
-
-		add_editor_style( $stylesheet_path );
-	}
-
-	/**
 	 * Enqueue Back End CSS(Back End)
 	 */
 	function add_editor_styles() {
@@ -100,5 +76,5 @@ class Scripts {
 	}
 }
 
-use fse\theme\init;
+use hakoniwa\theme\init;
 new Scripts();

@@ -1,7 +1,7 @@
 <?php
-namespace fse\theme\util;
+namespace hakoniwa\theme\util;
 
-use fse\theme\init\Define;
+use hakoniwa\theme\init\Define;
 
 class CreateForm {
 
@@ -516,5 +516,5 @@ class CreateForm {
 	}
 }
 
-use fse\theme\util;
+use hakoniwa\theme\util;
 new CreateForm();

@@ -1,7 +1,7 @@
 <?php
-namespace fse\theme\init;
+namespace hakoniwa\theme\init;
 
-use fse\theme\init\Define;
+use hakoniwa\theme\init\Define;
 
 class Settings {
 
@@ -88,5 +88,5 @@ class Settings {
 	}
 }
 
-use fse\theme\init;
+use hakoniwa\theme\init;
 new Settings();

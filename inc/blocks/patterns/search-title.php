@@ -1,5 +1,5 @@
 <?php
-use fse\theme\init\Define;
+use hakoniwa\theme\init\Define;
 
 /**
  * Search Title

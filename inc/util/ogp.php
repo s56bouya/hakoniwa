@@ -1,8 +1,8 @@
 <?php
-namespace fse\theme\util;
+namespace hakoniwa\theme\util;
 
-use fse\theme\init\Define;
-use fse\theme\util\Functions;
+use hakoniwa\theme\init\Define;
+use hakoniwa\theme\util\Functions;
 
 class OGP {
 

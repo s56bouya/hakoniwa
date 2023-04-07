@@ -1,5 +1,5 @@
 <?php
-namespace fse\theme\blocks\core\pagination;
+namespace hakoniwa\theme\blocks\core\pagination;
 
 /**
  * ブロックフィルター
@@ -42,5 +42,5 @@ class Filter {
     }
 }
 
-use fse\theme\blocks\core\pagination\Filter;
+use hakoniwa\theme\blocks\core\pagination\Filter;
 new Filter();

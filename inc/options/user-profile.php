@@ -1,8 +1,8 @@
 <?php
-namespace fse\theme\options;
+namespace hakoniwa\theme\options;
 
-use fse\theme\init\Define;
-use fse\theme\util\CreateForm;
+use hakoniwa\theme\init\Define;
+use hakoniwa\theme\util\CreateForm;
 
 class Profile {
 
@@ -49,5 +49,5 @@ class Profile {
 
 }
 
-use fse\theme\options;
+use hakoniwa\theme\options;
 new Profile();

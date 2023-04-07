@@ -1,5 +1,5 @@
 <?php
-use fse\theme\init\Define;
+use hakoniwa\theme\init\Define;
 
 /**
  * Footer with social links and copyright

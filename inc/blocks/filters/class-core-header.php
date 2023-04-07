@@ -1,5 +1,5 @@
 <?php
-namespace fse\theme\blocks\core\header;
+namespace hakoniwa\theme\blocks\core\header;
 
 /**
  * ブロックフィルター
@@ -27,5 +27,5 @@ class Filter {
 
 }
 
-use fse\theme\blocks\core\header\Filter;
+use hakoniwa\theme\blocks\core\header\Filter;
 new Filter();

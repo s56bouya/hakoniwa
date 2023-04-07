@@ -1,7 +1,7 @@
 <?php
-namespace fse\theme\blocks;
+namespace hakoniwa\theme\blocks;
 
-use fse\theme\init\Define;
+use hakoniwa\theme\init\Define;
 
 class Patterns {
 
@@ -152,5 +152,5 @@ class Patterns {
 
 }
 
-use fse\theme\blocks;
+use hakoniwa\theme\blocks;
 new Patterns();

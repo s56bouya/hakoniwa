@@ -1,7 +1,7 @@
 <?php
-namespace fse\theme\blocks\core\search;
+namespace hakoniwa\theme\blocks\core\search;
 
-use fse\theme\init\Define;
+use hakoniwa\theme\init\Define;
 
 /**
  * ブロックフィルター
@@ -27,5 +27,5 @@ class Filter {
     }
 }
 
-use fse\theme\blocks\core\search\Filter;
+use hakoniwa\theme\blocks\core\search\Filter;
 new Filter();
