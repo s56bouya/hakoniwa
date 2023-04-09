@@ -1,0 +1,16 @@
+
+.backdrop-grayscale-0{
+    backdrop-filter: grayscale(0);
+}
+
+.backdrop-grayscale{
+	backdrop-filter: grayscale(100%);
+}
+
+.hover\:backdrop-grayscale-0:hover{
+    backdrop-filter: grayscale(0);
+}
+
+.hover\:backdrop-grayscale:hover{
+	backdrop-filter: grayscale(100%);
+}

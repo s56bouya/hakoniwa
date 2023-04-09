@@ -1,0 +1,9 @@
+
+$prefix: "custom";
+$sizes: 1, 2, 4, 6, 8;
+
+@each $size in $sizes {
+    .gap-#{$size} {
+        gap:calc( var( --wp--#{$prefix}--gap ) * #{$size} );
+    }
+}

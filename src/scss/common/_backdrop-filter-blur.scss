@@ -1,0 +1,40 @@
+$selector: ".backdrop-blur";
+$prefix: "custom";
+$sizes: (
+    none:0,
+    sm:4,
+    null:8,
+    md:12,
+    lg:16,
+    xl:24,
+    2xl:40,
+    3xl:64
+);
+
+@each $key, $size in $sizes {
+    @if $size == 1 {
+        $selector: ".backdrop-blur";
+    }
+
+    @else {
+        $selector: ".backdrop-blur-#{$key}";
+    }
+
+    #{$selector} {
+        backdrop-filter:blur(#{$size}px);
+    }
+}
+
+@each $key, $size in $sizes {
+    @if $size == 1 {
+        $selector: "backdrop-blur:hover";
+    }
+
+    @else {
+        $selector: "backdrop-blur-#{$key}:hover";
+    }
+
+    .hover\:#{$selector} {
+        backdrop-filter:blur(#{$size}px);
+    }
+}

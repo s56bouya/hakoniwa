@@ -1,0 +1,33 @@
+$selector: ".backdrop-hue-rotate";
+$prefix: "custom";
+$sizes: (
+    0, 15, 30, 60, 90, 180
+);
+
+@each $size in $sizes {
+    @if $size == 1 {
+        $selector: ".backdrop-hue-rotate";
+    }
+
+    @else {
+        $selector: ".backdrop-hue-rotate-#{$size}";
+    }
+
+    #{$selector} {
+        backdrop-filter:hue-rotate(#{$size}deg);
+    }
+}
+
+@each $size in $sizes {
+    @if $size == 1 {
+        $selector: "backdrop-hue-rotate:hover";
+    }
+
+    @else {
+        $selector: "backdrop-hue-rotate-#{$size}:hover";
+    }
+
+    .hover\:#{$selector} {
+        backdrop-filter:hue-rotate(#{$size}deg);
+    }
+}

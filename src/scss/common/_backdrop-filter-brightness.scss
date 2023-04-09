@@ -1,0 +1,39 @@
+@use "sass:math";
+$selector: ".backdrop-brightness";
+$prefix: "custom";
+$sizes: (
+    0, 50, 75, 90, 95, 100, 105, 110, 125, 150, 200
+);
+
+@each $size in $sizes {
+    @if $size == 1 {
+        $selector: ".backdrop-brightness";
+    }
+
+    @else {
+        $selector: ".backdrop-brightness-#{$size}";
+    }
+
+    $size_calc: math.div( $size, 100 );
+
+    #{$selector} {
+        backdrop-filter:brightness($size_calc);
+    }
+}
+
+@each $size in $sizes {
+    @if $size == 1 {
+        $selector: "backdrop-brightness:hover";
+    }
+
+    @else {
+        $selector: "backdrop-brightness-#{$size}:hover";
+    }
+
+    $size_calc: math.div( $size, 100 );
+
+    .hover\:#{$selector} {
+        backdrop-filter:brightness($size_calc);
+    }
+}
+

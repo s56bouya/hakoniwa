@@ -1,0 +1,30 @@
+$selector: ".rounded";
+$prefix: "custom";
+$sizes: (
+    none:0,
+    sm:0.5,
+    null:1,
+    md:1.5,
+    lg:2,
+    xl:3,
+    2xl:4,
+    3xl:6
+);
+
+@each $key, $size in $sizes {
+    @if $size == 1 {
+        $selector: ".rounded";
+    }
+
+    @else {
+        $selector: ".rounded-#{$key}";
+    }
+
+    #{$selector} {
+        border-radius:calc( var(--wp--#{$prefix}--border-radius) * #{$size} );
+    }
+}
+
+.rounded-full{
+    border-radius:9999px;
+}

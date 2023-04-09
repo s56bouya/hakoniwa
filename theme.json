@@ -56,8 +56,12 @@
 				"3xl": 2.4
 			},
 			"blocks": {
-				"blockGap": "2em"
-			}
+				"blockGap": "2rem"
+			},
+			"border-width": "1px",
+			"border-radius": "0.25rem",
+			"padding": "0.25rem",
+			"gap": "0.25rem"
 		},
 		"spacing": {
 			"blockGap": true,
@@ -205,12 +209,17 @@
 						"bottom": "0px",
 						"left": "0px"
 					},
-					"blockGap": "2em"
+					"blockGap": "2rem"
 				}
 			},
 			"core/group": {
 				"spacing": {
-					"blockGap": "2em"
+					"blockGap": "2rem"
+				}
+            },
+			"core/columns": {
+				"spacing": {
+					"blockGap": "2rem"
 				}
             },
 			"core/post-content": {
@@ -247,7 +256,7 @@
                     }
                 },
 				"spacing": {
-					"blockGap": "2em"
+					"blockGap": "2rem"
 				}
 			},
 			"core/post-excerpt": {

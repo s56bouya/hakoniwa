@@ -1,0 +1,47 @@
+
+$prefix: "custom";
+$sizes: 1, 2, 4, 6, 8;
+
+@each $size in $sizes {
+    .p-#{$size} {
+        padding:calc( var( --wp--#{$prefix}--padding ) * #{$size} );
+    }
+}
+
+@each $size in $sizes {
+    .px-#{$size} {
+        padding-left:calc( var( --wp--#{$prefix}--padding ) * #{$size} );
+        padding-right:calc( var( --wp--#{$prefix}--padding ) * #{$size} );
+    }
+}
+
+@each $size in $sizes {
+    .py-#{$size} {
+        padding-top:calc( var( --wp--#{$prefix}--padding ) * #{$size} );
+        padding-bottom:calc( var( --wp--#{$prefix}--padding ) * #{$size} );
+    }
+}
+
+@each $size in $sizes {
+    .pt-#{$size} {
+        padding-top:calc( var( --wp--#{$prefix}--padding ) * #{$size} );
+    }
+}
+
+@each $size in $sizes {
+    .pb-#{$size} {
+        padding-bottom:calc( var( --wp--#{$prefix}--padding ) * #{$size} );
+    }
+}
+
+@each $size in $sizes {
+    .pl-#{$size} {
+        padding-left:calc( var( --wp--#{$prefix}--padding ) * #{$size} );
+    }
+}
+
+@each $size in $sizes {
+    .pr-#{$size} {
+        padding-right:calc( var( --wp--#{$prefix}--padding ) * #{$size} );
+    }
+}

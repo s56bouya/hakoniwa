@@ -1,0 +1,15 @@
+$sizes: (
+    solid,
+    dotted,
+    dashed,
+    double
+);
+
+@each $size in $sizes {
+
+    .border-#{$size} {
+        border-style:#{$size};
+    }
+
+}
+

@@ -1,0 +1,21 @@
+$selector: ".border";
+$prefix: "custom";
+$sizes: (
+    null:1,
+    2:2,
+    4:4,
+    8:8
+);
+
+@each $key, $size in $sizes {
+
+    @if $key != null {
+        $selector: ".border-#{$key}";
+    }
+
+    #{$selector} {
+        border-width:calc( var(--wp--#{$prefix}--border-width) * #{$size} );
+    }
+
+}
+

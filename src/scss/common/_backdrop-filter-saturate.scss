@@ -1,0 +1,42 @@
+@use "sass:math";
+$selector: ".backdrop-saturate";
+$prefix: "custom";
+$size_calc: 0;
+$sizes: (
+    0, 50, 100, 150, 200
+);
+
+@each $size in $sizes {
+    $selector: ".backdrop-saturate-#{$size}";
+
+    @if $size == 0 {
+        #{$selector} {
+            backdrop-filter:saturate(0);
+        }
+    }
+
+    @else {
+        $size_calc: math.div( $size, 100 );
+        #{$selector} {
+            backdrop-filter:saturate($size_calc);
+        }
+    }
+}
+
+@each $size in $sizes {
+    $selector: "backdrop-saturate-#{$size}:hover";
+
+    @if $size == 0 {
+        .hover\:#{$selector} {
+            backdrop-filter:saturate(0);
+        }
+    }
+
+    @else {
+        $size_calc: math.div( $size, 100 );
+        .hover\:#{$selector} {
+            backdrop-filter:saturate($size_calc);
+        }
+    }
+}
+

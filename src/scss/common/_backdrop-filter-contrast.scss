@@ -1,0 +1,25 @@
+@use "sass:math";
+$prefix: "custom";
+$sizes: (
+    0, 50, 75, 100, 105, 125, 150, 200
+);
+
+@each $size in $sizes {
+    $selector: ".backdrop-contrast-#{$size}";
+
+    $size_calc: math.div( $size, 100 );
+
+    #{$selector} {
+        backdrop-filter:contrast($size_calc);
+    }
+}
+
+@each $size in $sizes {
+    $selector: "backdrop-contrast-#{$size}:hover";
+
+    $size_calc: math.div( $size, 100 );
+
+    .hover\:#{$selector} {
+        backdrop-filter:contrast($size_calc);
+    }
+}
