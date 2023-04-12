@@ -4,6 +4,8 @@
 src export-ignore
 dist/* export-ignore
 
+/theme-info.json export-ignore
+
 /package.json export-ignore
 /package-lock.json export-ignore
 
