@@ -1,0 +1,19 @@
+.gitignore export-ignore
+.gitattributes export-ignore
+
+src export-ignore
+dist/* export-ignore
+
+/package.json export-ignore
+/package-lock.json export-ignore
+
+.gitignore export-ignore
+/.babelrc export-ignore
+/.browserslistrc export-ignore
+/.eslintignore export-ignore
+/.eslintrc.js export-ignore
+/.stylelintrc.json export-ignore
+
+/postcss.config.js export-ignore
+/rollup.config.js export-ignore
+/webpack.config.js export-ignore

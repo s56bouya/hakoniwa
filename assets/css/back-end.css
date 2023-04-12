@@ -28,6 +28,10 @@ button {
      object-fit: cover;
 }
 
+.__inner-container {
+  word-break: break-all;
+}
+
 /*
 body > .is-root-container,
 .edit-post-visual-editor__post-title-wrapper,
@@ -75,10 +79,6 @@ body > .is-root-container > .wp-block-template-part > .wp-block-cover,
 
 .wp-block-post-comments #comments {
   margin-bottom: 1em;
-}
-
-.page-title .wp-block-group {
-  margin: 0.5em 0;
 }
 
 .wp-block-navigation .wp-block-page-list {
