@@ -5,7 +5,7 @@ use hakoniwa\theme\init\Define;
 
 class Update {
 
-    private $file = 'theme-info.json';
+    private $file = '/wp/packages/themes/hakoniwa/theme-info.json';
 
     /**
      * Constructor.

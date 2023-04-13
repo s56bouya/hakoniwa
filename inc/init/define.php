@@ -25,7 +25,7 @@ class Define {
 
 			case 'network_auth':
 
-				$define = 'https://hakoniwa.animagate.com/wp/packages/themes/hakoniwa';
+				$define = 'https://hakoniwa.animagate.com';
 
 				break;
 
