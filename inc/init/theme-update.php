@@ -12,8 +12,8 @@ class Update {
      */
     public function __construct() {
 
-        add_filter( 'site_transient_update_themes', [ $this, 'update' ] );
-
+        add_filter( 'pre_set_transient_update_themes', [ $this, 'update' ] );
+        add_filter( 'pre_set_site_transient_update_themes', [ $this, 'update' ] );
     }
 
     /**

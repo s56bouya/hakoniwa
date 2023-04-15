@@ -127,12 +127,39 @@ class ThemeAbout {
 
 				<?php if( true === Define::value( 'network_active' ) ){ ?>
 				<hr>
-				<h3>ライセンス</h3>
-				<p>ライセンスキーを入れて認証を行ってください。ライセンス認証された製品は「新機能の追加」「セキュリティアップデート」のサービスが利用可能です。
-				<br><br>【認証できない場合】<br>
-				サブスクリプション版:サブスクリプションを更新し、ライセンスキーの有効期限を延長してください。<br>
-				買い切り版:正しい URL でライセンスキーを発行しているかどうか確認してください。
-				</p>
+				<h3 id="siteurl">ライセンス</h3>
+				<p>公式サイトでライセンスを購入し、サイトアドレス (URL)<input tyle="text" value="<?php echo esc_url( get_option( 'home' ) ); ?>" onclick="copySiteUrl( this )" style="border:none; background:#fff; margin:0 0.2rem; padding:0.2rem 0.5rem; width:100%; max-width:240px;" readonly><span id="copied_message"></span>を入力してライセンスキーを発行してください。ライセンス認証された製品は「新機能の追加」「セキュリティアップデート」のサービスが利用可能です。</p>
+				<script>
+					function copySiteUrl(e) {
+						const checkContent = document.getElementById( 'site-url-copied' );
+						if( !! checkContent ){
+							checkContent.remove();
+						}
+
+						e.select();
+						navigator.clipboard.writeText( e.value );
+
+						const newContent = document.createElement( 'span' );
+
+						newContent.classList.add( 'copied' );
+						newContent.setAttribute( 'id', 'site-url-copied' );
+						newContent.style.display = 'inline';
+						newContent.style.backgroundColor = '#fefefe';
+						newContent.style.padding = '0.2rem 0.5rem';
+						newContent.style.margin = '0 0.5rem';
+
+						const newText = document.createTextNode( 'URL をコピーしました' );
+
+						newContent.appendChild( newText );
+
+						const currentDiv = document.getElementById( 'siteurl' );
+						currentDiv.appendChild( newContent );
+
+						setTimeout( function() {
+							newContent.remove();
+						}, 2000 );							
+					}
+				</script>
 				<div class="flex">
 					<div class="flex-1">
 						<form method="post" action="options.php">
@@ -147,6 +174,10 @@ class ThemeAbout {
 						</form>
 					</div>
 				</div>
+				<p>【認証できない場合】<br>
+				サブスクリプション版:サブスクリプションを更新し、ライセンスキーの有効期限を延長してください。<br>
+				買い切り版:正しい URL でライセンスキーを発行しているかどうか確認してください。
+				</p>
 				<?php } ?>
 			</div>
 		<?php
