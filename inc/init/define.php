@@ -31,7 +31,7 @@ class Define {
 
 			case 'network_active':
 
-				$define = true;
+				$define = false;
 
 				break;
 

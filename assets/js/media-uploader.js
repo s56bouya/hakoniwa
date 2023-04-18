@@ -1,170 +1,111 @@
-( function () {
-	
+(function () {
 	'use strict';
 
-	const themeName = object.themeName;
+	(function () {
 
-	function setAttributes( el, attrs ) {
-		for( var key in attrs ) {
-			el.setAttribute( key, attrs[key] );
-		}
-	}
+	  var themeName = object.themeName;
 
-	const elements = document.querySelectorAll(
-		'.' + themeName + '-image-uploader'
-	);
+	  function setAttributes(el, attrs) {
+	    for (var key in attrs) {
+	      el.setAttribute(key, attrs[key]);
+	    }
+	  }
 
-	if ( !! elements ) {
+	  var elements = document.querySelectorAll('.' + themeName + '-image-uploader');
 
-		elements.forEach( function ( element, i ) {
-			element.addEventListener( 'click', function ( e ) {
+	  if (!!elements) {
+	    elements.forEach(function (element, i) {
+	      element.addEventListener('click', function (e) {
+	        e.preventDefault(); //親要素取得
 
-				e.preventDefault();
+	        var parent = element.parentNode;
+	        var customUploader = wp.media({
+	          title: '画像を選択',
+	          library: {
+	            type: 'image'
+	          },
+	          button: {
+	            text: 'この画像を使う'
+	          },
+	          multiple: false
+	        }).on('select', function () {
+	          var attachment = customUploader.state().get('selection').first().toJSON();
+	          var removeButton = parent.querySelector('.' + themeName + '-remove-image');
+	          var current = parent.querySelector('.' + themeName + '-image-current');
+	          var preview = parent.querySelector('.' + themeName + '-image-loader-preview');
+	          var val = parent.querySelector('input');
 
-				//親要素取得
-				let parent = element.parentNode;
+	          if (!preview) {
+	            element.insertAdjacentHTML('beforebegin', '<img class="' + themeName + '-image-loader-preview" src="' + attachment.url + '" style="max-width:320px;margin-bottom:1rem;display:block;" alt="" />');
+	          } else {
+	            preview.setAttribute('src', attachment.url);
+	          }
 
-				let customUploader = wp.media({
+	          if (!!current) {
+	            current.remove();
+	          }
 
-						title: '画像を選択',
-						library: {
-							type: 'image'
-						},
-						button: {
-							text: 'この画像を使う'
-						},
-						multiple: false
+	          val.setAttribute('value', attachment.id);
 
-					}).on('select', function () {
+	          if (!removeButton) {
+	            // removeボタン作成して追加
+	            var removebutton = document.createElement('a');
+	            removebutton.innerText = '画像を削除';
+	            setAttributes(removebutton, {
+	              'href': '#',
+	              'class': themeName + '-remove-image button'
+	            });
+	            element.insertAdjacentElement('afterend', removebutton);
 
-						let attachment = customUploader.state().get('selection').first().toJSON();
+	            removebutton.onclick = function () {
+	              // プレビューと画像とinputの値を削除
+	              var removeButton = parent.querySelector('.' + themeName + '-remove-image');
+	              var current = parent.querySelector('.' + themeName + '-image-current');
+	              var preview = parent.querySelector('.' + themeName + '-image-loader-preview');
+	              var val = parent.querySelector('input');
 
-						const removeButton = parent.querySelector(
-							'.' + themeName + '-remove-image'
-						);
+	              if (preview) {
+	                preview.remove();
+	              }
 
-						const current = parent.querySelector(
-							'.' + themeName + '-image-current'
-						);
+	              if (current) {
+	                current.remove();
+	              }
 
-						const preview = parent.querySelector(
-							'.' + themeName + '-image-loader-preview'
-						);
+	              removeButton.remove();
+	              val.setAttribute('value', '');
+	              return false;
+	            };
+	          }
+	        }).open();
+	      }, false);
+	    });
+	  }
 
-						const val = parent.querySelector(
-							'input'
-						);
+	  var removeButtons = document.querySelectorAll('.' + themeName + '-remove-image');
 
-						if ( ! preview ) {
-							element.insertAdjacentHTML( 'beforebegin', '<img class="' + themeName + '-image-loader-preview" src="' + attachment.url + '" style="max-width:320px;margin-bottom:1rem;display:block;" alt="" />' );
-						} else {
-							preview.setAttribute('src', attachment.url);
-						}
+	  if (!!removeButtons) {
+	    removeButtons.forEach(function (removeButton, i) {
+	      removeButton.addEventListener('click', function (e) {
+	        var parent = removeButton.parentNode;
+	        var current = parent.querySelector('.' + themeName + '-image-current');
+	        var preview = parent.querySelector('.' + themeName + '-image-loader-preview');
+	        var val = parent.querySelector('input');
 
-						if ( !! current ) {
-							current.remove();
-						}
-				
-						val.setAttribute( 'value', attachment.id );
-				
-						if ( ! removeButton ) {
+	        if (preview) {
+	          preview.remove();
+	        }
 
-							// removeボタン作成して追加
-							const removebutton = document.createElement('a');
-							removebutton.innerText = '画像を削除';
-							
-							setAttributes(
-								removebutton,
-								{
-									'href': '#',
-									'class': themeName + '-remove-image button',
-								}
-							);
+	        if (current) {
+	          current.remove();
+	        }
 
-							element.insertAdjacentElement( 'afterend', removebutton );
+	        removeButton.remove();
+	        val.setAttribute('value', '');
+	        return false;
+	      });
+	    });
+	  }
+	})();
 
-							removebutton.onclick = function(){
-								// プレビューと画像とinputの値を削除
-
-								const removeButton = parent.querySelector(
-									'.' + themeName + '-remove-image'
-								);
-		
-								const current = parent.querySelector(
-									'.' + themeName + '-image-current'
-								);
-		
-								const preview = parent.querySelector(
-									'.' + themeName + '-image-loader-preview'
-								);
-		
-								const val = parent.querySelector(
-									'input'
-								);
-
-								if ( preview ) {
-									preview.remove();
-								}
-
-								if ( current ) {
-									current.remove();
-								}
-
-								removeButton.remove();
-
-								val.setAttribute('value', '');
-	
-								return false;
-
-							};
-
-						}
-
-					}).open();
-				},
-				false
-			);
-		} );
-	}
-
-	const removeButtons = document.querySelectorAll(
-		'.' + themeName + '-remove-image'
-	);
-
-	if ( !! removeButtons ) {
-
-		removeButtons.forEach( function ( removeButton, i ) {
-			removeButton.addEventListener( 'click', function ( e ) {
-				let parent = removeButton.parentNode;
-
-				const current = parent.querySelector(
-					'.' + themeName + '-image-current'
-				);
-
-				const preview = parent.querySelector(
-					'.' + themeName + '-image-loader-preview'
-				);
-
-				const val = parent.querySelector(
-					'input'
-				);
-
-				if ( preview ) {
-					preview.remove();
-				}
-
-				if ( current ) {
-					current.remove();
-				}
-
-				removeButton.remove();
-
-				val.setAttribute('value', '');
-
-				return false;
-			});
-		});
-	}
-
-
-}() );
+})();

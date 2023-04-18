@@ -61,7 +61,7 @@ class TwitterCard {
 			if ( is_front_page() ) {
 				$title = apply_filters( Define::value( 'theme_name' ) . '_ogp_twitter_title', get_bloginfo( 'name' ) );
 			} else {
-				$singular_title = get_post_meta( $post->ID, '_nishiki_pro_meta_box_title_' . get_post_type(), true );
+				$singular_title = get_post_meta( $post->ID, '_' . Define::value( 'theme_name' ) . '_meta_box_title_' . get_post_type(), true );
 				if ( $singular_title ) {
 					$og_title = $singular_title;
 				} else {

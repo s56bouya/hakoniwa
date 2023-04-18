@@ -55,7 +55,7 @@ class Menu {
 		$tab_array  = $this->tab_array;
 		$get_action = ! empty( $_GET['action'] ) ? htmlspecialchars( $_GET['action'] ) : '';
 
-		echo '<div class="menu-wrapper flex flex-col mr-4 self-baseline sticky top-8">';
+		echo '<div class="hakoniwa-options-wrapper flex flex-col mr-4 self-baseline sticky top-8">';
 		foreach ( $tab_array as $key => $val ) {
 			$active = '';
 			if ( ! isset( $get_action ) && false === $flag ) {
@@ -64,6 +64,11 @@ class Menu {
 			} elseif ( isset( $get_action ) && $key === $get_action && false === $flag ) {
 				$active = ' active';
 			}
+
+			if( empty( $get_action ) && 'general' == $key ){
+				$active = ' active';
+			}
+
 			echo '<a href="' . esc_url(
 				add_query_arg(
 					array(
@@ -71,7 +76,7 @@ class Menu {
 					),
 					$admin_url
 				)
-			) . '" class="menu' . esc_attr( $active ) . '">' . esc_html( $val ) . '</a>';
+			) . '" class="py-2 px-4' . esc_attr( $active ) . '">' . esc_html( $val ) . '</a>';
 		}
 
 		echo '</div>';
@@ -100,6 +105,13 @@ class Menu {
 
 				break;
 			}
+		}
+
+		if( false === $flag ){
+			settings_fields( Define::value( 'theme_options_name' ) . '_general' );
+			do_settings_sections( Define::value( 'theme_options_name' ) . '_general' );
+
+			submit_button();
 		}
 	}
 

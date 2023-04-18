@@ -26,10 +26,10 @@ class Scripts {
 			wp_enqueue_script( 'comment-reply' );
 		}
 
-//		$front_end_js = apply_filters( Define::value( 'theme_name' ) . '_enqueue_front_end_js', get_template_directory_uri() . '/assets/js/front-end.js' );
+		$front_end_js = apply_filters( Define::value( 'theme_name' ) . '_enqueue_front_end_js', get_template_directory_uri() . '/assets/js/front-end.js' );
 
-//		wp_register_script( Define::value( 'theme_name' ) . '-main-script', $front_end_js, array(), '1.0.0', true );
-//		wp_enqueue_script( Define::value( 'theme_name' ) . '-main-script' );
+		wp_register_script( Define::value( 'theme_name' ) . '-front-end', $front_end_js, array(), '1.0.0', true );
+		wp_enqueue_script( Define::value( 'theme_name' ) . '-front-end' );
 
 		// Add Style
 
@@ -47,6 +47,14 @@ class Scripts {
 	public function admin_read_scripts() {
 		$current_screen = get_current_screen();
 
+		// Add Admin CSS
+		$get_page = ! empty( $_GET['page'] ) ? htmlspecialchars( $_GET['page'] ) : '';
+			
+		if ( Define::value( 'theme_name' ) . '-options.php' === $get_page ) {
+			wp_register_style( Define::value( 'theme_name' ) . '-admin', get_template_directory_uri() . '/assets/css/admin.css', array(), '1.0.0', 'all' );
+			wp_enqueue_style( Define::value( 'theme_name' ) . '-admin' );
+		}
+		
 		// Add Localize
 		$localize_data = array( 
 			'themeName' => Define::value( 'theme_name' )

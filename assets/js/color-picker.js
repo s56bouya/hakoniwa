@@ -1,5 +1,9 @@
-jQuery( document ).ready( function ( $ ) {
-	const themeName = object.themeName;
+(function () {
+	'use strict';
 
-	$( '.' + themeName + '-color-picker' ).wpColorPicker();
-} );
+	jQuery(document).ready(function ($) {
+	  var themeName = object.themeName;
+	  $('.' + themeName + '-color-picker').wpColorPicker();
+	});
+
+})();

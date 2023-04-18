@@ -12,6 +12,7 @@ class Update {
      */
     public function __construct() {
 
+//        add_filter( 'site_transient_update_themes', [ $this, 'update' ] );
         add_filter( 'pre_set_transient_update_themes', [ $this, 'update' ] );
         add_filter( 'pre_set_site_transient_update_themes', [ $this, 'update' ] );
     }
@@ -36,7 +37,7 @@ class Update {
 
         }
 
-        delete_transient( Define::value( 'theme_name' ) . '_update' );
+        //delete_transient( Define::value( 'theme_name' ) . '_update' );
         $remote = get_transient( Define::value( 'theme_name' ) . '_update' );
 
         if( false === $remote ) {
@@ -59,7 +60,7 @@ class Update {
                 return false;
             }
 
-            //set_transient( Define::value( 'theme_name' ) . '_update', $remote, DAY_IN_SECONDS );
+            set_transient( Define::value( 'theme_name' ) . '_update', $remote, 12 * HOUR_IN_SECONDS );
         }
 
         $remote = json_decode( wp_remote_retrieve_body( $remote ) );
@@ -76,13 +77,14 @@ class Update {
             return false;
         }
 
-        $stylesheet = get_template();
-        $theme = wp_get_theme();
-    	$version = $theme->get( 'Version' );
-
         if ( empty( $transient->checked ) ) {
             return $transient;
         }
+
+        // テーマの情報を取得
+        $stylesheet = get_template();
+        $theme = wp_get_theme();
+    	$version = $theme->get( 'Version' );
 
         $remote = $this->request();
 
@@ -105,7 +107,7 @@ class Update {
             && version_compare( $remote->requires, get_bloginfo( 'version' ), '<=' )
             && version_compare( $remote->requires_php, PHP_VERSION, '<' )
         ) {
-            
+            var_dump($stylesheet);
             $transient->response[ $stylesheet ] = $data;              
         } else {
             $transient->no_update[ $stylesheet ] = $data;

@@ -17,6 +17,9 @@ class Settings {
 
 		// theme.json の上書き
 		add_filter( 'block_editor_settings_all', [ $this, 'override_theme_json' ], 10, 2 );
+
+		// ページトップへ戻る
+		add_action( 'wp_footer', [ $this, 'scroll_page_top_button' ], 10 );
 	}
 
 	/**
@@ -86,6 +89,88 @@ class Settings {
 
 		return $editor_settings;
 	}
+	
+	/**
+	 * ページトップボタン
+	 *
+	 * @return void
+	 */
+	function scroll_page_top_button() {
+
+		if ( ! apply_filters( Define::value( 'theme_options_name' ) . '_scroll_page_top_button', true ) ) {
+			return;
+		}
+
+		$output = '';
+		$url    = apply_filters( Define::value( 'theme_options_name' ) . '_scroll_page_top_url', '#header' );
+		$class  = array();
+
+		$options = get_option( Define::value( 'theme_options_name' ) . '_general' );
+
+		if( $options['scroll_to_button'] ){
+			if( isset( $options['scroll_to_button']['desktop'] ) ){
+				$class[] = 'is-desktop';
+			}
+
+			if( isset( $options['scroll_to_button']['tablet'] ) ){
+				$class[] = 'is-tablet';
+			}
+
+			if( isset( $options['scroll_to_button']['smartphone'] ) ){
+				$class[] = 'is-smartphone';
+			}
+		}
+
+		$kses_defaults = wp_kses_allowed_html( 'post' );
+
+		$svg_args = array(
+			'svg'   => array(
+				'class'           => true,
+				'aria-hidden'     => true,
+				'aria-labelledby' => true,
+				'role'            => true,
+				'xmlns'           => true,
+				'width'           => true,
+				'height'          => true,
+				'viewbox'         => true,
+				'stroke-width'    => true,
+				'stroke'          => true,
+				'fill'            => true,
+				'stroke-linecap'  => true,
+				'stroke-linejoin' => true,
+			),
+			'g'     => array(
+				'fill'      => true,
+				'transform' => true,
+			),
+			'title' => array( 'title' => true ),
+			'path'  => array(
+				'stroke' => true,
+				'd'      => true,
+				'fill'   => true,
+			),
+		);
+
+		$allowed_tags = array_merge( $kses_defaults, $svg_args );
+
+		$bottom_right_content = '<div id="scroll-page-top" class="' . implode( ' ', $class ) . '"><a href="' . $url . '">
+			<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-up" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+				<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+				<path d="M6 15l6 -6l6 6" />
+			</svg>
+		</a></div>';
+
+		$bottom_right_content = apply_filters( Define::value( 'theme_options_name' ) . '_bottom_right_content', $bottom_right_content, $url );
+
+		$output .= '<div class="footer-bottom-right-content fixed">';
+		$output .= apply_filters( Define::value( 'theme_options_name' ) . '_before_bottom_right_content', $before_bottom_right_content = '' );
+		$output .= $bottom_right_content;
+		$output .= apply_filters( Define::value( 'theme_options_name' ) . '_after_bottom_right_content', $after_bottom_right_content = '' );
+		$output .= '</div>';
+
+		echo wp_kses( $output, $allowed_tags );
+	}
+
 }
 
 use hakoniwa\theme\init;

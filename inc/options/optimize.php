@@ -161,11 +161,19 @@ class Optimize {
 		$options = get_option( $this->page_name() );
 
 		if ( empty( $options ) ) {
+			add_action( 'wp_enqueue_scripts', array( $this, 'disable_jquery_frontend' ), 110 );
 			return false;
 		}
 
+		// Front end CSS
+		if ( ! empty( $options['front_end_css'] ) ) {
+			if ( ! empty( $options['front_end_css']['minify'] ) ) {
+				add_filter( Define::value( 'theme_name' ) . '_enqueue_front_end_css', array( $this, 'front_end_css' ), 100 );
+			}
+		}
+
 		// Front end jQuery
-		if ( ! empty( $options['front_end_jquery'] ) ) {
+		if ( isset( $options['front_end_jquery'] ) ) {
 			if ( '' === $options['front_end_jquery'] ) {
 				add_action( 'wp_enqueue_scripts', array( $this, 'disable_jquery_frontend' ), 100 );
 			}
@@ -181,6 +189,18 @@ class Optimize {
 			add_action( 'wp_enqueue_scripts', array( $this, 'deregister_oembed' ), 100 );
 		}
 
+	}
+
+	/**
+	 * フロントエンドの CSS を最小化する
+	 *
+	 * @param string $url URL
+	 * @return $url
+	 */
+	public function front_end_css( $url ) {
+		$url = get_template_directory_uri() . '/assets/css/front-end.min.css';
+
+		return $url;
 	}
 
 	/**

@@ -15,8 +15,5 @@ require_once 'inc/blocks/filters/index.php';
 // Block Categories
 require_once 'inc/blocks/categories/index.php';
 
-// Customizer
-//require_once 'inc/customizer/index.php';
-
 // Block Patterns
 //require_once 'inc/blocks/patterns/index.php';

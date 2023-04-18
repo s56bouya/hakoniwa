@@ -1,0 +1,17 @@
+/*-----------------------------
+* Responsive Breakpoints
+* 783px + 			Tablet +
+* 0px - 782px       Tablet
+* 601px - 782px     SmartPhone - Tablet
+* 601px +           SmartPhone +
+* 0px - 600px       SmartPhone
+------------------------------*/
+
+// Breakpoint
+$breakpoints: (
+	"smartphone": "only screen and (max-width:600px)",
+	"smartphone+": "only screen and (min-width: 601px)",
+	"smartphone_tablet": "only screen and (min-width: 601px) and (max-width:782px)",
+	"tablet": "only screen and (max-width: 782px)",
+	"tablet+": "only screen and (min-width: 783px)"
+) !default;

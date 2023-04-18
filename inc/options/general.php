@@ -68,6 +68,28 @@ class General {
 			)
 		);
 
+		add_settings_field(
+			'scroll_to_button',
+			__( 'ページ上部へ戻るボタン', Define::value( 'theme_name' ) ),
+			array( $create_form, 'checkbox_multiple' ),
+			$this->page_name(),
+			$this->page_name(),
+			array(
+				'title'       => '',
+				'label'       => 'scroll_to_button',
+				'page_name'   => $this->page_name(),
+				'description' => '',
+				'script'      => array(
+					'data'    => array(
+						'desktop'		=> 'デスクトップで表示',
+						'tablet'		=> 'タブレットで表示',
+						'smartphone'	=> 'スマートフォンで表示',
+					),
+				),
+				'display_key' => false,
+			)
+		);
+
 	}
 
 	/**
