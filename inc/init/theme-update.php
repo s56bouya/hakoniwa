@@ -107,7 +107,7 @@ class Update {
             && version_compare( $remote->requires, get_bloginfo( 'version' ), '<=' )
             && version_compare( $remote->requires_php, PHP_VERSION, '<' )
         ) {
-            var_dump($stylesheet);
+//            var_dump($stylesheet);
             $transient->response[ $stylesheet ] = $data;              
         } else {
             $transient->no_update[ $stylesheet ] = $data;

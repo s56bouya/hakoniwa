@@ -107,7 +107,7 @@ class Settings {
 
 		$options = get_option( Define::value( 'theme_options_name' ) . '_general' );
 
-		if( $options['scroll_to_button'] ){
+		if( ! empty( $options['scroll_to_button'] ) ){
 			if( isset( $options['scroll_to_button']['desktop'] ) ){
 				$class[] = 'is-desktop';
 			}
