@@ -88,6 +88,31 @@ button{
     word-break: break-all;
 }
 
+.wp-block-post-content{
+    [class*="wp-block-hakoniwa-blocks"]{
+        a{
+            color: inherit;
+            text-decoration: inherit;
+    
+            &:hover{
+                color: inherit;
+            }    
+        }
+
+        .__inner-container{
+            a:where(:not(.wp-element-button)){
+                color: var(--wp--preset--color--primary);
+                text-decoration: underline;
+        
+                &:hover{
+                    color: var(--wp--preset--color--secondary);
+                    text-decoration: none;
+                }    
+            }
+        }
+    }
+}
+
 .wp-block-columns{
     &.post-content{
         gap:24px;
