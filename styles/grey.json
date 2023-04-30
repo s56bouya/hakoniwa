@@ -1,0 +1,35 @@
+{
+    "version": 2,
+    "settings": {
+        "color": {
+			"gradients": [],
+			"palette": [
+				{
+					"color": "#f6f6f6",
+					"name": "Base",
+					"slug": "base"
+				},
+				{
+					"color": "#111111",
+					"name": "Contrast",
+					"slug": "contrast"
+				},
+				{
+					"color": "#131313",
+					"name": "Primary",
+					"slug": "primary"
+				},
+				{
+					"color": "#999999",
+					"name": "Secondary",
+					"slug": "secondary"
+				},
+				{
+					"color": "#131313",
+					"name": "Tertiary",
+					"slug": "tertiary"
+				}
+			]
+		}
+	}
+}
