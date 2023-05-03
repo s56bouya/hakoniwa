@@ -37,7 +37,7 @@ class Update {
 
         }
 
-        //delete_transient( Define::value( 'theme_name' ) . '_update' );
+        delete_transient( Define::value( 'theme_name' ) . '_update' );
         $remote = get_transient( Define::value( 'theme_name' ) . '_update' );
 
         if( false === $remote ) {
@@ -72,12 +72,8 @@ class Update {
     /**
      * 更新通知
      */
-    public function update( $transient ){
-        if( ! is_admin() ){
-            return false;
-        }
-
-        if ( empty( $transient->checked ) ) {
+    public function update( $transient ){        
+        if ( ! isset( $transient->checked ) ) {
             return $transient;
         }
 
@@ -100,7 +96,7 @@ class Update {
             'new_version' => $remote->version,
             'package' => $remote->download_url,
         );
- 
+
         if(
             $remote
             && version_compare( $version, $remote->version, '<' )
@@ -109,8 +105,6 @@ class Update {
         ) {
 //            var_dump($stylesheet);
             $transient->response[ $stylesheet ] = $data;              
-        } else {
-            $transient->no_update[ $stylesheet ] = $data;
         }
      
         return $transient;
