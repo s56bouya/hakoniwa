@@ -18,6 +18,9 @@ class Settings {
 		// theme.json の上書き
 		add_filter( 'block_editor_settings_all', [ $this, 'override_theme_json' ], 10, 2 );
 
+		// カスタムテンプレートの設定
+		add_filter( 'default_template_types', [ $this, 'custom_templates' ], 10 );
+
 		// ページトップへ戻る
 		add_action( 'wp_footer', [ $this, 'scroll_page_top_button' ], 10 );
 	}
@@ -26,6 +29,8 @@ class Settings {
 	 * テーマサポート
 	 */
 	public function support(){
+		load_theme_textdomain( Define::value( 'theme_name' ), get_template_directory() . '/languages' );
+
 		add_theme_support( 'post-thumbnails' );
 
 		add_theme_support( 'wp-block-styles' );
@@ -88,6 +93,38 @@ class Settings {
 		}
 
 		return $editor_settings;
+	}
+
+	/**
+	 * カスタムテンプレートの設定
+	 */
+	public function custom_templates( $default_template_types ){
+
+		$default_template_types['content-only'] = array(
+			'title'       => __( '[Hakoniwa]:Content only', Define::value( 'theme_name' ) ),
+			'description' => __(
+				'ヘッダー/フッターを非表示にして、本文のコンテンツのみ表示したいときに使えるテンプレートです。',
+				Define::value( 'theme_name' )
+			),
+		);
+
+		$default_template_types['single-two-columns'] = array(
+			'title'       => __( '[Hakoniwa]:Single two columns', Define::value( 'theme_name' ) ),
+			'description' => __(
+				'2カラムレイアウトのテンプレートです。',
+				Define::value( 'theme_name' )
+			),
+		);
+
+		$default_template_types['single-without-title'] = array(
+			'title'       => __( '[Hakoniwa]:Single without title', Define::value( 'theme_name' ) ),
+			'description' => __(
+				'タイトルを非表示にしたいときに使えるテンプレートです。',
+				Define::value( 'theme_name' )
+			),
+		);
+
+		return $default_template_types;
 	}
 	
 	/**
