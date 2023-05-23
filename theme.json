@@ -23,7 +23,7 @@
 					"slug": "primary"
 				},
 				{
-					"color": "#0044a3",
+					"color": "#2879ae",
 					"name": "Secondary",
 					"slug": "secondary"
 				},
@@ -53,7 +53,7 @@
 				"operator": "*",
 				"increment": 1.5,
 				"steps": 7,
-				"mediumStep": 1.5,
+				"mediumStep": 1.25,
 				"unit": "rem"
 			}
 		},
@@ -73,8 +73,8 @@
 				"2xl": 2.2,
 				"3xl": 2.4
 			},
-			"blocks": {
-				"blockGap": "2rem"
+			"style":{
+				"block-gap": "2rem"
 			},
 			"border-width": "1px",
 			"border-radius": "0.25rem",
@@ -129,22 +129,22 @@
 				{
 					"name": "3xl",
 					"slug": "3xl",
-					"size": "clamp(1.4rem, 3.5vw, 1.8rem)"
+					"size": "clamp(1.6rem, 1.4rem + 1vw, 2rem)"
 				},
 				{
 					"name": "2xl",
 					"slug": "2xl",
-					"size": "clamp(1.35rem, 1.3rem + 0.25vw, 1.45rem)"
+					"size": "clamp(1.55rem, 1.4rem + 0.75vw, 1.85rem)"
 				},
 				{
 					"name": "xl",
 					"slug": "xl",
-					"size": "clamp(1.2rem, 1.125rem + 0.38vw, 1.35rem)"
+					"size": "clamp(1.4rem, 1.3rem + 0.5vw, 1.6rem)"
 				},
 				{
 					"name": "lg",
 					"slug": "lg",
-					"size": "clamp(1.1rem, 1.025rem + 0.37vw, 1.25rem)"
+					"size": "clamp(1.2rem, 1.1rem + 0.5vw, 1.4rem)"
 				},
 				{
 					"name": "md",
@@ -171,13 +171,14 @@
 	},
 	"styles": {
 		"blocks": {
+			"core/buttons": {
+				"spacing": {
+					"blockGap": "var(--wp--custom--style--block-gap)"
+				}
+			},
 			"core/button": {
 				"border": {
 					"radius": "0"
-				},
-				"color": {
-					"background": "var(--wp--preset--color--contrast)",
-					"text": "var(--wp--preset--color--base)"
 				}
 			},
 			"core/site-title": {
@@ -209,17 +210,17 @@
 						"bottom": "0px",
 						"left": "0px"
 					},
-					"blockGap": "2rem"
+					"blockGap": "var(--wp--custom--style--block-gap)"
 				}
 			},
 			"core/group": {
 				"spacing": {
-					"blockGap": "2rem"
+					"blockGap": "var(--wp--custom--style--block-gap)"
 				}
             },
 			"core/columns": {
 				"spacing": {
-					"blockGap": "2rem"
+					"blockGap": "var(--wp--custom--style--block-gap)"
 				}
             },
 			"core/post-content": {
@@ -259,9 +260,6 @@
 							"text": "var(--wp--preset--color--primary)"
 						},
 						":hover": {
-							"color": {
-								"text": "var(--wp--preset--color--secondary)"
-							},
 							"typography": {
 								"textDecoration": "none"
 							}
@@ -277,12 +275,15 @@
 					}
                 },
 				"spacing": {
-					"blockGap": "2rem"
+					"blockGap": "var(--wp--custom--style--block-gap)"
 				}
 			},
 			"core/post-excerpt": {
 				"spacing": {
-					"blockGap": "0"
+					"margin": {
+						"bottom": "0.5rem",
+						"top": "0.5rem"
+					}
 				}
 			},
 			"core/query": {
@@ -340,17 +341,17 @@
 				},
 				"color": {
 					"background": "var(--wp--preset--color--primary)",
-					"text": "var(--wp--preset--color--contrast)"
+					"text": "var(--wp--preset--color--base)"
 				},
 				":hover": {
 					"color": {
-						"background": "var(--wp--preset--color--contrast)",
+						"background": "var(--wp--preset--color--secondary)",
 						"text": "var(--wp--preset--color--base)"
 					}
 				},
 				":focus": {
 					"color": {
-						"background": "var(--wp--preset--color--contrast)",
+						"background": "var(--wp--preset--color--secondary)",
 						"text": "var(--wp--preset--color--base)"
 					}
 				},
@@ -376,13 +377,13 @@
 			}
 		},
 		"spacing": {
+			"blockGap": "var(--wp--custom--style--block-gap)",
 			"padding": {
                 "top": "0",
                 "right": "2rem",
                 "bottom": "0",
                 "left": "2rem"
-            },
-			"blockGap": "0"
+            }
 		},
 		"typography": {
 			"fontFamily": "var(--wp--preset--font-family--system-font)",
@@ -398,18 +399,18 @@
 			"area": "header"
 		},
 		{
-			"name": "header-small-dark",
-			"title": "Header (Dark, small)",
+			"name": "header-wide",
+			"title": "Header (Wide)",
+			"area": "header"
+		},
+		{
+			"name": "header-dark",
+			"title": "Header (Dark)",
 			"area": "header"
 		},
 		{
 			"name": "header-center",
 			"title": "Header Center",
-			"area": "header"
-		},
-		{
-			"name": "header-center-phone",
-			"title": "Header Center Phone",
 			"area": "header"
 		},
 		{
@@ -420,6 +421,16 @@
 		{
 			"name": "footer",
 			"title": "Footer",
+			"area": "footer"
+		},
+		{
+			"name": "footer-2-columns",
+			"title": "Footer 2 Columns",
+			"area": "footer"
+		},
+		{
+			"name": "footer-3-columns",
+			"title": "Footer 3 Columns",
 			"area": "footer"
 		}
 	]

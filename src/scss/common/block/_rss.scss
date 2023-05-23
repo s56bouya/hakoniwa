@@ -1,0 +1,13 @@
+.wp-block-rss{
+    list-style-type: none;
+
+    &:not(.is-grid){
+        display: flex;
+        gap:var( --wp--custom--style--block-gap );
+        flex-direction: column;
+    }
+
+    .wp-block-rss__item-title{
+        margin-bottom: calc( var( --wp--custom--style--block-gap ) / 4 );
+    }
+}

@@ -216,7 +216,7 @@ class ThemeAbout {
 					'label'       	=> Define::value( 'theme_name' ) . '_license_key',
 					'option_name'	=> Define::value( 'theme_name' ),
 					'page_name'   	=> $this->page_name(),
-					'product_id'	=> Define::value( 'product_id' ),
+					'product_id'	=> Define::value( 'product_theme_id' ),
 				)
 			);
 	
@@ -327,7 +327,7 @@ class ThemeAbout {
 			];
 
 			// 製品 ID が合っていればデータを更新
-			if( Define::value( 'product_id' ) !== $response['product_id'] ){
+			if( Define::value( 'product_theme_id' ) !== $response['product_id'] ){
 
 				// アクティベートをfalseにする
 				$args = [

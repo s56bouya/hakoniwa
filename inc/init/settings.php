@@ -19,7 +19,7 @@ class Settings {
 		add_filter( 'block_editor_settings_all', [ $this, 'override_theme_json' ], 10, 2 );
 
 		// カスタムテンプレートの設定
-		add_filter( 'default_template_types', [ $this, 'custom_templates' ], 10 );
+//		add_filter( 'default_template_types', [ $this, 'custom_templates' ], 10 );
 
 		// ページトップへ戻る
 		add_action( 'wp_footer', [ $this, 'scroll_page_top_button' ], 10 );
@@ -108,8 +108,8 @@ class Settings {
 			),
 		);
 
-		$default_template_types['single-two-columns'] = array(
-			'title'       => __( '[Hakoniwa]:Single two columns', Define::value( 'theme_name' ) ),
+		$default_template_types['single-2-columns'] = array(
+			'title'       => __( '[Hakoniwa]:Single 2 columns', Define::value( 'theme_name' ) ),
 			'description' => __(
 				'2カラムレイアウトのテンプレートです。',
 				Define::value( 'theme_name' )

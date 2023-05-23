@@ -35,9 +35,15 @@ class Define {
 
 				break;
 
-			case 'product_id':
+			case 'product_theme_id':
 
 				$define = 'prod_Me7x97EpjK8bTK';
+
+				break;
+
+			case 'product_plugin_blocks_id':
+
+				$define = 'prod_NehaygIV4aIBiJ';
 
 				break;
 

@@ -16,6 +16,10 @@ a{
     text-decoration: none;
 }
 
+a,button{
+    transition: color .3s ease,background-color .3s ease,border-color .3s ease;
+}
+
 button{
     cursor: pointer;
 }
@@ -88,17 +92,26 @@ button{
     word-break: break-all;
 }
 
+.wp-site-blocks{
+    .wp-block-template-part{
+        margin:0;
+    }
+}
+
 .wp-block-post-content{
     [class*="wp-block-hakoniwa-blocks"]{
-        a{
+        /*
+        a:where(:not(.wp-element-button)){
             color: inherit;
             text-decoration: inherit;
     
             &:hover{
                 color: inherit;
-            }    
+            }
         }
+        */
 
+        /*
         .__inner-container{
             a:where(:not(.wp-element-button)){
                 color: var(--wp--preset--color--primary);
@@ -110,6 +123,7 @@ button{
                 }    
             }
         }
+        */
     }
 }
 
@@ -164,12 +178,24 @@ button{
     width: 100%;
     height: 100%;
     display: flex;
-    background: #f9f9f9;
+    background: var(--wp--preset--color--tertiary);
 
     svg{
         margin: auto;
         width: clamp(1.5rem, 1.318rem + 0.91vw, 2rem);
         height: auto;
-        stroke: #aaa;
+        stroke: var(--wp--preset--color--contrast);
     }
+}
+
+.is-style-hakoniwa-blocks-template-part-fixed{
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+}
+
+.is-style-hakoniwa-blocks-template-part-sticky{
+    position: sticky;
+    top: calc(0px + var(--wp-admin--admin-bar--position-offset, 0px));
+    z-index: 20;
 }
