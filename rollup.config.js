@@ -4,7 +4,6 @@ import eslint from '@rollup/plugin-eslint';
 import commonjs from '@rollup/plugin-commonjs';
 import { uglify } from "rollup-plugin-uglify";
 
-
 export default [
   //color-picker.js
   {

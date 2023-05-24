@@ -29,21 +29,9 @@ class Define {
 
 				break;
 
-			case 'network_active':
-
-				$define = false;
-
-				break;
-
 			case 'product_theme_id':
 
 				$define = 'prod_Me7x97EpjK8bTK';
-
-				break;
-
-			case 'product_plugin_blocks_id':
-
-				$define = 'prod_NehaygIV4aIBiJ';
 
 				break;
 
