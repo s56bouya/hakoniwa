@@ -98,7 +98,7 @@
   /** Init */
 
   function hakoniwaInit() {
-    /** Shooth Scroll */
+    /** Smooth Scroll */
     hakoniwaSmoothScroll();
   }
 

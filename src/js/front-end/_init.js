@@ -3,7 +3,7 @@ import { hakoniwaSmoothScroll } from './_smooth-scroll';
 /** Init */
 function hakoniwaInit() {
 
-	/** Shooth Scroll */
+	/** Smooth Scroll */
 	hakoniwaSmoothScroll();
 
 }
