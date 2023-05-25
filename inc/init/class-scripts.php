@@ -35,7 +35,7 @@ class Scripts {
 
 		$front_end_js = apply_filters( Define::value( 'theme_name' ) . '_enqueue_front_end_js', get_template_directory_uri() . '/assets/js/front-end.js' );
 
-		wp_register_script( Define::value( 'theme_name' ) . '-front-end', $front_end_js, array(), $version_string, true );
+		wp_register_script( Define::value( 'theme_name' ) . '-front-end', $front_end_js, [], $version_string, true );
 		wp_enqueue_script( Define::value( 'theme_name' ) . '-front-end' );
 
 		/**
@@ -44,7 +44,7 @@ class Scripts {
 
 		$front_end_css = apply_filters( Define::value( 'theme_name' ) . '_enqueue_front_end_css', get_template_directory_uri() . '/assets/css/front-end.css' );
 
-		wp_register_style( Define::value( 'theme_name' ) . '-front-end', $front_end_css, array(), $version_string, 'all' );
+		wp_register_style( Define::value( 'theme_name' ) . '-front-end', $front_end_css, [], $version_string, 'all' );
 		wp_enqueue_style( Define::value( 'theme_name' ) . '-front-end' );
 
 	}

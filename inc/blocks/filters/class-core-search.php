@@ -13,7 +13,7 @@ class Search {
 	 */
 	public function __construct() {
 
-		add_filter( 'render_block_core/search', array( $this, 'render_block' ), 10, 2 );
+		add_filter( 'render_block_core/search', [ $this, 'render_block' ], 10, 2 );
 
 	}
 

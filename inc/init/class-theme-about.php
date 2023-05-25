@@ -17,9 +17,9 @@ class ThemeAbout {
 	 */
 	public function __construct() {
 
-		add_action( 'admin_menu', array( $this, 'about_page' ) );
+		add_action( 'admin_menu', [ $this, 'about_page' ] );
 		
-		add_action( 'after_switch_theme', array( $this, 'switch_theme' ) );
+		add_action( 'after_switch_theme', [ $this, 'switch_theme' ] );
 
 	}
 
@@ -40,7 +40,7 @@ class ThemeAbout {
 		$theme_data = wp_get_theme( Define::value( 'theme_name' ) );
 
 		/* translators: %1$s: theme name %2$s: about page url */
-		$message = sprintf( wp_kses( __( 'Welcome and thanks for choosing %1$s theme. Please visit our <a href="%2$s">about page</a>.', Define::value( 'theme_name' ) ), array( 'a' => array( 'href' => array() ) ) ), esc_attr( $theme_data->name ), esc_url( admin_url( 'themes.php?page=about' ) ) );
+		$message = sprintf( wp_kses( __( 'Welcome and thanks for choosing %1$s theme. Please visit our <a href="%2$s">about page</a>.', Define::value( 'theme_name' ) ), [ 'a' => [ 'href' => [] ] ] ), esc_attr( $theme_data->name ), esc_url( admin_url( 'themes.php?page=about' ) ) );
 		printf( '<div class="updated notice notice-success notice-alt is-dismissible"><p>%s</p></div>', wp_kses_post( $message ) );
 
 	}
@@ -50,7 +50,7 @@ class ThemeAbout {
 	 */
 	public function switch_theme() {
 
-		add_action( 'admin_notices', array( $this, 'about_page_notice' ) );
+		add_action( 'admin_notices', [ $this, 'about_page_notice' ] );
 
 	}
 
@@ -66,7 +66,7 @@ class ThemeAbout {
 			$this->menu_title,
 			'edit_theme_options',
 			'about',
-			array( $this, 'theme_info_page' )
+			[ $this, 'theme_info_page' ]
 		);
 
 	}

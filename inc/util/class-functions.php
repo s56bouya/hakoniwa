@@ -23,9 +23,9 @@ class Functions {
 	 */
 	public static function get_all_post_types() {
 
-		$args     = array(
+		$args     = [
 			'public' => true,
-		);
+		];
 		
 		$output   = 'names';
 		$operator = 'and';
