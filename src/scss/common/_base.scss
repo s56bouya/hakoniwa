@@ -1,4 +1,4 @@
-/* フロント・バック共通のスタイルを書く*/
+/* Common Styles */
 @use "sass:map";
 @use "sass:meta";
 @use "../global/breakpoint";
@@ -50,7 +50,6 @@ button{
     }
 }
 
-
 @media #{map.get(breakpoint.$breakpoints, "tablet")} {
     #scroll-page-top{
         &.is-tablet{
@@ -98,35 +97,6 @@ button{
     }
 }
 
-.wp-block-post-content{
-    [class*="wp-block-hakoniwa-blocks"]{
-        /*
-        a:where(:not(.wp-element-button)){
-            color: inherit;
-            text-decoration: inherit;
-    
-            &:hover{
-                color: inherit;
-            }
-        }
-        */
-
-        /*
-        .__inner-container{
-            a:where(:not(.wp-element-button)){
-                color: var(--wp--preset--color--primary);
-                text-decoration: underline;
-        
-                &:hover{
-                    color: var(--wp--preset--color--secondary);
-                    text-decoration: none;
-                }    
-            }
-        }
-        */
-    }
-}
-
 .wp-block-columns{
     &.post-content{
         gap:24px;
@@ -159,7 +129,7 @@ button{
     }
 }
 
-/*投稿テンプレート*/
+/* Post Template*/
 .wp-block-post-template{
     .detail{
         margin-block-start:0;

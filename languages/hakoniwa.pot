@@ -23,3 +23,11 @@ msgstr ""
 
 msgid "[Hakoniwa]:Single without title"
 msgstr ""
+
+msgid ""
+"Welcome and thanks for choosing %1$s theme. "
+"Please visit our <a href=\"%2$s\">about page</a>."
+msgstr ""
+
+msgid "%1$s is a block theme that allows you to use blocks anywhere on your website."
+msgstr ""

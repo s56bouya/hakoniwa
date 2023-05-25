@@ -7,7 +7,7 @@
 * 601px +           SmartPhone +
 * 0px - 600px       SmartPhone
 ------------------------------*/
-/* フロント・バック共通のスタイルを書く*/
+/* Common Styles */
 * {
   box-sizing: border-box;
 }
@@ -81,32 +81,6 @@ button {
   margin: 0;
 }
 
-.wp-block-post-content [class*=wp-block-hakoniwa-blocks] {
-  /*
-  a:where(:not(.wp-element-button)){
-      color: inherit;
-      text-decoration: inherit;
-
-      &:hover{
-          color: inherit;
-      }
-  }
-  */
-  /*
-  .__inner-container{
-      a:where(:not(.wp-element-button)){
-          color: var(--wp--preset--color--primary);
-          text-decoration: underline;
-
-          &:hover{
-              color: var(--wp--preset--color--secondary);
-              text-decoration: none;
-          }    
-      }
-  }
-  */
-}
-
 .wp-block-columns.post-content {
   gap: 24px;
 }
@@ -127,7 +101,7 @@ button {
   gap: 1em;
 }
 
-/*投稿テンプレート*/
+/* Post Template*/
 .wp-block-post-template .detail {
   -webkit-margin-before: 0;
           margin-block-start: 0;

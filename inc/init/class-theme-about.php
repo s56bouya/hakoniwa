@@ -6,7 +6,7 @@ use hakoniwa\theme\init\Define;
 class ThemeAbout {
 
 	/**
-	 * メニュータイトル
+	 * Menu Title
 	 *
 	 * @var string
 	 */
@@ -18,15 +18,18 @@ class ThemeAbout {
 	public function __construct() {
 
 		add_action( 'admin_menu', array( $this, 'about_page' ) );
+		
 		add_action( 'after_switch_theme', array( $this, 'switch_theme' ) );
 
 	}
 
 	/**
-	 * ページ名
+	 * Page Name
 	 */
 	public function page_name(){
+
 		return 'theme_about';
+
 	}
 
 	/**
@@ -56,7 +59,7 @@ class ThemeAbout {
 	 */
 	public function about_page() {
 
-		$this->menu_title = __( 'テーマについて', Define::value( 'theme_name' ) );
+		$this->menu_title = __( 'About Theme', Define::value( 'theme_name' ) );
 
 		add_theme_page(
 			$this->menu_title,
@@ -69,57 +72,29 @@ class ThemeAbout {
 	}
 
 	/**
-	 * Tab Array
-	 */
-	public function tab_array() {
-		$tab_array = array(
-			'welcome'  => __( 'About Theme', Define::value( 'theme_name' ) ),
-			'iconfont' => __( 'Use Icon', Define::value( 'theme_name' ) ),
-		);
-
-		return $tab_array;
-	}
-
-	/**
 	 * Theme Page Info
 	 */
 	public function theme_info_page() {
+
 		$theme_data = wp_get_theme( Define::value( 'theme_name' ) );
 		$theme_name = $theme_data->name;
+		$message    = sprintf( __( '%1$s is a block theme that allows you to use blocks anywhere on your website.', Define::value( 'theme_name' ) ), esc_attr( $theme_name ) );
+
+		do_action( Define::value( 'theme_name' ) . '_theme_about_wrapper_before' );
 		?>
-			<style>
-				.about-wrap .dashicons-admin-network{
-					display: flex;
-					align-items:center;
-				}
-				.about-wrap .dashicons-admin-network::before{
-					vertical-align:middle;
-					margin-right:0.5rem;
-				}
-				.about-wrap .dashicons-admin-network.active input{
-					background:#99e0aa;
-				}
-				.about-wrap .dashicons-admin-network.active::before{
-					color:#61ad73;
-				}
-				.about-wrap .dashicons-admin-network.deactive input{
-					background:#e9c972;
-				}
-				.about-wrap .dashicons-admin-network.deactive::before{
-					color:#dba616;
-				}
-			</style>
 			<div class="wrap about-wrap">
-				<h1><?php printf( esc_html__( 'Welcome to %1s - Version %2s', Define::value( 'theme_name' ) ), esc_html( $theme_data->name ), esc_html( $theme_data->version ) ); ?></h1>
-				<div class="about-text"><?php echo esc_html( $theme_name ); ?> は、ウェブサイトのあらゆる場所でブロックが使用可能な、運営に必要な機能が豊富に搭載されたブロックテーマです。</div>
+				<h1><?php printf( esc_html__( 'Welcome to %1s - Version %2s', Define::value( 'theme_name' ) ), esc_html( $theme_name ), esc_html( $theme_data->version ) ); ?></h1>
+				<div class="about-text"><?php echo wp_kses_post( $message ); ?></div>
 				<hr>
 				<?php
-					do_action( Define::value( 'theme_name' ) . '_theme_about_before' );
-					do_action( Define::value( 'theme_name' ) . '_theme_about_content' );
-					do_action( Define::value( 'theme_name' ) . '_theme_about_after' );
+				do_action( Define::value( 'theme_name' ) . '_theme_about_before' );
+				do_action( Define::value( 'theme_name' ) . '_theme_about_content' );
+				do_action( Define::value( 'theme_name' ) . '_theme_about_after' );
 				?>
 			</div>
 		<?php
+		do_action( Define::value( 'theme_name' ) . '_theme_about_wrapper_after' );
+		
 	}
 
 }

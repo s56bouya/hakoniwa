@@ -1,6 +1,5 @@
 {
 	"version": 2,
-	"patterns": [ "short-text-surrounded-by-round-images", "partner-logos", "my-theme/hello"],
 	"settings": {
 		"useRootPaddingAwareAlignments": true,
 		"appearanceTools": true,

@@ -1,13 +1,15 @@
 <?php
-
-// Util
+/**
+ * Util
+ */
 require_once 'inc/util/index.php';
 
-// Init
+/**
+ * Init
+ */
 require_once 'inc/init/index.php';
 
-// Block Filters
+/**
+ * Block Filters
+ */
 require_once 'inc/blocks/filters/index.php';
-
-// Block Categories
-require_once 'inc/blocks/categories/index.php';
