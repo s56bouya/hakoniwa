@@ -1,15 +1,10 @@
 import { hakoniwaSmoothScroll } from './_smooth-scroll';
-import { hakoniwaScrollTopButton } from './_scroll-top';
 
-/** Init（ドキュメントを全部読み込んだ後の設定） */
-
+/** Init */
 function hakoniwaInit() {
 
-	/** スムーススクロール */
+	/** Shooth Scroll */
 	hakoniwaSmoothScroll();
-
-	/** スクロールトップボタン */
-	hakoniwaScrollTopButton();
 
 }
 

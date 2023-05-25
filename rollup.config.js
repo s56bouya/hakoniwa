@@ -5,69 +5,6 @@ import commonjs from '@rollup/plugin-commonjs';
 import { uglify } from "rollup-plugin-uglify";
 
 export default [
-  //color-picker.js
-  {
-    input: './src/js/back-end/color-picker.js',
-    plugins: [
-      eslint(),
-      babel({
-        'babelHelpers': 'bundled',
-        'presets': [
-          ['@babel/preset-env',{
-            'useBuiltIns': 'usage',
-            'corejs': 3,
-          }]
-        ]
-      }),
-      multi(),
-    ],
-    output: {
-      file: './dist/assets/js/color-picker.js',
-      format: 'iife'
-    } 
-  },
-  //customizer-controls.js
-  {
-    input: './src/js/back-end/customize-controls.js',
-    plugins: [
-      eslint(),
-      babel({
-        'babelHelpers': 'bundled',
-        'presets': [
-          ['@babel/preset-env',{
-            'useBuiltIns': 'usage',
-            'corejs': 3,         
-          }]
-        ]
-      }),
-      multi(),
-    ],
-    output: {
-      file: './dist/assets/js/customize-controls.js',
-      format: 'iife'
-    } 
-  },
-  //media-uploader.js
-  {
-    input: './src/js/back-end/media-uploader.js',
-    plugins: [
-      eslint(),
-      babel({
-        'babelHelpers': 'bundled',
-        'presets': [
-          ['@babel/preset-env',{
-            'useBuiltIns': 'usage',       
-            'corejs': 3,     
-          }]
-        ]
-      }),
-      multi(),
-    ],
-    output: {
-      file: './dist/assets/js/media-uploader.js',
-      format: 'iife'
-    } 
-  },
   // front-end.js
   {
     input: './src/js/front-end/index.js',
