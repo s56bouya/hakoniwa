@@ -40,7 +40,7 @@ class ThemeAbout {
 		$theme_data = wp_get_theme( Define::value( 'theme_name' ) );
 
 		/* translators: %1$s: theme name %2$s: about page url */
-		$message = sprintf( wp_kses( __( 'Welcome and thanks for choosing %1$s theme. Please visit our <a href="%2$s">about page</a>.', Define::value( 'theme_name' ) ), [ 'a' => [ 'href' => [] ] ] ), esc_attr( $theme_data->name ), esc_url( admin_url( 'themes.php?page=about' ) ) );
+		$message = sprintf( wp_kses( __( 'Welcome and thanks for choosing %1$s theme. Please visit our <a href="%2$s">about page</a>.', 'hakoniwa' ), [ 'a' => [ 'href' => [] ] ] ), esc_attr( $theme_data->name ), esc_url( admin_url( 'themes.php?page=about' ) ) );
 		printf( '<div class="updated notice notice-success notice-alt is-dismissible"><p>%s</p></div>', wp_kses_post( $message ) );
 
 	}
@@ -59,7 +59,7 @@ class ThemeAbout {
 	 */
 	public function about_page() {
 
-		$this->menu_title = __( 'About Theme', Define::value( 'theme_name' ) );
+		$this->menu_title = __( 'About Theme', 'hakoniwa' );
 
 		add_theme_page(
 			$this->menu_title,
@@ -78,12 +78,12 @@ class ThemeAbout {
 
 		$theme_data = wp_get_theme( Define::value( 'theme_name' ) );
 		$theme_name = $theme_data->name;
-		$message    = sprintf( __( '%1$s is a block theme that allows you to use blocks anywhere on your website.', Define::value( 'theme_name' ) ), esc_attr( $theme_name ) );
+		$message    = sprintf( __( '%1$s is a block theme that allows you to use blocks anywhere on your website.', 'hakoniwa' ), 'hakoniwa' );
 
 		do_action( Define::value( 'theme_name' ) . '_theme_about_wrapper_before' );
 		?>
 			<div class="wrap about-wrap">
-				<h1><?php printf( esc_html__( 'Welcome to %1s - Version %2s', Define::value( 'theme_name' ) ), esc_html( $theme_name ), esc_html( $theme_data->version ) ); ?></h1>
+				<h1><?php printf( esc_html__( 'Welcome to %1s - Version %2s', 'hakoniwa' ), esc_html( $theme_name ), esc_html( $theme_data->version ) ); ?></h1>
 				<div class="about-text"><?php echo wp_kses_post( $message ); ?></div>
 				<hr>
 				<?php

@@ -16,7 +16,7 @@
 <!-- /wp:social-links -->
 
 <!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center"><?php echo esc_html__( '©&nbsp;' . get_bloginfo( 'name' ) ); ?></p>
+<p class="has-text-align-center"><?php echo esc_html( '©&nbsp;' . get_bloginfo( 'name' ) ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->

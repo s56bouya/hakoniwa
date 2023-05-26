@@ -21,7 +21,7 @@ class Search {
 
 		if( is_search() ){
 			if( ! have_posts() ){
-				$text = '<p>' . esc_html( __( 'We could not find any results for your search. You can give it another try through the search form below.', Define::value( 'theme_name' ) ) ) . '</p>';
+				$text = '<p>' . esc_html( __( 'We could not find any results for your search. You can give it another try through the search form below.', 'hakoniwa' ) ) . '</p>';
 				$block_content = $text . $block_content;
 			}
 		}
