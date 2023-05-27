@@ -28,6 +28,10 @@ button {
   cursor: pointer;
 }
 
+main.wp-block-group {
+  margin: 0;
+}
+
 .footer-bottom-right-content {
   bottom: 1rem;
   right: 1rem;
