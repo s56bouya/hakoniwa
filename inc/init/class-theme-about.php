@@ -83,7 +83,7 @@ class ThemeAbout {
 		do_action( Define::value( 'theme_name' ) . '_theme_about_wrapper_before' );
 		?>
 			<div class="wrap about-wrap">
-				<h1><?php printf( esc_html__( 'Welcome to %1s - Version %2s', 'hakoniwa' ), esc_html( $theme_name ), esc_html( $theme_data->version ) ); ?></h1>
+				<h1><?php printf( esc_html__( 'Welcome to %1$1s - Version %2$2s', 'hakoniwa' ), esc_html( $theme_name ), esc_html( $theme_data->version ) ); ?></h1>
 				<div class="about-text"><?php echo wp_kses_post( $message ); ?></div>
 				<hr>
 				<?php
