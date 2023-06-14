@@ -15,7 +15,7 @@ function hakoniwaSmoothScroll() {
 
 		const speed = 300,
 			movingFrequency = 10,
-			links = document.querySelectorAll( 'a:not(.noscroll)' );
+			links = document.querySelectorAll( 'a:not(.noscroll):not(.skip-link.screen-reader-text)' );
 
 		const getUrl = window.location;
 		const baseUrl =

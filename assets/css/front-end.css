@@ -88,16 +88,22 @@ main.wp-block-group {
   gap: 24px;
 }
 
+.wp-block-latest-comments {
+  padding-left: 0;
+}
+
 .wp-block-post-comments .commentlist .comment {
   padding-left: 0;
+}
+.wp-block-post-comments #comments {
+  margin-bottom: 1em;
 }
 
 .comment-form > * {
   margin: 1.5rem 0;
 }
-
-.wp-block-post-comments #comments {
-  margin-bottom: 1em;
+.comment-form textarea {
+  resize: vertical;
 }
 
 .wp-block-navigation .wp-block-page-list {
@@ -1165,8 +1171,7 @@ main {
   font-size: var(--wp--preset--font-size--main-content);
 }
 main ul, main ol {
-  list-style-position: inside;
-  padding-left: 0;
+  padding-left: 1.5em;
 }
 main ul li ul, main ul li ol, main ol li ul, main ol li ol {
   padding-left: 1em;

@@ -109,11 +109,19 @@ main{
     }
 }
 
+.wp-block-latest-comments{
+	padding-left:0;
+}
+
 .wp-block-post-comments{
     .commentlist{
         .comment{
             padding-left:0;
         }
+    }
+
+	#comments{
+        margin-bottom:1em;
     }
 }
 
@@ -121,12 +129,10 @@ main{
     > * {
         margin:1.5rem 0;
     }
-}
 
-.wp-block-post-comments{
-    #comments{
-        margin-bottom:1em;
-    }
+	textarea{
+		resize:vertical;
+	}
 }
 
 .wp-block-navigation{

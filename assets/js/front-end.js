@@ -23,7 +23,7 @@
       href;
       var speed = 300,
           movingFrequency = 10,
-          links = document.querySelectorAll('a:not(.noscroll)');
+          links = document.querySelectorAll('a:not(.noscroll):not(.skip-link.screen-reader-text)');
       var getUrl = window.location;
       var baseUrl = getUrl.protocol + '//' + getUrl.host + '/' + getUrl.pathname.split('/')[1] + '/';
 

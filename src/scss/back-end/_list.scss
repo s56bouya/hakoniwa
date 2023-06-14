@@ -1,11 +1,3 @@
 @use "../global" as g;
 
 @include g.list;
-
-.wp-block-list{
-    li{
-        div{
-            display: inline-block;
-        }
-    }
-}
