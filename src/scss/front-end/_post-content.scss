@@ -1,7 +1,7 @@
 @use "../global" as g;
 
-main{
-    @include g.list;
+@include g.list;
 
+main{
     font-size: var(--wp--preset--font-size--main-content);
 }

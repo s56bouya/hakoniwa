@@ -1167,20 +1167,23 @@ nav.wp-block-query-pagination {
   margin-bottom: calc(var(--wp--custom--style--block-gap) / 4);
 }
 
-main {
-  font-size: var(--wp--preset--font-size--main-content);
-}
-main ul, main ol {
+ul, ol {
   padding-left: 1.5em;
 }
-main ul li ul, main ul li ol, main ol li ul, main ol li ol {
+ul li ul, ul li ol, ol li ul, ol li ol {
   padding-left: 1em;
 }
-main ul {
+
+ul {
   list-style-type: disc;
 }
-main ol {
+
+ol {
   list-style-type: decimal;
+}
+
+main {
+  font-size: var(--wp--preset--font-size--main-content);
 }
 
 .has-block-gap > * {
