@@ -1,0 +1,119 @@
+@use "sass:map";
+@use "../../breakpoint";
+@use "../../variables" as *;
+
+.is-style-#{$product-name}-heading-border-01{
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    padding-top:0.5em;
+    padding-bottom:0.5em;
+}
+
+.is-style-#{$product-name}-heading-border-02{
+    border-bottom: 1px solid;
+    padding-bottom:0.5em;
+}
+
+.is-style-#{$product-name}-heading-border-03{
+    border: 1px solid;
+    padding:0.5em;
+}
+
+.is-style-#{$product-name}-heading-border-04:not(.block-editor-block-list__layout){
+    align-items: center;
+    display: flex;
+
+    &::before{
+        margin-right: 1em;
+    }
+
+    &::after{
+        margin-left: 1em;
+    }
+
+    &::before,
+    &::after{
+        border-top: 1px solid;
+        content: "";
+        flex-grow: 1;
+        position: static;
+    }
+}
+
+.is-style-#{$product-name}-heading-bracket-01:not(.block-editor-block-list__layout){
+    display: table;
+    padding-top:0.5em;
+    padding-bottom:0.5em;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+    position: relative;
+    width:100%;
+    text-align: center;
+
+    &::before{
+        border-left: 1px solid;
+        border-top: 1px solid;
+        bottom: auto;
+        left: 0;
+        right: auto;
+        top: 0;
+    }
+
+    &::after{
+        border-bottom: 1px solid;
+        border-right: 1px solid;
+        bottom: 0;
+        left: auto;
+        right: 0;
+        top: auto;
+    }
+
+    &::before,
+    &::after{
+        border-radius: 0;
+        position: absolute;
+        content: "";
+        height: 1em;
+        width: 1em;
+    }
+}
+
+.is-style-#{$product-name}-heading-bracket-02:not(.block-editor-block-list__layout){
+    display: table;
+    padding-top:0.5em;
+    padding-bottom:0.5em;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+    position: relative;
+    width:100%;
+    text-align: center;
+
+    &::before{
+        border-bottom: 1px solid;
+        border-left: 1px solid;
+        border-top: 1px solid;
+        bottom: 0;
+        left: 0;
+        right: auto;
+        top: 0;
+    }
+
+    &::after{
+        border-bottom: 1px solid;
+        border-right: 1px solid;
+        border-top: 1px solid;
+        bottom: 0;
+        left: auto;
+        right: 0;
+        top: 0;
+    }
+
+    &::before,
+    &::after{
+        border-radius: 0;
+        content: "";
+        height: 100%;
+        position: absolute;
+        width: 0.5rem;
+    }
+}

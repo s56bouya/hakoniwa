@@ -1,3 +1,11 @@
 @use "../global" as g;
 
 @include g.list;
+
+ul[class*=is-style-hakoniwa-list]{
+	li{
+		div.block-editor-rich-text__editable{
+			display: inline-block;
+		}
+	}
+}

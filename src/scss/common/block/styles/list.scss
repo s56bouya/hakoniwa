@@ -1,0 +1,47 @@
+@use "sass:map";
+@use "../../breakpoint";
+@use "../../variables" as *;
+
+ul[class*="is-style-#{$product-name}-list"] {
+	padding-left:0;
+	
+	li{
+		list-style-type: none;
+
+		&::before{
+			content: "";
+			display: inline-block;
+			width: var(--wp--preset--font-size--main-content);
+			height: var(--wp--preset--font-size--main-content);
+			margin-right: 0.5em;
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: center;
+			vertical-align: text-top;
+		}
+	}
+
+	&.is-style-#{$product-name}-list-check-01{
+		li{
+			&::before{
+				background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-check' width='24' height='24' viewBox='0 0 24 24' stroke-width='1' stroke='currentColor' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M5 12l5 5l10 -10' /%3E%3C/svg%3E");
+			}	
+		}
+	}
+
+	&.is-style-#{$product-name}-list-arrow-01{
+		li{
+			&::before{
+				background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-arrow-big-right' width='24' height='24' viewBox='0 0 24 24' stroke-width='2' stroke='currentColor' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M4 9h8v-3.586a1 1 0 0 1 1.707 -.707l6.586 6.586a1 1 0 0 1 0 1.414l-6.586 6.586a1 1 0 0 1 -1.707 -.707v-3.586h-8a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1z' /%3E%3C/svg%3E ");
+			}	
+		}
+	}
+
+	&.is-style-#{$product-name}-list-arrow-02{
+		li{
+			&::before{
+				background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-arrow-narrow-right' width='24' height='24' viewBox='0 0 24 24' stroke-width='2' stroke='currentColor' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'/%3E%3Cline x1='5' y1='12' x2='19' y2='12' /%3E%3Cline x1='15' y1='16' x2='19' y2='12' /%3E%3Cline x1='15' y1='8' x2='19' y2='12' /%3E%3C/svg%3E ");
+			}	
+		}
+	}
+}

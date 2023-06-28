@@ -1,0 +1,22 @@
+/*-----------------------------
+* Responsive Breakpoints
+* 1001px +          Desktop+
+* 0px - 1000px      SmartPhone - Tablet - Desktop
+* 769px - 1000px    Tablet - Desktop
+* 0px - 768px       Tablet
+* 681px - 768px     SmartPhone - Tablet
+* 0px - 680px       SmartPhone
+------------------------------*/
+
+// Breakpoint
+$breakpoints: (
+	"smartphone": "only screen and (max-width:680px)",
+	"smartphone+": "only screen and (min-width: 681px)",
+	"smartphone_tablet": "only screen and (min-width: 681px) and (max-width:768px)",
+	"smartphone_desktop": "only screen and (min-width: 681px) and (max-width:960px)",
+	"tablet": "only screen and (max-width: 768px)",
+	"tablet+": "only screen and (min-width: 769px)",
+	"tablet_desktop": "only screen and (min-width: 769px) and (max-width:960px)",
+	"desktop": "only screen and (max-width:960px)",
+	"desktop+": "only screen and (min-width: 961px)"
+) !default;

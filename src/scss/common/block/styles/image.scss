@@ -1,0 +1,71 @@
+@use "sass:map";
+@use "../../breakpoint";
+@use "../../variables" as *;
+
+.wp-block-plugin{
+	background-color: transparent;
+}
+
+// image style
+body{
+	--#{$product-name}-image-style-ink-01: url(../images/block-styles/ink01.svg);
+	--#{$product-name}-image-style-ink-02: url(../images/block-styles/ink02.svg);
+	--#{$product-name}-image-style-ink-03: url(../images/block-styles/ink03.svg);
+	--#{$product-name}-image-style-fluid-01: url(../images/block-styles/fluid01.svg);
+	--#{$product-name}-image-style-fluid-02: url(../images/block-styles/fluid02.svg);
+	--#{$product-name}-image-style-fluid-03: url(../images/block-styles/fluid03.svg);
+}
+
+.is-style-#{$product-name}-image-circle-01{
+	img{
+		clip-path: circle();
+	}
+}
+
+.is-style-#{$product-name}-image-rhombus-01{
+	img{
+		clip-path:polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+	}
+}
+
+.is-style-#{$product-name}-image-ink-01{
+	img{
+		-webkit-mask:var(--#{$product-name}-image-style-ink-01) center center no-repeat;
+		mask:var(--#{$product-name}-image-style-ink-01) center center no-repeat;
+	}
+}
+
+.is-style-#{$product-name}-image-ink-02{
+	img{
+		-webkit-mask:var(--#{$product-name}-image-style-ink-02) center center no-repeat;
+		mask:var(--#{$product-name}-image-style-ink-02) center center no-repeat;
+	}
+}
+
+.is-style-#{$product-name}-image-ink-03{
+	img{
+		-webkit-mask:var(--#{$product-name}-image-style-ink-03) center center no-repeat;
+		mask:var(--#{$product-name}-image-style-ink-03) center center no-repeat;
+	}
+}
+
+.is-style-#{$product-name}-image-fluid-01{
+	img{
+		-webkit-mask:var(--#{$product-name}-image-style-fluid-01) center center no-repeat;
+		mask:var(--#{$product-name}-image-style-fluid-01) center center no-repeat;
+	}
+}
+
+.is-style-#{$product-name}-image-fluid-02{
+	img{
+		-webkit-mask:var(--#{$product-name}-image-style-fluid-02) center center no-repeat;
+		mask:var(--#{$product-name}-image-style-fluid-02) center center no-repeat;
+	}
+}
+
+.is-style-#{$product-name}-image-fluid-03{
+	img{
+		-webkit-mask:var(--#{$product-name}-image-style-fluid-03) center center no-repeat;
+		mask:var(--#{$product-name}-image-style-fluid-03) center center no-repeat;
+	}
+}
