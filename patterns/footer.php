@@ -2,7 +2,7 @@
 /**
  * Title: Footer
  * Slug: hakoniwa/footer
- * Categories: footer
+ * Categories: footer,Hakoniwa
 */
 ?>
 <!-- wp:group {"align":"full","layout":{"inherit":true,"type":"constrained"}} -->

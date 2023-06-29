@@ -2,7 +2,7 @@
 /**
  * Title: Footer 2 Columns
  * Slug: hakoniwa/footer-2-columns
- * Categories: footer
+ * Categories: footer,Hakoniwa
 */
 ?>
 <!-- wp:group {"align":"full","layout":{"inherit":true,"type":"constrained"}} -->
@@ -11,7 +11,7 @@
 <div class="wp-block-columns alignwide"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide"><!-- wp:heading {"level":3,"className":"is-style-hakoniwa-blocks-heading-border-02"} -->
-<h3 class="wp-block-heading is-style-hakoniwa-blocks-heading-border-02">カテゴリー</h3>
+<h3 class="wp-block-heading is-style-hakoniwa-blocks-heading-border-02">Categories</h3>
 <!-- /wp:heading -->
 
 <!-- wp:categories /--></div>
@@ -21,7 +21,7 @@
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide"><!-- wp:heading {"level":3,"className":"is-style-hakoniwa-blocks-heading-border-02"} -->
-<h3 class="wp-block-heading is-style-hakoniwa-blocks-heading-border-02">タグ</h3>
+<h3 class="wp-block-heading is-style-hakoniwa-blocks-heading-border-02">Tags</h3>
 <!-- /wp:heading -->
 
 <!-- wp:tag-cloud /--></div>

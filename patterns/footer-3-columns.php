@@ -2,8 +2,8 @@
 /**
  * Title: Footer 3 Columns
  * Slug: hakoniwa/footer-3-columns
- * Categories: footer
-*/
+ * Categories: footer,Hakoniwa
+ */
 ?>
 <!-- wp:group {"align":"full","layout":{"inherit":true,"type":"constrained"}} -->
 <div class="wp-block-group alignfull"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|30","padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}},"layout":{"type":"constrained"}} -->
@@ -35,11 +35,11 @@
 <!-- /wp:heading -->
 
 <!-- wp:social-links {"style":{"spacing":{"blockGap":{"top":"var:preset|spacing|30","left":"var:preset|spacing|30"}}},"className":"is-style-logos-only","layout":{"type":"flex","orientation":"horizontal"}} -->
-<ul class="wp-block-social-links is-style-logos-only"><!-- wp:social-link {"service":"twitter"} /-->
+<ul class="wp-block-social-links is-style-logos-only"><!-- wp:social-link {"url":"#","service":"twitter"} /-->
 
-<!-- wp:social-link {"service":"facebook"} /-->
+<!-- wp:social-link {"url":"#","service":"facebook"} /-->
 
-<!-- wp:social-link {"service":"instagram"} /--></ul>
+<!-- wp:social-link {"url":"#","service":"instagram"} /--></ul>
 <!-- /wp:social-links --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>

@@ -23,19 +23,19 @@ $paragraph_array = array(
 	),
 	array(
 		'name'  => 'paragraph-point-01',
-		'label' => 'ポイント',
-	),
-	array(
-		'name'  => 'paragraph-point-02',
 		'label' => 'ポイント 01',
 	),
 	array(
-		'name'  => 'paragraph-point-03',
+		'name'  => 'paragraph-point-02',
 		'label' => 'ポイント 02',
 	),
 	array(
-		'name'  => 'paragraph-point-04',
+		'name'  => 'paragraph-point-03',
 		'label' => 'ポイント 03',
+	),
+	array(
+		'name'  => 'paragraph-point-04',
+		'label' => 'ポイント 04',
 	),
 	array(
 		'name'  => 'paragraph-circle-01',

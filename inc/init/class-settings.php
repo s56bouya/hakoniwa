@@ -14,6 +14,8 @@ class Settings {
 
 		add_filter( 'post_thumbnail_html', [ $this, 'default_thumbnail' ], 10, 3 );
 
+		add_action( 'init', [ $this, 'register_pattern_categories' ] );
+
 	}
 
 	/**
@@ -50,6 +52,28 @@ class Settings {
 
 		return $html;
 		
+	}
+
+	/**
+	 * Block Pattern Categories
+	 */
+	public function register_pattern_categories() {
+
+		$patterns = array();
+	
+		$block_pattern_categories = array(
+			'Hakoniwa' => array( 
+				'label' => __( 'Hakoniwa Theme', 'hakoniwa' )
+			)
+		);
+	
+		$block_pattern_categories = apply_filters( 'hakoniwa_block_pattern_categories', $block_pattern_categories );
+	
+		foreach ( $block_pattern_categories as $name => $properties ) {
+			if ( ! \WP_Block_Pattern_Categories_Registry::get_instance()->is_registered( $name ) ) {
+				register_block_pattern_category( $name, $properties );
+			}
+		}
 	}
 
 }

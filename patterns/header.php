@@ -2,8 +2,8 @@
 /**
  * Title: Header
  * Slug: hakoniwa/header
- * Categories: header
-*/
+ * Categories: header,Hakoniwa
+ */
 ?>
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}},"layout":{"inherit":true,"type":"constrained"}} -->
 <div id="header" class="wp-block-group" style="padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)">
