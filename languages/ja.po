@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: AnimaGate, Inc.\n"
 "POT-Creation-Date: 2017-08-18 20:03+1200\n"
-"PO-Revision-Date: 2023-05-25 12:29+0900\n"
+"PO-Revision-Date: 2023-06-30 17:54+0900\n"
 "Last-Translator: \n"
 "Language-Team: Tetsuya Imamura <wpdev@animagate.com>\n"
 "Language: ja\n"
@@ -36,3 +36,126 @@ msgid ""
 "%1$s is a block theme that allows you to use blocks anywhere on your website."
 msgstr ""
 "%1$s は、ウェブサイトのあらゆる場所でブロックが使用できるブロックテーマです。"
+
+msgid "Info 01"
+msgstr "お知らせ 01"
+
+msgid "Info 02"
+msgstr "お知らせ 02"
+
+msgid "Warning"
+msgstr "注意"
+
+msgid "Question"
+msgstr "クエスチョン"
+
+msgid "Checkmark"
+msgstr "チェックマーク"
+
+msgid "Point 01"
+msgstr "ポイント 01"
+
+msgid "Point 02"
+msgstr "ポイント 02"
+
+msgid "Point 03"
+msgstr "ポイント 03"
+
+msgid "Point 04"
+msgstr "ポイント 04"
+
+msgid "Circle"
+msgstr "サークル"
+
+msgid "Cross"
+msgstr "クロス"
+
+msgid "Primary Outline"
+msgstr ""
+
+msgid "Secondary Outline"
+msgstr ""
+
+msgid "Tertiary Outline"
+msgstr ""
+
+msgid "Rhombus"
+msgstr "ひし形"
+
+msgid "Ink 01"
+msgstr "インク 01"
+
+msgid "Ink 02"
+msgstr "インク 02"
+
+msgid "Ink 03"
+msgstr "インク 03"
+
+msgid "Fluid 01"
+msgstr "流体 01"
+
+msgid "Fluid 02"
+msgstr "流体 02"
+
+msgid "Fluid 03"
+msgstr "流体 03"
+
+msgid "Check 01"
+msgstr "チェック 01"
+
+msgid "Arrow 01"
+msgstr "矢印 01"
+
+msgid "Arrow 02"
+msgstr "矢印 02"
+
+msgid "Border 01"
+msgstr "ボーダー 01"
+
+msgid "Border 02"
+msgstr "ボーダー 02"
+
+msgid "Border 03"
+msgstr "ボーダー 03"
+
+msgid "Border 04"
+msgstr "ボーダー 04"
+
+msgid "Bracket 01"
+msgstr "カッコ 01"
+
+msgid "Bracket 02"
+msgstr "カッコ 02"
+
+msgid "Stripe"
+msgstr "ストライプ"
+
+msgid "Dot"
+msgstr "ドット"
+
+msgid "Check"
+msgstr "チェック"
+
+msgid "Shadow 01"
+msgstr ""
+
+msgid "Shadow 02"
+msgstr ""
+
+msgid "Shadow 03"
+msgstr ""
+
+msgid "Shadow 04"
+msgstr ""
+
+msgid "Hover Shadow 01"
+msgstr ""
+
+msgid "Hover Shadow 02"
+msgstr ""
+
+msgid "Hover Shadow 03"
+msgstr ""
+
+msgid "Hover Shadow 04"
+msgstr ""

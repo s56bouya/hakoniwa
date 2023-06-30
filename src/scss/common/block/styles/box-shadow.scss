@@ -1,0 +1,177 @@
+@use "sass:map";
+@use "../../breakpoint";
+@use "../../variables" as *;
+
+[class*=is-style-#{$product-name}-box-shadow],
+[class*=is-style-#{$product-name}-hover-box-shadow]{
+	transition: box-shadow .3s ease;
+}
+
+.wp-block-button:is([class*=is-style-#{$product-name}-box-shadow],[class*=is-style-#{$product-name}-hover-box-shadow]),
+.wp-block-button:is([class*=is-style-#{$product-name}-box-shadow]:hover,[class*=is-style-#{$product-name}-hover-box-shadow]:hover){
+	box-shadow:none;
+}
+
+.wp-block-button{
+	&.is-style-#{$product-name}-box-shadow-sm{
+		.wp-block-button__link{
+			box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+		}
+	}
+	
+	&.is-style-#{$product-name}-box-shadow{
+		.wp-block-button__link{
+			box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+		}
+	}
+	
+	&.is-style-#{$product-name}-box-shadow-md{
+		.wp-block-button__link{
+			box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+		}
+	}
+	
+	&.is-style-#{$product-name}-box-shadow-lg{
+		.wp-block-button__link{
+			box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+		}
+	}
+	
+	&.is-style-#{$product-name}-box-shadow-xl{
+		.wp-block-button__link{
+			box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+		}
+	}
+	
+	&.is-style-#{$product-name}-box-shadow-2-xl{
+		.wp-block-button__link{
+			box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+		}
+	}
+	
+	&.is-style-#{$product-name}-box-shadow-inner{
+		.wp-block-button__link{
+			box-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+		}
+	}
+	
+	&.is-style-#{$product-name}-hover-box-shadow-01{
+		.wp-block-button__link{
+			box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+	
+			&:hover{
+				box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+			}	
+		}
+	}
+	
+	&.is-style-#{$product-name}-hover-box-shadow-02{
+		.wp-block-button__link{
+			box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+	
+			&:hover{
+				box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+			}	
+		}
+	}
+	
+	&.is-style-#{$product-name}-hover-box-shadow-03{
+		.wp-block-button__link{
+			box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+	
+			&:hover{
+				box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+			}	
+		}
+	}
+	
+	&.is-style-#{$product-name}-hover-box-shadow-04{
+		.wp-block-button__link{
+			box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+	
+			&:hover{
+				box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+			}	
+		}
+	}
+	
+	&.is-style-#{$product-name}-hover-box-shadow-05{
+		.wp-block-button__link{
+			box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+	
+			&:hover{
+				box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+			}
+		}
+	}
+
+	
+}
+
+.is-style-#{$product-name}-box-shadow-sm{
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+}
+
+.is-style-#{$product-name}-box-shadow{
+	box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+.is-style-#{$product-name}-box-shadow-md{
+	box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.is-style-#{$product-name}-box-shadow-lg{
+	box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.is-style-#{$product-name}-box-shadow-xl{
+	box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.is-style-#{$product-name}-box-shadow-2-xl{
+	box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+}
+
+.is-style-#{$product-name}-box-shadow-inner{
+	box-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+}
+
+.is-style-#{$product-name}-hover-box-shadow-01{
+	box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+
+	&:hover{
+		box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+	}
+}
+
+.is-style-#{$product-name}-hover-box-shadow-02{
+	box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+
+	&:hover{
+		box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+	}
+}
+
+.is-style-#{$product-name}-hover-box-shadow-03{
+	box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+
+	&:hover{
+		box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+	}
+}
+
+.is-style-#{$product-name}-hover-box-shadow-04{
+	box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+	&:hover{
+		box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+	}
+}
+
+.is-style-#{$product-name}-hover-box-shadow-05{
+	box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+
+	&:hover{
+		box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+	}
+}

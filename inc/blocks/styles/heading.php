@@ -2,27 +2,27 @@
 // heading
 $heading_array = array(
 	array(
-		'name'  => 'heading-border-01',
-		'label' => 'ボーダー 01',
+		'name'  => 'border-01',
+		'label' => __( 'Border 01', 'hakoniwa' ),
 	),
 	array(
-		'name'  => 'heading-border-02',
-		'label' => 'ボーダー 02',
+		'name'  => 'border-02',
+		'label' => __( 'Border 02', 'hakoniwa' ),
 	),
 	array(
-		'name'  => 'heading-border-03',
-		'label' => 'ボーダー 03',
+		'name'  => 'border-03',
+		'label' => __( 'Border 03', 'hakoniwa' ),
 	),
 	array(
-		'name'  => 'heading-border-04',
-		'label' => 'ボーダー 04',
+		'name'  => 'border-04',
+		'label' => __( 'Border 04', 'hakoniwa' ),
 	),
 	array(
-		'name'  => 'heading-bracket-01',
-		'label' => 'カッコ 01',
+		'name'  => 'bracket-01',
+		'label' => __( 'Bracket 01', 'hakoniwa' ),
 	),
 	array(
-		'name'  => 'heading-bracket-02',
-		'label' => 'カッコ 02',
+		'name'  => 'bracket-02',
+		'label' => __( 'Bracket 02', 'hakoniwa' ),
 	)
 );

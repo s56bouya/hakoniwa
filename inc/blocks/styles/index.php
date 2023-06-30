@@ -17,11 +17,11 @@ class Register {
 	 */
 	public function register() {
 
+		require_once 'background.php';
+
 		require_once 'heading.php';
 
-		require_once 'paragraph.php';
-
-		require_once 'group.php';
+		require_once 'symbol.php';
 
 		require_once 'image.php';
 
@@ -29,31 +29,38 @@ class Register {
 
 		require_once 'button.php';
 
+		require_once 'box-shadow.php';
+
 		// heading
 		$this->register_blocks_styles( 'core/heading', $heading_array );
 
 		// paragraph
-		$this->register_blocks_styles( 'core/paragraph', $paragraph_array );
+		$this->register_blocks_styles( 'core/paragraph', $symbol_array );
+		$this->register_blocks_styles( 'core/paragraph', $box_shadow_array );
 
 		// group
-		$this->register_blocks_styles( 'core/group', $group_array );
+		$this->register_blocks_styles( 'core/group', $symbol_array );
+		$this->register_blocks_styles( 'core/group', $background_array );
+		$this->register_blocks_styles( 'core/group', $box_shadow_array );
 
 		// image
 		$this->register_blocks_styles( 'core/image', $image_array );
+		$this->register_blocks_styles( 'core/image', $box_shadow_array );
 
 		// list
 		$this->register_blocks_styles( 'core/list', $list_array );
 
 		// Button
 		$this->register_blocks_styles( 'core/button', $button_array );
+		$this->register_blocks_styles( 'core/button', $box_shadow_array );
 		
 	}
 
 	/**
-	 * スタイル登録
+	 * Register Block Styles
 	 *
-	 * @param string $block_name ブロック名
-	 * @param array  $style_props プロパティ
+	 * @param string $block_name Block name
+	 * @param array  $style_props Props
 	 * @return void
 	 */
 	public function register_blocks_styles( $block_name, $style_props, $prefix = '' ) {

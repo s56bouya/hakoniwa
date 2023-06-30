@@ -3,14 +3,14 @@
 $list_array = array(
 	array(
 		'name'  => 'list-check-01',
-		'label' => 'チェック 01',
+		'label' => __( 'Check 01', 'hakoniwa' ),
 	),
 	array(
 		'name'  => 'list-arrow-01',
-		'label' => '矢印 01',
+		'label' => __( 'Arrow 01', 'hakoniwa' ),
 	),
 	array(
 		'name'  => 'list-arrow-02',
-		'label' => '矢印 02',
+		'label' => __( 'Arrow 02', 'hakoniwa' ),
 	)
 );

@@ -2,7 +2,7 @@
 @use "../../breakpoint";
 @use "../../variables" as *;
 
-.is-style-#{$product-name}-paragraph-info-01{
+.is-style-#{$product-name}-symbol-info-01{
     background: #fafafa;
     border: 1px solid #ccc;
 
@@ -11,7 +11,7 @@
     }
 }
 
-.is-style-#{$product-name}-paragraph-info-02{
+.is-style-#{$product-name}-symbol-info-02{
     background: #fafafa;
     border: 1px solid #ccc;
 
@@ -20,7 +20,7 @@
     }
 }
 
-.is-style-#{$product-name}-paragraph-warning-01{
+.is-style-#{$product-name}-symbol-warning-01{
     background: #fdfbf7;
     border: 1px solid #f2ca00;
 
@@ -29,7 +29,7 @@
     }
 }
 
-.is-style-#{$product-name}-paragraph-question-01{
+.is-style-#{$product-name}-symbol-question-01{
     background: #fafafa;
     border: 1px solid #ccc;
 
@@ -38,7 +38,7 @@
     }
 }
 
-.is-style-#{$product-name}-paragraph-checkmark-01{
+.is-style-#{$product-name}-symbol-checkmark-01{
     background: #fafafa;
     border: 1px solid #ccc;
 
@@ -47,7 +47,7 @@
     }
 }
 
-.is-style-#{$product-name}-paragraph-point-01{
+.is-style-#{$product-name}-symbol-point-01{
     background: #fafafa;
     border: 1px solid #ccc;
 
@@ -56,7 +56,7 @@
     }
 }
 
-.is-style-#{$product-name}-paragraph-point-02{
+.is-style-#{$product-name}-symbol-point-02{
     background: #fafafa;
     border: 1px solid #ccc;
 
@@ -65,7 +65,7 @@
     }
 }
 
-.is-style-#{$product-name}-paragraph-point-03{
+.is-style-#{$product-name}-symbol-point-03{
     background: #fafafa;
     border: 1px solid #ccc;
 
@@ -74,7 +74,7 @@
     }
 }
 
-.is-style-#{$product-name}-paragraph-point-04{
+.is-style-#{$product-name}-symbol-point-04{
     background: #fafafa;
     border: 1px solid #ccc;
 
@@ -83,7 +83,7 @@
     }
 }
 
-.is-style-#{$product-name}-paragraph-circle-01{
+.is-style-#{$product-name}-symbol-circle-01{
     background: #fff7f4;
     border: 1px solid #f18383;
 
@@ -92,7 +92,7 @@
     }
 }
 
-.is-style-#{$product-name}-paragraph-cross-01{
+.is-style-#{$product-name}-symbol-cross-01{
     background: #f4f8ff;
     border: 1px solid #83a9f1;
 
@@ -101,7 +101,7 @@
     }
 }
 
-p[class*=is-style-#{$product-name}-paragraph] {
+[class*=is-style-#{$product-name}-symbol] {
     padding: 1em 1em 1em 4em;
     position: relative;
 
@@ -121,7 +121,7 @@ p[class*=is-style-#{$product-name}-paragraph] {
 }
 
 @media #{map.get(breakpoint.$breakpoints, "smartphone")} {
-    p[class*=is-style-#{$product-name}-paragraph] {
+    [class*=is-style-#{$product-name}-symbol] {
         padding: 4em 1em 1em 1em;
     
         &::before{

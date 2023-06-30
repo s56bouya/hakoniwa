@@ -31,3 +31,129 @@ msgstr ""
 
 msgid "%1$s is a block theme that allows you to use blocks anywhere on your website."
 msgstr ""
+
+msgid "Info 01"
+msgstr ""
+
+msgid "Info 02"
+msgstr ""
+
+msgid "Warning"
+msgstr ""
+
+msgid "Question"
+msgstr ""
+
+msgid "Checkmark"
+msgstr ""
+
+msgid "Point 01"
+msgstr ""
+
+msgid "Point 02"
+msgstr ""
+
+msgid "Point 03"
+msgstr ""
+
+msgid "Point 04"
+msgstr ""
+
+msgid "Circle"
+msgstr ""
+
+msgid "Cross"
+msgstr ""
+
+msgid "Primary Outline"
+msgstr ""
+
+msgid "Secondary Outline"
+msgstr ""
+
+msgid "Tertiary Outline"
+msgstr ""
+
+msgid "Circle"
+msgstr ""
+
+msgid "Rhombus"
+msgstr ""
+
+msgid "Ink 01"
+msgstr ""
+
+msgid "Ink 02"
+msgstr ""
+
+msgid "Ink 03"
+msgstr ""
+
+msgid "Fluid 01"
+msgstr ""
+
+msgid "Fluid 02"
+msgstr ""
+
+msgid "Fluid 03"
+msgstr ""
+
+msgid "Check 01"
+msgstr ""
+
+msgid "Arrow 01"
+msgstr ""
+
+msgid "Arrow 02"
+msgstr ""
+
+msgid "Border 01"
+msgstr ""
+
+msgid "Border 02"
+msgstr ""
+
+msgid "Border 03"
+msgstr ""
+
+msgid "Border 04"
+msgstr ""
+
+msgid "Bracket 01"
+msgstr ""
+
+msgid "Bracket 02"
+msgstr ""
+
+msgid "Stripe"
+msgstr ""
+
+msgid "Dot"
+msgstr ""
+
+msgid "Check"
+msgstr ""
+
+msgid "Shadow 01"
+msgstr ""
+
+msgid "Shadow 02"
+msgstr ""
+
+msgid "Shadow 03"
+msgstr ""
+
+msgid "Shadow 04"
+msgstr ""
+
+msgid "Hover Shadow 01"
+msgstr ""
+
+msgid "Hover Shadow 02"
+msgstr ""
+
+msgid "Hover Shadow 03"
+msgstr ""
+
+msgid "Hover Shadow 04"
+msgstr ""

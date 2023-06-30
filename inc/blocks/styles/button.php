@@ -3,14 +3,14 @@
 $button_array = array(
 	array(
 		'name'  => 'button-primary-outline',
-		'label' => 'Primary Outline',
+		'label' => __( 'Primary Outline', 'hakoniwa' ),
 	),
 	array(
 		'name'  => 'button-secondary-outline',
-		'label' => 'Secondary Outline',
+		'label' => __( 'Secondary Outline', 'hakoniwa' ),
 	),
 	array(
 		'name'  => 'button-tertiary-outline',
-		'label' => 'Tertiary Outline',
+		'label' => __( 'Tertiary Outline', 'hakoniwa' ),
 	)
 );

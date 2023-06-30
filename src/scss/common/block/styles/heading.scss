@@ -2,24 +2,24 @@
 @use "../../breakpoint";
 @use "../../variables" as *;
 
-.is-style-#{$product-name}-heading-border-01{
+.is-style-#{$product-name}-border-01{
     border-top: 1px solid;
     border-bottom: 1px solid;
     padding-top:0.5em;
     padding-bottom:0.5em;
 }
 
-.is-style-#{$product-name}-heading-border-02{
+.is-style-#{$product-name}-border-02{
     border-bottom: 1px solid;
     padding-bottom:0.5em;
 }
 
-.is-style-#{$product-name}-heading-border-03{
+.is-style-#{$product-name}-border-03{
     border: 1px solid;
     padding:0.5em;
 }
 
-.is-style-#{$product-name}-heading-border-04:not(.block-editor-block-list__layout){
+.is-style-#{$product-name}-border-04:not(.block-editor-block-list__layout){
     align-items: center;
     display: flex;
 
@@ -40,7 +40,7 @@
     }
 }
 
-.is-style-#{$product-name}-heading-bracket-01:not(.block-editor-block-list__layout){
+.is-style-#{$product-name}-bracket-01:not(.block-editor-block-list__layout){
     display: table;
     padding-top:0.5em;
     padding-bottom:0.5em;
@@ -78,7 +78,7 @@
     }
 }
 
-.is-style-#{$product-name}-heading-bracket-02:not(.block-editor-block-list__layout){
+.is-style-#{$product-name}-bracket-02:not(.block-editor-block-list__layout){
     display: table;
     padding-top:0.5em;
     padding-bottom:0.5em;
