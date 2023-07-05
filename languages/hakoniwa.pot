@@ -32,6 +32,12 @@ msgstr ""
 msgid "%1$s is a block theme that allows you to use blocks anywhere on your website."
 msgstr ""
 
+msgid "%1$s is currently being distributed as a beta version, and we are providing an update service free of charge."
+msgstr ""
+
+msgid "%1$s : Please activate the license. Provides a service for plugin updates."
+msgstr ""
+
 msgid "Info 01"
 msgstr ""
 
