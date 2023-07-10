@@ -5,7 +5,7 @@
  * Categories: Hakoniwa
  */
 ?>
-<!-- wp:group {"backgroundColor":"tertiary","layout":{"type":"default"}} -->
+<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"backgroundColor":"tertiary","layout":{"type":"default"}} -->
 <div class="wp-block-group has-tertiary-background-color has-background"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group"><!-- wp:avatar {"size":48,"align":"center"} /-->
 
@@ -20,8 +20,5 @@
 <!-- /wp:social-links --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:post-author-biography /--></div>
-<!-- /wp:group --></div>
+<!-- wp:post-author-biography /--></div>
 <!-- /wp:group -->
-
