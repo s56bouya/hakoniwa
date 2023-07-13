@@ -40,8 +40,8 @@ class ThemeAbout {
 		$theme_data = wp_get_theme( Define::value( 'theme_name' ) );
 
 		/* translators: %1$s: theme name %2$s: about page url */
-		$message = sprintf( wp_kses( __( 'Welcome and thanks for choosing %1$s theme. Please visit our <a href="%2$s">about page</a>.', 'hakoniwa' ), [ 'a' => [ 'href' => [] ] ] ), esc_attr( $theme_data->name ), esc_url( admin_url( 'themes.php?page=about' ) ) );
-		printf( '<div class="updated notice notice-success notice-alt is-dismissible"><p>%s</p></div>', wp_kses_post( $message ) );
+		$message = sprintf( __( 'Welcome and thanks for choosing %1$s theme.', 'hakoniwa' ), esc_attr( $theme_data->name ) );
+		printf( '<div class="updated notice notice-success notice-alt is-dismissible"><p>%s</p><p><a class="button button-primary" href="https://hakoniwa.animagate.com/" target="_blank">' . __( 'Theme support page', 'hakoniwa' ) . '</a></p></div>', wp_kses_post( $message ) );
 
 	}
 

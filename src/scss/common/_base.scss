@@ -33,7 +33,7 @@ main{
 .footer-bottom-right-content{
     bottom:1rem;
     right: 1rem;
-    width: 2rem;
+	z-index:1;
 
     #scroll-page-top{
         visibility: hidden;
