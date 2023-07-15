@@ -24,6 +24,10 @@ a, button {
   transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+img {
+  transition: box-shadow 0.3s ease;
+}
+
 button {
   cursor: pointer;
 }
@@ -1443,6 +1447,8 @@ ul[class*=is-style-hakoniwa-list].is-style-hakoniwa-list-arrow-02 li::before {
   transition: box-shadow 0.3s ease;
 }
 
+.wp-block-image:is([class*=is-style-hakoniwa-box-shadow], [class*=is-style-hakoniwa-hover-box-shadow]),
+.wp-block-image:is([class*=is-style-hakoniwa-box-shadow]:hover, [class*=is-style-hakoniwa-hover-box-shadow]:hover),
 .wp-block-button:is([class*=is-style-hakoniwa-box-shadow], [class*=is-style-hakoniwa-hover-box-shadow]),
 .wp-block-button:is([class*=is-style-hakoniwa-box-shadow]:hover, [class*=is-style-hakoniwa-hover-box-shadow]:hover) {
   box-shadow: none;
@@ -1497,6 +1503,58 @@ ul[class*=is-style-hakoniwa-list].is-style-hakoniwa-list-arrow-02 li::before {
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
 }
 .wp-block-button.is-style-hakoniwa-hover-box-shadow-05 .wp-block-button__link:hover {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.wp-block-image.is-style-hakoniwa-box-shadow-sm img {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+.wp-block-image.is-style-hakoniwa-box-shadow img {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+}
+.wp-block-image.is-style-hakoniwa-box-shadow-md img {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+.wp-block-image.is-style-hakoniwa-box-shadow-lg img {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+.wp-block-image.is-style-hakoniwa-box-shadow-xl img {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+.wp-block-image.is-style-hakoniwa-box-shadow-2-xl img {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+.wp-block-image.is-style-hakoniwa-box-shadow-inner img {
+  box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+}
+.wp-block-image.is-style-hakoniwa-hover-box-shadow-01 img {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+.wp-block-image.is-style-hakoniwa-hover-box-shadow-01 img:hover {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+}
+.wp-block-image.is-style-hakoniwa-hover-box-shadow-02 img {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+}
+.wp-block-image.is-style-hakoniwa-hover-box-shadow-02 img:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+.wp-block-image.is-style-hakoniwa-hover-box-shadow-03 img {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+.wp-block-image.is-style-hakoniwa-hover-box-shadow-03 img:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+.wp-block-image.is-style-hakoniwa-hover-box-shadow-04 img {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+.wp-block-image.is-style-hakoniwa-hover-box-shadow-04 img:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+.wp-block-image.is-style-hakoniwa-hover-box-shadow-05 img {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+.wp-block-image.is-style-hakoniwa-hover-box-shadow-05 img:hover {
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 
