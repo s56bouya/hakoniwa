@@ -28,6 +28,10 @@ img {
   transition: box-shadow 0.3s ease;
 }
 
+pre {
+  white-space: pre-wrap;
+}
+
 button {
   cursor: pointer;
 }
