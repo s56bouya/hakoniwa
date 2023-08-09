@@ -1,0 +1,129 @@
+
+@mixin margin( $size : '' ) {
+	// margin auto
+	.#{ $size }m-auto{
+		margin: auto;
+	}
+
+	.#{ $size }mx-auto{
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.#{ $size }my-auto{
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+
+	.#{ $size }ml-auto{
+		margin-left: auto;
+	}
+
+	.#{ $size }mt-auto{
+		margin-top: auto;
+	}
+
+	.#{ $size }mr-auto{
+		margin-right: auto;
+	}
+
+	.#{ $size }mb-auto{
+		margin-bottom: auto;
+	}
+
+	$array: 0.5,1,1.5,2,2.5,3,3.5,4,5,6,7,8,9,10,11,12,14,16,20,24,28,32,36,40,44,48,52,56,60,64,68,72,80,96;
+
+	@each $val in $array {
+		$num :$val;
+
+		@if $val == 0.5 {
+			$val : 0\.5;
+			$num : 0.5;
+		}
+		@else if $val == 1.5 {
+			$val : 1\.5;
+			$num : 1.5;
+		}
+		@else if $val == 2.5 {
+			$val : 2\.5;
+			$num : 2.5;
+		}
+		@else if $val == 3.5 {
+			$val : 3\.5;
+			$num : 3.5;
+		}
+		@else {
+		}
+
+		// margin
+		.#{ $size }m-#{ $val } {
+			margin: $num * 0.25rem;
+		}
+
+		.#{ $size }-m-#{ $val } {
+			margin: -$num * 0.25rem;
+		}
+
+		// margin-x
+		.#{ $size }mx-#{ $val } {
+			margin-left:$num * 0.25rem;
+			margin-right:$num * 0.25rem;
+		}
+
+		.#{ $size }-mx-#{ $val } {
+			margin-left:-$num * 0.25rem;
+			margin-right:-$num * 0.25rem;
+		}
+
+		// margin-y
+		.#{ $size }my-#{ $val } {
+			margin-top:$num * 0.25rem;
+			margin-bottom:$num * 0.25rem;
+		}
+
+		.#{ $size }-my-#{ $val } {
+			margin-top:-$num * 0.25rem;
+			margin-bottom:-$num * 0.25rem;
+		}
+
+		// margin-left
+		.#{ $size }ml-#{ $val } {
+			margin-left:$num * 0.25rem;
+		}
+
+		.#{ $size }-ml-#{ $val } {
+			margin-left:-$num * 0.25rem;
+		}
+
+		// margin-top
+		.#{ $size }mt-#{ $val } {
+			margin-top:$num * 0.25rem;
+		}
+
+		.#{ $size }-mt-#{ $val } {
+			margin-top:-$num * 0.25rem;
+		}
+
+		// margin-right
+		.#{ $size }mr-#{ $val } {
+			margin-right:$num * 0.25rem;
+		}
+
+		.#{ $size }-mr-#{ $val } {
+			margin-right:-$num * 0.25rem;
+		}
+
+		// margin-bottom
+		.#{ $size }mb-#{ $val } {
+			margin-bottom:$num * 0.25rem;
+		}
+
+		.#{ $size }-mb-#{ $val } {
+			margin-bottom:-$num * 0.25rem;
+		}
+	}
+
+}
+
+/*----- Margin */
+//@include margin();

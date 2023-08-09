@@ -411,6 +411,7 @@ main.wp-block-group {
   padding-right: calc( var( --wp--custom--padding ) * 8 );
 }
 
+/*----- Margin */
 .gap-1 {
   gap: calc( var( --wp--custom--gap ) * 1 );
 }
@@ -1103,10 +1104,6 @@ main.wp-block-group {
 
 .aspect-ratio-191-100 {
   aspect-ratio: 1.91/1;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: normal;
 }
 
 .wp-block-post-excerpt .wp-block-post-excerpt__excerpt {

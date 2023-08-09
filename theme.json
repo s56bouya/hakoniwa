@@ -262,11 +262,6 @@
 							"typography": {
 								"textDecoration": "none"
 							}
-						},			
-						":active": {
-							"color": {
-								"text": "var(--wp--preset--color--secondary)"
-							}
 						},
 						"typography": {
 							"textDecoration": "underline"
@@ -304,6 +299,11 @@
 			"text": "var(--wp--preset--color--contrast)"
 		},
 		"elements": {
+			"heading":{
+				"typography": {
+					"fontWeight": "normal"
+				}
+			},
 			"h1": {
 				"typography": {
 					"lineHeight": "var(--wp--custom--line-height--md)"
