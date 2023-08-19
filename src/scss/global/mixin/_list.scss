@@ -1,8 +1,32 @@
 @mixin list{
+
+	nav.wp-block-navigation{
+		ul,ol{
+			&.wp-block-page-list{
+				li{
+					margin-bottom:0;
+				}
+			}
+		}
+	}
+
+	ul,ol{
+		&:not(.wp-block-navigation, .wp-block-social-links, .is-layout-flex){
+			li{
+				&:not(:last-child){
+					margin-bottom:calc( var(--wp--custom--style--block-gap ) / 1.5 );
+				}
+			}
+		}
+	}
+
     ul,ol{
         padding-left:1.5em;
+
+		
     
         li{
+
             ul,ol{
                 padding-left:1em;
             }

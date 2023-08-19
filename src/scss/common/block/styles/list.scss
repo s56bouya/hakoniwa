@@ -3,21 +3,25 @@
 @use "../../variables" as *;
 
 ul[class*="is-style-#{$product-name}-list"] {
-	padding-left:0;
+	padding-left:calc( var(--wp--preset--font-size--main-content) + 0.5em );
 	
 	li{
+		position: relative;
 		list-style-type: none;
 
 		&::before{
 			content: "";
+			position: absolute;
+			top: 5px;
 			display: inline-block;
 			width: var(--wp--preset--font-size--main-content);
 			height: var(--wp--preset--font-size--main-content);
-			margin-right: 0.5em;
+			margin-left: calc(-1 * var(--wp--preset--font-size--main-content) - 0.5em);
+			margin-right:0.5em;
 			background-repeat: no-repeat;
 			background-size: contain;
 			background-position: center;
-			vertical-align: text-top;
+			vertical-align: middle;
 		}
 	}
 

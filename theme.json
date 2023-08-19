@@ -123,7 +123,7 @@
 				{
 					"name": "main-content",
 					"slug": "main-content",
-					"size": "clamp(0.95rem, 0.925rem + 0.13vw, 1rem)"
+					"size": "clamp(1rem, 0.964rem + 0.18vw, 1.1rem)"
 				},
 				{
 					"name": "3xl",
@@ -415,6 +415,11 @@
 		{
 			"name": "header-button",
 			"title": "Header Button",
+			"area": "header"
+		},
+		{
+			"name": "header-wide-and-search-button",
+			"title": "Header wide and search button",
 			"area": "header"
 		},
 		{
