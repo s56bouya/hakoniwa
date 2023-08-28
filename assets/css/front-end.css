@@ -40,6 +40,11 @@ main.wp-block-group {
   margin: 0;
 }
 
+.home .wp-block-query .wp-block-post-template a {
+  text-decoration: none;
+  color: currentColor;
+}
+
 .footer-bottom-right-content {
   bottom: 1rem;
   right: 1rem;
@@ -1102,7 +1107,7 @@ main.wp-block-group {
   aspect-ratio: 1.91/1;
 }
 
-.wp-block-search.header-modal a, .wp-block-search.header-modal button {
+.wp-block-search.header-modal button {
   transition: none;
 }
 .wp-block-search.header-modal:not(.wp-block-search__searchfield-hidden) {
@@ -1126,6 +1131,9 @@ main.wp-block-group {
   height: auto;
   margin: auto;
   max-width: var(--wp--style--global--content-size);
+}
+.wp-block-search.header-modal:not(.wp-block-search__searchfield-hidden) button:hover {
+  transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 .wp-block-search.header-modal.wp-block-search__searchfield-hidden .wp-block-search__inside-wrapper > * {
   height: 24px;

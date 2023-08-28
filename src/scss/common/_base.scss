@@ -38,6 +38,17 @@ main{
 	}
 }
 
+.home{
+	.wp-block-query{
+		.wp-block-post-template{
+			a{
+				text-decoration: none;
+				color: currentColor;
+			}	
+		}
+	}
+}
+
 .footer-bottom-right-content{
     bottom:1rem;
     right: 1rem;

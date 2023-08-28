@@ -1,8 +1,8 @@
 
 .wp-block-search{
 	&.header-modal{
-		a,button{
-			transition: none;
+		button{
+			transition: none;	
 		}
 
 		&:not(.wp-block-search__searchfield-hidden){
@@ -27,7 +27,13 @@
 				height: auto;
 				margin: auto;
 				max-width: var(--wp--style--global--content-size);
-			}	
+			}
+			
+			button{
+				&:hover{
+					transition: color .3s ease,background-color .3s ease,border-color .3s ease, box-shadow .3s ease;
+				}
+			}
 		}
 
 		&.wp-block-search__searchfield-hidden{
