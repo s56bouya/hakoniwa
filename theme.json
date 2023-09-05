@@ -94,14 +94,9 @@
 			"customLineHeight": true,
 			"fontFamilies": [
 				{
-					"fontFamily": "-apple-system,BlinkMacSystemFont,Roboto,\"Droid Sans\",Meiryo,\"Hiragino Kaku Gothic Pro\",\"MS PMincho\",sans-serif",
+					"fontFamily": "-apple-system,BlinkMacSystemFont,Roboto,\"Droid Sans\",Meiryo,YuGothic,\"Hiragino Kaku Gothic Pro\",\"MS PMincho\",sans-serif",
 					"name": "System Font",
 					"slug": "system-font"
-				},
-				{
-					"fontFamily": "\"Yu Mincho\", YuMincho",
-					"name": "yu-mincho",
-					"slug": "yu-mincho"
 				},
 				{
 					"fontFamily": "\"Yu Mincho\", YuMincho, \"Hiragino Mincho ProN W3\", \"Hiragino Mincho ProN\", \"HG明朝E\", \"ＭＳ Ｐ明朝\", \"ＭＳ 明朝\", serif",
