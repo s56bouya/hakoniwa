@@ -1213,6 +1213,10 @@ nav.wp-block-query-pagination {
   margin-bottom: calc(var(--wp--custom--style--block-gap) / 4);
 }
 
+.wp-block-navigation__responsive-container.is-menu-open {
+  padding: var(--wp--custom--style--block-gap, 2rem);
+}
+
 /*-----------------------------
 * Responsive Breakpoints
 * 1001px +          Desktop+
@@ -1791,7 +1795,7 @@ nav.wp-block-navigation ul.wp-block-page-list li, nav.wp-block-navigation ol.wp-
 }
 
 ul:not(.wp-block-navigation, .wp-block-social-links, .is-layout-flex) li:not(:last-child), ol:not(.wp-block-navigation, .wp-block-social-links, .is-layout-flex) li:not(:last-child) {
-  margin-bottom: calc(var(--wp--custom--style--block-gap) / 1.5);
+  margin-bottom: calc(var(--wp--custom--style--block-gap) / 4);
 }
 
 ul, ol {
