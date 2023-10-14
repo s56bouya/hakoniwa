@@ -19,6 +19,10 @@ class Search {
 
 	public function render_block( $block_content, $block ) {
 
+		if( ! empty( $block['attrs']['className'] ) && 'header-modal' === $block['attrs']['className'] ){
+			return $block_content;
+		}
+
 		if( is_search() ){
 			if( ! have_posts() ){
 				$text = '<p>' . esc_html( __( 'We could not find any results for your search. You can give it another try through the search form below.', 'hakoniwa' ) ) . '</p>';
