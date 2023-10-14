@@ -19,7 +19,7 @@ class Search {
 
 	public function render_block( $block_content, $block ) {
 
-		if( ! empty( $block['attrs']['className'] ) && 'header-modal' === $block['attrs']['className'] ){
+		if( ! empty( $block['attrs']['className'] ) && 'page-title-inner-search' !== $block['attrs']['className'] ){
 			return $block_content;
 		}
 
