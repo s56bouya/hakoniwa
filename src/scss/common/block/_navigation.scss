@@ -1,7 +1,15 @@
 
+@use "sass:map";
+@use "../breakpoint";
+@use "../variables" as *;
+
 .wp-block-navigation__responsive-container{
 	&.is-menu-open{
 		padding:var(--wp--custom--style--block-gap,2rem);
+
+		.wp-block-navigation__responsive-container-content .wp-block-navigation__submenu-container{
+			padding-top:inherit;
+		}
 	}
 }
 
@@ -11,4 +19,16 @@
 		height: auto;
 		line-height:inherit;
 	}
+}
+
+@media #{map.get(breakpoint.$breakpoints, "tablet+")} {
+	.wp-block-navigation{
+		.has-child{
+			.wp-block-navigation__submenu-container{
+				.wp-block-navigation__submenu-icon{
+					margin-right:1em;
+				}
+			}
+		}
+	} 
 }

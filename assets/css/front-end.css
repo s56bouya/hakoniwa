@@ -1213,16 +1213,6 @@ nav.wp-block-query-pagination {
   margin-bottom: calc(var(--wp--custom--style--block-gap) / 4);
 }
 
-.wp-block-navigation__responsive-container.is-menu-open {
-  padding: var(--wp--custom--style--block-gap, 2rem);
-}
-
-.wp-block-navigation .wp-block-navigation__submenu-icon {
-  width: auto;
-  height: auto;
-  line-height: inherit;
-}
-
 /*-----------------------------
 * Responsive Breakpoints
 * 1001px +          Desktop+
@@ -1232,6 +1222,24 @@ nav.wp-block-query-pagination {
 * 681px - 768px     SmartPhone - Tablet
 * 0px - 680px       SmartPhone
 ------------------------------*/
+.wp-block-navigation__responsive-container.is-menu-open {
+  padding: var(--wp--custom--style--block-gap, 2rem);
+}
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation__submenu-container {
+  padding-top: inherit;
+}
+
+.wp-block-navigation .wp-block-navigation__submenu-icon {
+  width: auto;
+  height: auto;
+  line-height: inherit;
+}
+
+@media only screen and (min-width: 769px) {
+  .wp-block-navigation .has-child .wp-block-navigation__submenu-container .wp-block-navigation__submenu-icon {
+    margin-right: 1em;
+  }
+}
 .is-style-hakoniwa-border-01 {
   border-top: 1px solid;
   border-bottom: 1px solid;
