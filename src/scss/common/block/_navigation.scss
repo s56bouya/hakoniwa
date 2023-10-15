@@ -4,3 +4,11 @@
 		padding:var(--wp--custom--style--block-gap,2rem);
 	}
 }
+
+.wp-block-navigation{
+	.wp-block-navigation__submenu-icon{
+		width: auto;
+		height: auto;
+		line-height:inherit;
+	}
+}

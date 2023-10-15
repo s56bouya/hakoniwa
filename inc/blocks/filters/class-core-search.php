@@ -19,14 +19,12 @@ class Search {
 
 	public function render_block( $block_content, $block ) {
 
-		if( ! empty( $block['attrs']['className'] ) && 'page-title-inner-search' !== $block['attrs']['className'] ){
-			return $block_content;
-		}
-
-		if( is_search() ){
-			if( ! have_posts() ){
-				$text = '<p>' . esc_html( __( 'We could not find any results for your search. You can give it another try through the search form below.', 'hakoniwa' ) ) . '</p>';
-				$block_content = $text . $block_content;
+		if( ! empty( $block['attrs']['className'] ) && 'page-title-inner-search' === $block['attrs']['className'] ){
+			if( is_search() ){
+				if( ! have_posts() ){
+					$text = '<p>' . esc_html( __( 'We could not find any results for your search. You can give it another try through the search form below.', 'hakoniwa' ) ) . '</p>';
+					$block_content = $text . $block_content;
+				}
 			}
 		}
 
