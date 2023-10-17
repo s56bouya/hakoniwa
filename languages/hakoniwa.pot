@@ -169,3 +169,6 @@ msgstr ""
 
 msgid "We could not find any results for your search. You can give it another try through the search form below."
 msgstr ""
+
+msgid "Author"
+msgstr ""
