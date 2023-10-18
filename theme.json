@@ -125,7 +125,7 @@
 				{
 					"name": "main-content",
 					"slug": "main-content",
-					"size": "clamp(1rem, 0.964rem + 0.18vw, 1.1rem)"
+					"size": "clamp(0.9rem, 0.853rem + 0.24vw, 1rem)"
 				},
 				{
 					"name": "5XL",
@@ -140,42 +140,42 @@
 				{
 					"name": "3XL",
 					"slug": "3xl",
-					"size": "clamp(1.8rem, 1.591rem + 0.55vw, 2rem)"
+					"size": "clamp(1.2rem, 0.824rem + 1.88vw, 2rem)"
 				},
 				{
 					"name": "2XL",
 					"slug": "2xl",
-					"size": "clamp(1.6rem, 1.527rem + 0.36vw, 1.8rem)"
+					"size": "clamp(1.1rem, 0.771rem + 1.65vw, 1.8rem)"
 				},
 				{
 					"name": "XL",
 					"slug": "xl",
-					"size": "clamp(1.4rem, 1.3rem + 0.5vw, 1.6rem)"
+					"size": "clamp(1rem, 0.718rem + 1.41vw, 1.6rem)"
 				},
 				{
 					"name": "Large",
 					"slug": "lg",
-					"size": "clamp(1.2rem, 1.1rem + 0.5vw, 1.4rem)"
+					"size": "clamp(0.95rem, 0.738rem + 1.06vw, 1.4rem)"
 				},
 				{
 					"name": "Medium",
 					"slug": "md",
-					"size": "clamp(1.05rem, 0.975rem + 0.37vw, 1.2rem)"
+					"size": "clamp(0.9rem, 0.759rem + 0.71vw, 1.2rem)"
 				},
 				{
 					"name": "Small",
 					"slug": "sm",
-					"size": "clamp(1rem, 0.925rem + 0.37vw, 1.15rem)"
+					"size": "clamp(0.85rem, 0.709rem + 0.71vw, 1.15rem)"
 				},
 				{
 					"name": "XS",
 					"slug": "xs",
-					"size": "clamp(0.95rem, 0.875rem + 0.38vw, 1.1rem)"
+					"size": "clamp(0.8rem, 0.659rem + 0.71vw, 1.1rem)"
 				},
 				{
 					"name": "2XS",
 					"slug": "2xs",
-					"size": "clamp(0.85rem, 0.837rem + 0.06vw, 0.875rem)"
+					"size": "clamp(0.75rem, 0.691rem + 0.29vw, 0.875rem)"
 				}
 			]
 		}
@@ -318,17 +318,17 @@
 			},
 			"h1": {
 				"typography": {
-					"lineHeight": "var(--wp--custom--line-height--md)"
+					"lineHeight": "var(--wp--custom--line-height--sm)"
 				}
 			},
 			"h2": {
 				"typography": {
-					"lineHeight": "var(--wp--custom--line-height--md)"
+					"lineHeight": "var(--wp--custom--line-height--sm)"
 				}
 			},
 			"h3": {
 				"typography": {
-					"lineHeight": "var(--wp--custom--line-height--md)"
+					"lineHeight": "var(--wp--custom--line-height--sm)"
 				}
 			},
 			"h4": {

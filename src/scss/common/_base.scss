@@ -112,6 +112,7 @@ main{
     }    
 }
 
+.entry-content,
 .__inner-container{
     word-break: break-all;
 }
@@ -156,7 +157,12 @@ main{
 
 /* Post Template*/
 .wp-block-post-template{
+	.wp-block-post {
+		overflow: hidden;
+	}
+
     .detail{
+		word-wrap: break-word;
         margin-block-start:0;
 
         > *{

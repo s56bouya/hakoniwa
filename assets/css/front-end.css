@@ -89,6 +89,7 @@ main.wp-block-group {
      object-fit: cover;
 }
 
+.entry-content,
 .__inner-container {
   word-break: break-all;
 }
@@ -120,7 +121,11 @@ main.wp-block-group {
 }
 
 /* Post Template*/
+.wp-block-post-template .wp-block-post {
+  overflow: hidden;
+}
 .wp-block-post-template .detail {
+  word-wrap: break-word;
   -webkit-margin-before: 0;
           margin-block-start: 0;
 }
@@ -1194,6 +1199,9 @@ nav.wp-block-query-pagination {
   display: flex;
   gap: 0.5em;
 }
+.wp-block-query-pagination-numbers .current {
+  font-weight: bold;
+}
 
 .has-drop-cap:not(:focus):first-letter {
   font-size: 3em;
@@ -1804,6 +1812,12 @@ ul[class*=is-style-hakoniwa-list].is-style-hakoniwa-list-arrow-02 li::before {
     margin: 0 auto;
   }
 }
+.patterns-author-profile-01 .wp-block-post-author-biography {
+  margin-inline: auto;
+  inline-size: -moz-fit-content;
+  inline-size: fit-content;
+}
+
 nav.wp-block-navigation ul.wp-block-page-list li, nav.wp-block-navigation ol.wp-block-page-list li {
   margin-bottom: 0;
 }

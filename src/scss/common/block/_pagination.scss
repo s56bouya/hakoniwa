@@ -5,4 +5,8 @@ nav.wp-block-query-pagination{
 .wp-block-query-pagination-numbers{
     display: flex;
     gap: 0.5em;
+
+	.current{
+		font-weight: bold;
+	}
 }

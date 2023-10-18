@@ -1,0 +1,10 @@
+@use "sass:map";
+@use "../../breakpoint";
+@use "../../variables" as *;
+
+.patterns-author-profile-01{
+	.wp-block-post-author-biography{
+		margin-inline: auto;
+		inline-size: fit-content;
+	}
+}
