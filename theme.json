@@ -50,9 +50,9 @@
 			],
 			"spacingScale": {
 				"operator": "*",
-				"increment": 1.5,
+				"increment": 1.25,
 				"steps": 7,
-				"mediumStep": 1.25,
+				"mediumStep": 1.5,
 				"unit": "rem"
 			}
 		},
@@ -73,7 +73,7 @@
 				"3xl": 2.4
 			},
 			"style":{
-				"block-gap": "2rem"
+				"block-gap": "clamp(0.85rem, 0.426rem + 2.12vw, 1.75rem)"
 			},
 			"border-width": "1px",
 			"border-radius": "0.25rem",
@@ -244,27 +244,53 @@
                     "h2": {
                         "typography": {
                             "fontSize": "var(--wp--preset--font-size--xl)"
-                        }
+                        },
+						"spacing": {
+							"margin": {
+								"top": "var(--wp--preset--spacing--80)"
+							}
+						},
+						"className": "is-style-hakoniwa-border-02"
                     },
                     "h3": {
                         "typography": {
                             "fontSize": "var(--wp--preset--font-size--lg)"
-                        }
+                        },
+						"spacing": {
+							"margin": {
+								"top": "var(--wp--preset--spacing--70)"
+							}
+						}
                     },
 					"h4": {
                         "typography": {
                             "fontSize": "var(--wp--preset--font-size--md)"
-                        }
+                        },
+						"spacing": {
+							"margin": {
+								"top": "var(--wp--preset--spacing--70)"
+							}
+						}
                     },
 					"h5": {
                         "typography": {
                             "fontSize": "var(--wp--preset--font-size--sm)"
-                        }
+                        },
+						"spacing": {
+							"margin": {
+								"top": "var(--wp--preset--spacing--70)"
+							}
+						}
                     },
 					"h6": {
                         "typography": {
                             "fontSize": "var(--wp--preset--font-size--xs)"
-                        }
+                        },
+						"spacing": {
+							"margin": {
+								"top": "var(--wp--preset--spacing--70)"
+							}
+						}
                     },
 					"link": {
 						"color": {
