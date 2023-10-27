@@ -145,17 +145,17 @@
 				{
 					"name": "2XL",
 					"slug": "2xl",
-					"size": "clamp(1.1rem, 0.771rem + 1.65vw, 1.8rem)"
+					"size": "clamp(1.15rem, 0.844rem + 1.53vw, 1.8rem)"
 				},
 				{
 					"name": "XL",
 					"slug": "xl",
-					"size": "clamp(1rem, 0.718rem + 1.41vw, 1.6rem)"
+					"size": "clamp(1.1rem, 0.865rem + 1.18vw, 1.6rem)"
 				},
 				{
 					"name": "Large",
 					"slug": "lg",
-					"size": "clamp(0.95rem, 0.738rem + 1.06vw, 1.4rem)"
+					"size": "clamp(1rem, 0.812rem + 0.94vw, 1.4rem)"
 				},
 				{
 					"name": "Medium",
@@ -258,7 +258,7 @@
                         },
 						"spacing": {
 							"margin": {
-								"top": "var(--wp--preset--spacing--70)"
+								"top": "var(--wp--preset--spacing--80)"
 							}
 						}
                     },
