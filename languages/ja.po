@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AnimaGate, Inc.\n"
-"POT-Creation-Date: 2017-08-18 20:03+1200\n"
-"PO-Revision-Date: 2023-10-17 14:19+0900\n"
+"POT-Creation-Date: 2023-11-05 18:49+0900\n"
+"PO-Revision-Date: 2023-11-05 18:49+0900\n"
 "Last-Translator: \n"
 "Language-Team: Tetsuya Imamura <wpdev@animagate.com>\n"
 "Language: ja\n"
@@ -13,165 +13,11 @@ msgstr ""
 "X-Generator: Poedit 3.3.2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html__;esc_attr__;esc_attr_e;_n;"
-"_nx\n"
+"_nx;esc_html_x:1,2c;esc_attr_x:1,2c\n"
 "X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: node_modules\n"
 
-msgid "[Hakoniwa]:Content only"
-msgstr "[Hakoniwa]:本文のみ"
-
-msgid "[Hakoniwa]:Single two columns"
-msgstr "[Hakoniwa]:単一（2カラム）"
-
-msgid "[Hakoniwa]:Single without title"
-msgstr "[Hakoniwa]:単一（タイトルなし）"
-
-msgid "Welcome and thanks for choosing %1$s theme."
-msgstr "%1$s をご利用いただきありがとうございます。"
-
-msgid "Theme support page"
-msgstr "テーマ サポートページ"
-
-msgid ""
-"%1$s is a block theme that allows you to use blocks anywhere on your website."
-msgstr ""
-"%1$s は、ウェブサイトのあらゆる場所でブロックが使用できるブロックテーマです。"
-
-msgid ""
-"%1$s is currently being distributed as a beta version, and we are providing "
-"an update service free of charge."
-msgstr ""
-"%1$s は現在ベータ版として配布されており、無償でアップデートサービスを提供して"
-"います。"
-
-msgid ""
-"%1$s : Please activate the license. Provides a service for plugin updates."
-msgstr ""
-"%1$s : ライセンス認証してください。プラグインのアップデートサービスを提供しま"
-"す。"
-
-msgid "Info 01"
-msgstr "お知らせ 01"
-
-msgid "Info 02"
-msgstr "お知らせ 02"
-
-msgid "Warning"
-msgstr "注意"
-
-msgid "Question"
-msgstr "クエスチョン"
-
-msgid "Checkmark"
-msgstr "チェックマーク"
-
-msgid "Point 01"
-msgstr "ポイント 01"
-
-msgid "Point 02"
-msgstr "ポイント 02"
-
-msgid "Point 03"
-msgstr "ポイント 03"
-
-msgid "Point 04"
-msgstr "ポイント 04"
-
-msgid "Circle"
-msgstr "サークル"
-
-msgid "Cross"
-msgstr "クロス"
-
-msgid "Primary Outline"
-msgstr ""
-
-msgid "Secondary Outline"
-msgstr ""
-
-msgid "Tertiary Outline"
-msgstr ""
-
-msgid "Rhombus"
-msgstr "ひし形"
-
-msgid "Ink 01"
-msgstr "インク 01"
-
-msgid "Ink 02"
-msgstr "インク 02"
-
-msgid "Ink 03"
-msgstr "インク 03"
-
-msgid "Fluid 01"
-msgstr "流体 01"
-
-msgid "Fluid 02"
-msgstr "流体 02"
-
-msgid "Fluid 03"
-msgstr "流体 03"
-
-msgid "Check 01"
-msgstr "チェック 01"
-
-msgid "Arrow 01"
-msgstr "矢印 01"
-
-msgid "Arrow 02"
-msgstr "矢印 02"
-
-msgid "Border 01"
-msgstr "ボーダー 01"
-
-msgid "Border 02"
-msgstr "ボーダー 02"
-
-msgid "Border 03"
-msgstr "ボーダー 03"
-
-msgid "Border 04"
-msgstr "ボーダー 04"
-
-msgid "Bracket 01"
-msgstr "カッコ 01"
-
-msgid "Bracket 02"
-msgstr "カッコ 02"
-
-msgid "Stripe"
-msgstr "ストライプ"
-
-msgid "Dot"
-msgstr "ドット"
-
-msgid "Check"
-msgstr "チェック"
-
-msgid "Shadow 01"
-msgstr ""
-
-msgid "Shadow 02"
-msgstr ""
-
-msgid "Shadow 03"
-msgstr ""
-
-msgid "Shadow 04"
-msgstr ""
-
-msgid "Hover Shadow 01"
-msgstr ""
-
-msgid "Hover Shadow 02"
-msgstr ""
-
-msgid "Hover Shadow 03"
-msgstr ""
-
-msgid "Hover Shadow 04"
-msgstr ""
-
+#: inc/blocks/filters/class-core-search.php:25
 msgid ""
 "We could not find any results for your search. You can give it another try "
 "through the search form below."
@@ -179,8 +25,415 @@ msgstr ""
 "検索結果が見つかりませんでした。下の検索フォームからもう一度試してみてくださ"
 "い。"
 
+#: inc/blocks/styles/background.php:5
+msgid "Stripe"
+msgstr "ストライプ"
+
+#: inc/blocks/styles/background.php:9
+msgid "Dot"
+msgstr "ドット"
+
+#: inc/blocks/styles/background.php:13
+msgid "Check"
+msgstr "チェック"
+
+#: inc/blocks/styles/box-shadow.php:5
+msgid "Shadow Small"
+msgstr ""
+
+#: inc/blocks/styles/box-shadow.php:9
+msgid "Shadow"
+msgstr ""
+
+#: inc/blocks/styles/box-shadow.php:13
+msgid "Shadow Medium"
+msgstr ""
+
+#: inc/blocks/styles/box-shadow.php:17
+msgid "Shadow Large"
+msgstr ""
+
+#: inc/blocks/styles/box-shadow.php:21
+msgid "Shadow XL"
+msgstr ""
+
+#: inc/blocks/styles/box-shadow.php:25
+msgid "Shadow 2XL"
+msgstr ""
+
+#: inc/blocks/styles/box-shadow.php:29
+msgid "Shadow Inner"
+msgstr ""
+
+#: inc/blocks/styles/box-shadow.php:33
+msgid "Hover Shadow 01"
+msgstr ""
+
+#: inc/blocks/styles/box-shadow.php:37
+msgid "Hover Shadow 02"
+msgstr ""
+
+#: inc/blocks/styles/box-shadow.php:41
+msgid "Hover Shadow 03"
+msgstr ""
+
+#: inc/blocks/styles/box-shadow.php:45
+msgid "Hover Shadow 04"
+msgstr ""
+
+#: inc/blocks/styles/box-shadow.php:49
+msgid "Hover Shadow 05"
+msgstr ""
+
+#: inc/blocks/styles/button.php:6
+msgid "Primary Outline"
+msgstr ""
+
+#: inc/blocks/styles/button.php:10
+msgid "Secondary Outline"
+msgstr ""
+
+#: inc/blocks/styles/button.php:14
+msgid "Tertiary Outline"
+msgstr ""
+
+#: inc/blocks/styles/heading.php:6
+msgid "Border 01"
+msgstr "ボーダー 01"
+
+#: inc/blocks/styles/heading.php:10
+msgid "Border 02"
+msgstr "ボーダー 02"
+
+#: inc/blocks/styles/heading.php:14
+msgid "Border 03"
+msgstr "ボーダー 03"
+
+#: inc/blocks/styles/heading.php:18
+msgid "Border 04"
+msgstr "ボーダー 04"
+
+#: inc/blocks/styles/heading.php:22
+msgid "Bracket 01"
+msgstr "カッコ 01"
+
+#: inc/blocks/styles/heading.php:26
+msgid "Bracket 02"
+msgstr "カッコ 02"
+
+#: inc/blocks/styles/image.php:6 inc/blocks/styles/symbol.php:41
+msgid "Circle"
+msgstr "サークル"
+
+#: inc/blocks/styles/image.php:10
+msgid "Rhombus"
+msgstr "ひし形"
+
+#: inc/blocks/styles/image.php:14
+msgid "Ink 01"
+msgstr "インク 01"
+
+#: inc/blocks/styles/image.php:18
+msgid "Ink 02"
+msgstr "インク 02"
+
+#: inc/blocks/styles/image.php:22
+msgid "Ink 03"
+msgstr "インク 03"
+
+#: inc/blocks/styles/image.php:26
+msgid "Fluid 01"
+msgstr "流体 01"
+
+#: inc/blocks/styles/image.php:30
+msgid "Fluid 02"
+msgstr "流体 02"
+
+#: inc/blocks/styles/image.php:34
+msgid "Fluid 03"
+msgstr "流体 03"
+
+#: inc/blocks/styles/list.php:6
+msgid "Check 01"
+msgstr "チェック 01"
+
+#: inc/blocks/styles/list.php:10
+msgid "Arrow 01"
+msgstr "矢印 01"
+
+#: inc/blocks/styles/list.php:14
+msgid "Arrow 02"
+msgstr "矢印 02"
+
+#: inc/blocks/styles/symbol.php:5
+msgid "Info 01"
+msgstr "お知らせ 01"
+
+#: inc/blocks/styles/symbol.php:9
+msgid "Info 02"
+msgstr "お知らせ 02"
+
+#: inc/blocks/styles/symbol.php:13
+msgid "Warning"
+msgstr "注意"
+
+#: inc/blocks/styles/symbol.php:17
+msgid "Question"
+msgstr "クエスチョン"
+
+#: inc/blocks/styles/symbol.php:21
+msgid "Checkmark"
+msgstr "チェックマーク"
+
+#: inc/blocks/styles/symbol.php:25
+msgid "Point 01"
+msgstr "ポイント 01"
+
+#: inc/blocks/styles/symbol.php:29
+msgid "Point 02"
+msgstr "ポイント 02"
+
+#: inc/blocks/styles/symbol.php:33
+msgid "Point 03"
+msgstr "ポイント 03"
+
+#: inc/blocks/styles/symbol.php:37
+msgid "Point 04"
+msgstr "ポイント 04"
+
+#: inc/blocks/styles/symbol.php:45
+msgid "Cross"
+msgstr "クロス"
+
+#: inc/init/class-settings.php:64
+msgid "Hakoniwa Theme"
+msgstr ""
+
+#: inc/init/class-theme-about.php:43
+#, php-format
+msgid "Welcome and thanks for choosing %1$s theme."
+msgstr "%1$s をご利用いただきありがとうございます。"
+
+#: inc/init/class-theme-about.php:44
+msgid "Theme support page"
+msgstr "テーマ サポートページ"
+
+#: inc/init/class-theme-about.php:62
+msgid "About Theme"
+msgstr ""
+
+#: inc/init/class-theme-about.php:81
+#, php-format
+msgid ""
+"%1$s is a block theme that allows you to use blocks anywhere on your website."
+msgstr ""
+"%1$s は、ウェブサイトのあらゆる場所でブロックが使用できるブロックテーマです。"
+
+#: inc/init/class-theme-about.php:86
+#, php-format
+msgid "Welcome to %1$1s - Version %2$2s"
+msgstr ""
+
+#: patterns/call-to-action-01.php:16 patterns/call-to-action-02.php:17
+msgctxt "Pattern:Call To Action"
+msgid ""
+"A Call To Action (CTA) is a phrase or element in an advertisement, website, "
+"email, or other content that prompts the reader or viewer to take a specific "
+"action."
+msgstr ""
+"Call To Action（CTA）は、広告、ウェブサイト、メールなどのコンテンツで読者や視"
+"聴者に対して特定の行動を促す文句や要素のことを指します。"
+
+#: patterns/call-to-action-01.php:19 patterns/call-to-action-02.php:20
+msgctxt "Pattern:Call To Action"
+msgid ""
+"For example, a CTA is a phrase or button that prompts the visitor to take an "
+"action, such as \"Buy Now,\" \"Start Free Trial,\" or \"Contact Us.\" Used "
+"effectively, CTAs are designed to make it easy for visitors to take the next "
+"step."
+msgstr ""
+"例えば、「今すぐ購入する」「無料トライアルを始める」「お問合せはこちら」など"
+"のアクションを起こすよう促すフレーズやボタンが CTA です。CTA を効果的に使用す"
+"ることで、訪問者が次のステップを取りやすいように設計されています。"
+
+#: patterns/call-to-action-01.php:22 patterns/call-to-action-02.php:23
+msgctxt "Pattern:Call To Action"
+msgid ""
+"The goal is to get the user to take a specific action, which is important "
+"from a marketing and conversion perspective."
+msgstr ""
+"CTA を配置する目的は、ユーザーに特定の行動を起こさせることであり、マーケティ"
+"ングやコンバージョンの観点から重要な役割を果たします。"
+
+#: patterns/call-to-action-01.php:29 patterns/call-to-action-02.php:30
+msgctxt "Pattern:Call To Action"
+msgid "Contact"
+msgstr "お問合せはこちら"
+
+#: patterns/featured-content-02.php:25
+msgctxt "Pattern:Featured Content 02"
+msgid "Build"
+msgstr "組み立て"
+
+#: patterns/featured-content-02.php:29
+msgctxt "Pattern:Featured Content 02"
+msgid "Can intuitively create content as you wish using full site editing."
+msgstr "フルサイト編集の機能を使って自由なコンテンツを作成できます。"
+
+#: patterns/featured-content-02.php:47
+msgctxt "Pattern:Featured Content 02"
+msgid "Design"
+msgstr "デザイン"
+
+#: patterns/featured-content-02.php:51
+msgctxt "Pattern:Featured Content 02"
+msgid "Various block patterns and block styles can be used."
+msgstr "さまざまなブロックパターンやブロックスタイルが使えます。"
+
+#: patterns/featured-content-02.php:69
+msgctxt "Pattern:Featured Content 02"
+msgid "Flexible"
+msgstr "柔軟さ"
+
+#: patterns/featured-content-02.php:73
+msgctxt "Pattern:Featured Content 02"
+msgid "Support for content that changes and updates quickly."
+msgstr "頻繁なコンテンツの変更に素早く対応できます。"
+
+#: patterns/latest-posts-01.php:27
+msgctxt "Pattern:Latest Posts 01"
+msgid "Read more"
+msgstr "一覧を見る"
+
+#: patterns/main-visual-01.php:16
+msgctxt "Pattern:Main Visual 01"
+msgid "Welcome to Block Theme Hakoniwa"
+msgstr ""
+
+#: patterns/main-visual-01.php:19
+msgctxt "Pattern:Main Visual 01"
+msgid ""
+"Use the blocks to create the website you want. First, use the site editor to "
+"customize the top page."
+msgstr ""
+"ブロックを使って思い通りのウェブサイトを作ろう。まずはサイトエディターを使っ"
+"てトップページをカスタマイズしましょう。"
+
+#: patterns/main-visual-01.php:24
+msgctxt "Pattern:Main Visual 01"
+msgid "Edit Top Page"
+msgstr "トップページをカスタマイズ"
+
+#: patterns/media-text-01.php:11
+msgctxt "Pattern:Media Text 01"
+msgid "Image and text placement"
+msgstr ""
+
+#: patterns/media-text-01.php:17
+msgctxt "Pattern:Media Text 01"
+msgid ""
+"The combination of images and text makes the website visually appealing and "
+"grabs the visitor's attention."
+msgstr ""
+"画像とテキストの組み合わせはウェブサイトを視覚的にアピールし、訪問者の注意を"
+"引くことができます。"
+
+#: patterns/media-text-01.php:21
+msgctxt "Pattern:Media Text 01"
+msgid ""
+"Images visually complement the information provided by text. By "
+"complementing each other, information can be conveyed more clearly."
+msgstr ""
+"画像とテキストそれぞれの情報を相互に補完し、情報をより明確に伝えることができ"
+"ます。"
+
+#: patterns/media-text-01.php:25
+msgctxt "Pattern:Media Text 01"
+msgid "Adding appropriate captions and ALT text to images will improve SEO."
+msgstr ""
+"画像に適切なキャプションや ALT テキストを追加しましょう。SEO（検索エンジン最"
+"適化）の向上につながります。"
+
+#: patterns/media-text-01.php:32
+msgctxt "Pattern:Media Text 01"
+msgid "Read more"
+msgstr "もっと見る"
+
+#: patterns/post-author-profile-01.php:11
+#: patterns/post-author-profile-02.php:13
 msgid "Author"
 msgstr "著者"
+
+#~ msgctxt "Pattern:Call To Action"
+#~ msgid ""
+#~ "A Call To Action (CTA) is a phrase or element in an advertisement, "
+#~ "website, email, or other content that prompts the reader or viewer to "
+#~ "take a specific action. For example, a CTA is a phrase or button that "
+#~ "prompts the reader to take an action, such as \"Buy Now\" or \"Start Free "
+#~ "Trial. Effective CTAs are clear, compelling, and designed to make it easy "
+#~ "for the reader to take the next step. The goal is to get the user to take "
+#~ "a specific action, which is important from a marketing and conversion "
+#~ "perspective."
+#~ msgstr ""
+#~ "Call To Action（CTA）は、広告、ウェブサイト、メールなどのコンテンツで読者"
+#~ "や視聴者に対して特定の行動を促す文句や要素のことを指します。例えば、「今す"
+#~ "ぐ購入する」、「無料トライアルを始める」などのアクションを起こすよう促すフ"
+#~ "レーズやボタンが CTA です。CTA を効果的に使用することで、訪問者が次のス"
+#~ "テップを取りやすいように設計されています。CTA を配置する目的は、ユーザーに"
+#~ "特定の行動を起こさせることであり、マーケティングやコンバージョンの観点から"
+#~ "重要な役割を果たします。"
+
+#~ msgctxt "Pattern:Media Text 01"
+#~ msgid ""
+#~ "The combination of images and text can help tell a story more clearly. "
+#~ "The message is strengthened when visual images are combined with textual "
+#~ "descriptions."
+#~ msgstr ""
+#~ "画像とテキストの組み合わせは、ストーリーをより明確に伝えることができ、視覚"
+#~ "的なイメージと文字による説明を組み合わせることで、メッセージはより強くなり"
+#~ "ます。"
+
+#~ msgctxt "Pattern:Featured Content 02"
+#~ msgid "Can be decorated with a wide variety of patterns and styles."
+#~ msgstr "さまざまなブロックパターンやブロックスタイルで装飾できます。"
+
+#~ msgctxt "Pattern:Main Visual 01"
+#~ msgid "Create website you want with blocks"
+#~ msgstr "ブロックを使って思い通りのウェブサイトを作ろう"
+
+#~ msgctxt "Pattern:Main Visual 01"
+#~ msgid "Shape your ideas with the Site Editor"
+#~ msgstr "サイトエディターでアイデアを形に"
+
+#~ msgctxt "Pattern:Main Visual 01"
+#~ msgid "Manage your projects"
+#~ msgstr "ブロックテーマでプロジェクト管理しよう"
+
+#~ msgctxt "Pattern:Main Visual 01"
+#~ msgid "Speed ​​up content creation and reach your goals faster."
+#~ msgstr "コンテンツ作成をスピードアップして、早く目的に到達しよう。"
+
+#~ msgid "[Hakoniwa]:Content only"
+#~ msgstr "[Hakoniwa]:本文のみ"
+
+#~ msgid "[Hakoniwa]:Single two columns"
+#~ msgstr "[Hakoniwa]:単一（2カラム）"
+
+#~ msgid "[Hakoniwa]:Single without title"
+#~ msgstr "[Hakoniwa]:単一（タイトルなし）"
+
+#~ msgid ""
+#~ "%1$s is currently being distributed as a beta version, and we are "
+#~ "providing an update service free of charge."
+#~ msgstr ""
+#~ "%1$s は現在ベータ版として配布されており、無償でアップデートサービスを提供"
+#~ "しています。"
+
+#~ msgid ""
+#~ "%1$s : Please activate the license. Provides a service for plugin updates."
+#~ msgstr ""
+#~ "%1$s : ライセンス認証してください。プラグインのアップデートサービスを提供"
+#~ "します。"
 
 #~ msgid ""
 #~ "Welcome and thanks for choosing %1$s theme. Please visit our <a "

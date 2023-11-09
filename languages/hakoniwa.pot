@@ -172,3 +172,6 @@ msgstr ""
 
 msgid "Author"
 msgstr ""
+
+msgid "Manage your projects"
+msgstr ""

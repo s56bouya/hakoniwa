@@ -98,6 +98,7 @@
 			]
 		},
 		"typography": {
+			"writingMode": true,
 			"customLineHeight": true,
 			"fontFamilies": [
 				{
@@ -140,7 +141,7 @@
 				{
 					"name": "3XL",
 					"slug": "3xl",
-					"size": "clamp(1.2rem, 0.824rem + 1.88vw, 2rem)"
+					"size": "clamp(1.8rem, 1.706rem + 0.47vw, 2rem)"
 				},
 				{
 					"name": "2XL",
