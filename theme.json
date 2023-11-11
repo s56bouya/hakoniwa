@@ -202,20 +202,20 @@
 				{
 					"fluid": {
 						"min": "0.85rem",
-						"max": "1.15rem"
+						"max": "1.05rem"
 					},
 					"name": "Small",
 					"slug": "sm",
-					"size": "1.15rem"
+					"size": "1.05rem"
 				},
 				{
 					"fluid": {
 						"min": "0.8rem",
-						"max": "1.1rem"
+						"max": "1rem"
 					},
 					"name": "XS",
 					"slug": "xs",
-					"size": "1.1rem"
+					"size": "1rem"
 				},
 				{
 					"fluid": {
