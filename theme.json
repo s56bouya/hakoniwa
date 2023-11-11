@@ -83,7 +83,7 @@
 		"blocks": {
 			"core/image": {
 				"lightbox": {
-					"enabled": true,
+					"enabled": false,
 					"allowEditing": true
 				}
 			}
@@ -98,6 +98,10 @@
 			]
 		},
 		"typography": {
+			"fluid": {
+				"maxViewportWidth": "1000px",
+				"minViewportWidth": "320px"
+			},
 			"writingMode": true,
 			"customLineHeight": true,
 			"fontFamilies": [
@@ -124,59 +128,103 @@
 					"size": "1rem"
 				},
 				{
+					"fluid": {
+						"min": "0.9rem",
+						"max": "1rem"
+					},
 					"name": "main-content",
 					"slug": "main-content",
-					"size": "clamp(0.9rem, 0.853rem + 0.24vw, 1rem)"
+					"size": "1rem"
 				},
 				{
+					"fluid": {
+						"min": "2.6rem",
+						"max": "3rem"
+					},
 					"name": "5XL",
 					"slug": "5xl",
-					"size": "clamp(2.6rem, 2.455rem + 0.73vw, 3rem)"
+					"size": "3rem"
 				},
 				{
+					"fluid": {
+						"min": "2.2rem",
+						"max": "2.4rem"
+					},
 					"name": "4XL",
 					"slug": "4xl",
-					"size": "clamp(2.2rem, 1.855rem + 0.73vw, 2.4rem)"
+					"size": "2.4rem"
 				},
 				{
+					"fluid": {
+						"min": "1.8rem",
+						"max": "2rem"
+					},
 					"name": "3XL",
 					"slug": "3xl",
-					"size": "clamp(1.8rem, 1.706rem + 0.47vw, 2rem)"
+					"size": "2rem"
 				},
 				{
+					"fluid": {
+						"min": "1.15rem",
+						"max": "1.75rem"
+					},
 					"name": "2XL",
 					"slug": "2xl",
-					"size": "clamp(1.15rem, 0.868rem + 1.41vw, 1.75rem)"
+					"size": "1.75rem"
 				},
 				{
+					"fluid": {
+						"min": "1.1rem",
+						"max": "1.4rem"
+					},
 					"name": "XL",
 					"slug": "xl",
-					"size": "clamp(1.1rem, 0.959rem + 0.71vw, 1.4rem)"
+					"size": "1.4rem"
 				},
 				{
+					"fluid": {
+						"min": "1rem",
+						"max": "1.25rem"
+					},
 					"name": "Large",
 					"slug": "lg",
-					"size": "clamp(1rem, 0.812rem + 0.94vw, 1.25rem)"
+					"size": "1.25rem"
 				},
 				{
+					"fluid": {
+						"min": "0.9rem",
+						"max": "1.1rem"
+					},
 					"name": "Medium",
 					"slug": "md",
-					"size": "clamp(0.9rem, 0.759rem + 0.71vw, 1.1rem)"
+					"size": "1.1rem"
 				},
 				{
+					"fluid": {
+						"min": "0.85rem",
+						"max": "1.15rem"
+					},
 					"name": "Small",
 					"slug": "sm",
-					"size": "clamp(0.85rem, 0.709rem + 0.71vw, 1.15rem)"
+					"size": "1.15rem"
 				},
 				{
+					"fluid": {
+						"min": "0.8rem",
+						"max": "1.1rem"
+					},
 					"name": "XS",
 					"slug": "xs",
-					"size": "clamp(0.8rem, 0.659rem + 0.71vw, 1.1rem)"
+					"size": "1.1rem"
 				},
 				{
+					"fluid": {
+						"min": "0.75rem",
+						"max": "0.875rem"
+					},
 					"name": "2XS",
 					"slug": "2xs",
-					"size": "clamp(0.75rem, 0.691rem + 0.29vw, 0.875rem)"
+					"size": "0.875rem"
 				}
 			]
 		}
