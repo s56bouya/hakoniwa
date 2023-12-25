@@ -11,6 +11,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-y: scroll;
   overflow-x: hidden;
@@ -91,7 +95,7 @@ main.wp-block-group {
 
 .entry-content,
 .__inner-container {
-  word-break: break-all;
+  word-break: break-word;
 }
 
 .wp-site-blocks .wp-block-template-part {
