@@ -11,7 +11,22 @@
   box-sizing: border-box;
 }
 
+@keyframes smoothscroll1 {
+  from, to {
+    scroll-behavior: smooth;
+  }
+}
+@keyframes smoothscroll2 {
+  from, to {
+    scroll-behavior: smooth;
+  }
+}
 html {
+  animation: smoothscroll1 1s;
+}
+
+html:focus-within {
+  animation-name: smoothscroll2;
   scroll-behavior: smooth;
 }
 
@@ -1151,6 +1166,7 @@ main.wp-block-group {
   padding: 0;
   background-color: transparent;
   color: currentColor;
+  display: inline-block;
 }
 .wp-block-search.header-modal.wp-block-search__button-behavior-expand .wp-block-search__input {
   transition-duration: 0s;
