@@ -134,6 +134,10 @@ main{
     word-break: break-word;
 }
 
+h1.wp-block-site-title{
+	line-height: revert;
+}
+
 .wp-site-blocks{
     .wp-block-template-part{
         margin:0;
@@ -216,4 +220,21 @@ main{
     position: sticky;
     top: calc(0px + var(--wp-admin--admin-bar--position-offset, 0px));
     z-index: 20;
+}
+
+.wp-block-post-featured-image{
+	overflow:hidden;
+	
+	img{
+		width: 100%;
+	    height: 100%;
+	    transition: all 300ms ease;
+	    will-change: transform;
+	    backface-visibility: hidden;
+	    object-fit: cover;
+
+		&:hover{
+			transform: scale(1.05);
+		}
+	}
 }

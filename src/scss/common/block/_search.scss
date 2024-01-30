@@ -14,11 +14,10 @@
 			position: fixed;
 			left: 0;
 			right: 0;
-			padding-top:1rem;
 			padding-right: var(--wp--style--root--padding-right);
-			padding-bottom:1rem;
 			padding-left: var(--wp--style--root--padding-left);
 			top: var(--wp-admin--admin-bar--height, 0);
+			height:100vh;
 			z-index: 2;
 			background-color: color-mix(in srgb, transparent 20%, var(--wp--preset--color--base));
 
