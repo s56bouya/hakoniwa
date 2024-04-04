@@ -78,7 +78,7 @@ class ThemeAbout {
 
 		$theme_data = wp_get_theme( Define::value( 'theme_name' ) );
 		$theme_name = $theme_data->name;
-		$message    = sprintf( __( '%1$s is a block theme that allows you to use blocks anywhere on your website.', 'hakoniwa' ), 'hakoniwa' );
+		$message    = sprintf( __( '%1$s is a block theme that allows you to use blocks anywhere on your website.', 'hakoniwa' ), 'Hakoniwa' );
 
 		do_action( Define::value( 'theme_name' ) . '_theme_about_wrapper_before' );
 		?>
