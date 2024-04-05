@@ -1188,7 +1188,7 @@ h1.wp-block-site-title {
   color: currentColor;
   display: inline-block;
 }
-.wp-block-search.header-modal.wp-block-search__button-behavior-expand .wp-block-search__input {
+.wp-block-search.header-modal.wp-block-search__button-only .wp-block-search__input {
   transition-duration: 0s;
 }
 
