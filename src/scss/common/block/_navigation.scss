@@ -10,6 +10,14 @@
 		.wp-block-navigation__responsive-container-content .wp-block-navigation__submenu-container{
 			padding-top:inherit;
 		}
+
+		.wp-block-navigation__container{
+			margin: auto;
+		}
+
+		.wp-block-navigation-item.has-child.open-on-hover-click.wp-block-navigation-submenu{
+			gap:0.5rem;
+		}
 	}
 }
 

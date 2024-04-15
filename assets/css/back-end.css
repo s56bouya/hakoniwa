@@ -1187,6 +1187,7 @@ h1.wp-block-site-title {
   background-color: transparent;
   color: currentColor;
   display: inline-block;
+  border: none;
 }
 .wp-block-search.header-modal.wp-block-search__button-only .wp-block-search__input {
   transition-duration: 0s;
@@ -1275,6 +1276,12 @@ nav.wp-block-query-pagination {
 }
 .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation__submenu-container {
   padding-top: inherit;
+}
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__container {
+  margin: auto;
+}
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item.has-child.open-on-hover-click.wp-block-navigation-submenu {
+  gap: 0.5rem;
 }
 
 .wp-block-navigation .wp-block-navigation__submenu-icon {
