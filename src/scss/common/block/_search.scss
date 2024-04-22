@@ -16,10 +16,12 @@
 			right: 0;
 			padding-right: var(--wp--style--root--padding-right);
 			padding-left: var(--wp--style--root--padding-left);
-			top: var(--wp-admin--admin-bar--height, 0);
+			top: 0;
+			bottom:0;
 			height:100vh;
 			z-index: 2;
 			background-color: color-mix(in srgb, transparent 20%, var(--wp--preset--color--base));
+			backdrop-filter: blur(8px);
 
 			.wp-block-search__inside-wrapper {
 				gap:1rem;

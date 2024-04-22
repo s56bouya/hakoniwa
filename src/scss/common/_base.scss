@@ -71,7 +71,8 @@ main{
     right: 1rem;
 	z-index:1;
 
-    #scroll-page-top{
+    #scroll-page-top,
+	#fixed-toc{
         visibility: hidden;
         opacity: 0;
         transition: 300ms ease-in-out;
@@ -80,6 +81,13 @@ main{
             opacity: 1;
         }
     }
+
+	#fixed-toc{
+		&.show{
+			visibility: visible;
+		}
+	}
+
 }
 
 @media #{map.get(breakpoint.$breakpoints, "tablet+")} {

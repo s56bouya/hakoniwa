@@ -69,13 +69,18 @@ main.wp-block-group {
   right: 1rem;
   z-index: 1;
 }
-.footer-bottom-right-content #scroll-page-top {
+.footer-bottom-right-content #scroll-page-top,
+.footer-bottom-right-content #fixed-toc {
   visibility: hidden;
   opacity: 0;
   transition: 300ms ease-in-out;
 }
-.footer-bottom-right-content #scroll-page-top.show {
+.footer-bottom-right-content #scroll-page-top.show,
+.footer-bottom-right-content #fixed-toc.show {
   opacity: 1;
+}
+.footer-bottom-right-content #fixed-toc.show {
+  visibility: visible;
 }
 
 @media only screen and (min-width: 783px) {
@@ -1165,10 +1170,13 @@ h1.wp-block-site-title {
   right: 0;
   padding-right: var(--wp--style--root--padding-right);
   padding-left: var(--wp--style--root--padding-left);
-  top: var(--wp-admin--admin-bar--height, 0);
+  top: 0;
+  bottom: 0;
   height: 100vh;
   z-index: 2;
   background-color: color-mix(in srgb, transparent 20%, var(--wp--preset--color--base));
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
 }
 .wp-block-search.header-modal:not(.wp-block-search__searchfield-hidden) .wp-block-search__inside-wrapper {
   gap: 1rem;
