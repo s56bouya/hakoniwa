@@ -66,60 +66,6 @@ main{
 	}
 }
 
-.footer-bottom-right-content{
-    bottom:1rem;
-    right: 1rem;
-	z-index:1;
-
-    #scroll-page-top,
-	#fixed-toc{
-        visibility: hidden;
-        opacity: 0;
-        transition: 300ms ease-in-out;
-
-        &.show{
-            opacity: 1;
-        }
-    }
-
-	#fixed-toc{
-		&.show{
-			visibility: visible;
-		}
-	}
-
-}
-
-@media #{map.get(breakpoint.$breakpoints, "tablet+")} {
-    #scroll-page-top{
-        &.is-desktop{
-            &.show{
-                visibility: visible;
-            }
-        }    
-    }
-}
-
-@media #{map.get(breakpoint.$breakpoints, "tablet")} {
-    #scroll-page-top{
-        &.is-tablet{
-            &.show{
-                visibility: visible;
-            }
-        }    
-    }
-}
-
-@media #{map.get(breakpoint.$breakpoints, "smartphone")} {
-    #scroll-page-top{
-        &.is-smartphone{
-            &.show{
-                visibility: visible;
-            }
-        }    
-    }
-}
-
 .fixed{
     position:fixed;
 }
