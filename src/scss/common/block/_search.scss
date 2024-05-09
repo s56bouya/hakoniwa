@@ -19,7 +19,7 @@
 			top: 0;
 			bottom:0;
 			height:100vh;
-			z-index: 2;
+			z-index: 100;
 			background-color: color-mix(in srgb, transparent 20%, var(--wp--preset--color--base));
 			backdrop-filter: blur(8px);
 
