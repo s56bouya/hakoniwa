@@ -18,6 +18,14 @@ $heading_array = array(
 		'label' => __( 'Border 04', 'hakoniwa' ),
 	),
 	array(
+		'name'  => 'border-05',
+		'label' => __( 'Border 05', 'hakoniwa' ),
+	),
+	array(
+		'name'  => 'border-06',
+		'label' => __( 'Border 06', 'hakoniwa' ),
+	),
+	array(
 		'name'  => 'bracket-01',
 		'label' => __( 'Bracket 01', 'hakoniwa' ),
 	),

@@ -21,7 +21,7 @@
 			height:100vh;
 			z-index: 100;
 			background-color: color-mix(in srgb, transparent 20%, var(--wp--preset--color--base));
-			backdrop-filter: blur(8px);
+			backdrop-filter: blur(4px);
 
 			.wp-block-search__inside-wrapper {
 				gap:1rem;

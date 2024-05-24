@@ -78,6 +78,38 @@
     }
 }
 
+.is-style-#{$product-name}-border-05:not(.block-editor-block-list__layout){
+	position: relative;
+    border-bottom: 2px solid;
+    padding-bottom:0.5em;
+
+	&::after{
+		position: absolute;
+		left:  0;
+		bottom: -2px;
+		display: block;
+		content: " ";
+		width: 10%;
+		border-bottom: 2px solid color-mix(in srgb, var(--wp--preset--color--primary), transparent 0% );
+	}
+}
+
+.is-style-#{$product-name}-border-06:not(.block-editor-block-list__layout){
+	position: relative;
+    padding-bottom:0.5em;
+
+	&::after{
+		position: absolute;
+		left:  0;
+		bottom: -4px;
+		content: "";
+		width: 100%;
+		height:4px;
+		background-image:linear-gradient(-45deg, transparent 25%, currentColor 25%, currentColor 50%, transparent 50%, transparent 75%, currentColor 75%, currentColor);
+		background-size: 4px 4px;
+	}
+}
+
 .is-style-#{$product-name}-bracket-02:not(.block-editor-block-list__layout){
     display: table;
     padding-top:0.5em;
