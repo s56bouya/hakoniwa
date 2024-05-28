@@ -2,16 +2,34 @@
 @use "../../breakpoint";
 @use "../../variables" as *;
 
-.has-global-padding :where(.has-global-padding)[class*=is-style-#{$product-name}]{
-    padding:1.25em 2.375em;
+:where(.has-global-padding)[class*=is-style-#{$product-name}-background]{
+    padding:1em var(--wp--style--root--padding-right) 1em var(--wp--style--root--padding-left);
+}
+
+p{
+	&.has-background{
+		padding:1em var(--wp--style--root--padding-right) 1em var(--wp--style--root--padding-left);
+
+		&[class*=is-style-hakoniwa-symbol]{
+			padding: 1em 2em 1em 4.5em;
+		}
+	}
+}
+
+p.has-background{
+
+	&:not([class*=is-style-hakoniwa-symbol]){
+		padding:1em var(--wp--style--root--padding-right) 1em var(--wp--style--root--padding-left);		
+	}
+
 }
 
 .is-style-#{$product-name}-background-dot-01{
-    background-image: radial-gradient(circle at center center, #c7c7c7 1%, transparent 1%); background-size: 5px 5px;	
+    background-image: radial-gradient(circle at center center, #ebebeb80 1%, transparent 1%); background-size: 5px 5px;	
 }
 
 .is-style-#{$product-name}-background-check-01{
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cg fill='%23f5f5f5' %3E%3Cpath fill-rule='evenodd' d='M0 0h4v4H0V0zm4 4h4v4H4V4z'/%3E%3C/g%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cg fill='%23ebebeb50' %3E%3Cpath fill-rule='evenodd' d='M0 0h4v4H0V0zm4 4h4v4H4V4z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 .is-style-#{$product-name}-background-stripe-01{
