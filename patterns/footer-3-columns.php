@@ -3,7 +3,11 @@
  * Title: Footer 3 Columns
  * Slug: hakoniwa/footer-3-columns
  * Categories: footer,Hakoniwa
+ *
+ * @package Hakoniwa
+ * @since 1.0.0
  */
+
 ?>
 <!-- wp:group {"align":"full","layout":{"inherit":true,"type":"constrained"}} -->
 <div class="wp-block-group alignfull"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|30","padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}},"layout":{"type":"constrained"}} -->
@@ -46,7 +50,7 @@
 <!-- /wp:columns -->
 
 <!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center">©&nbsp;Hakoniwa Theme</p>
+<p class="has-text-align-center"><?php echo esc_html( '©&nbsp;' . get_bloginfo( 'name' ) ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->

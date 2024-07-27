@@ -3,7 +3,11 @@
  * Title: Main Visual 01
  * Slug: hakoniwa/main-visual-01
  * Categories: Hakoniwa
+ *
+ * @package Hakoniwa
+ * @since 1.0.0
  */
+
 ?>
 <!-- wp:group {"align":"full","style":{"spacing":{"blockGap":"0"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull">

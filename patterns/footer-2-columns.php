@@ -3,7 +3,11 @@
  * Title: Footer 2 Columns
  * Slug: hakoniwa/footer-2-columns
  * Categories: footer,Hakoniwa
-*/
+ *
+ * @package Hakoniwa
+ * @since 1.0.0
+ */
+
 ?>
 <!-- wp:group {"align":"full","layout":{"inherit":true,"type":"constrained"}} -->
 <div class="wp-block-group alignfull"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|30","padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}},"layout":{"type":"constrained"}} -->

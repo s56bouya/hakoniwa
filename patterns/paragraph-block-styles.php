@@ -3,7 +3,11 @@
  * Title: Paragraph Block Styles
  * Slug: hakoniwa/paragraph-block-styles
  * Categories: text,Hakoniwa
-*/
+ *
+ * @package Hakoniwa
+ * @since 1.0.0
+ */
+
 ?>
 <!-- wp:paragraph {"className":"is-style-hakoniwa-symbol-info-01"} -->
 <p class="is-style-hakoniwa-symbol-info-01">Info 01</p>

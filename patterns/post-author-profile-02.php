@@ -3,7 +3,11 @@
  * Title: Post Author Profile 02
  * Slug: hakoniwa/post-author-profile-02
  * Categories: Hakoniwa
+ *
+ * @package Hakoniwa
+ * @since 1.0.0
  */
+
 ?>
 <!-- wp:group {"style":{"spacing":{"blockGap":"0","margin":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80"}}},"className":"patterns-author-profile-02","layout":{"type":"constrained"}} -->
 <div class="wp-block-group patterns-author-profile-02" style="margin-top:var(--wp--preset--spacing--80);margin-bottom:var(--wp--preset--spacing--80)"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"top"}} -->

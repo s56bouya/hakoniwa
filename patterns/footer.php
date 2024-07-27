@@ -3,7 +3,12 @@
  * Title: Footer
  * Slug: hakoniwa/footer
  * Categories: footer,Hakoniwa
-*/
+ * Description: A simple footer.
+ *
+ * @package Hakoniwa
+ * @since 1.0.0
+ */
+
 ?>
 <!-- wp:group {"align":"full","layout":{"inherit":true,"type":"constrained"}} -->
 <div class="wp-block-group alignfull"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}}} -->

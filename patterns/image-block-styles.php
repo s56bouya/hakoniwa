@@ -3,7 +3,11 @@
  * Title: Image Block Styles
  * Slug: hakoniwa/image-block-styles
  * Categories: gallery,Hakoniwa
-*/
+ *
+ * @package Hakoniwa
+ * @since 1.0.0
+ */
+
 ?>
 <!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column -->

@@ -3,7 +3,11 @@
  * Title: Group Block Styles
  * Slug: hakoniwa/group-block-styles
  * Categories: Hakoniwa
-*/
+ *
+ * @package Hakoniwa
+ * @since 1.0.0
+ */
+
 ?>
 <!-- wp:group {"className":"is-style-hakoniwa-symbol-info-01","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-hakoniwa-symbol-info-01"><!-- wp:paragraph {"className":"is-style-default"} -->

@@ -3,12 +3,16 @@
  * Title: Post Author Profile 01
  * Slug: hakoniwa/post-author-profile-01
  * Categories: Hakoniwa
+ *
+ * @package Hakoniwa
+ * @since 1.0.0
  */
+
 ?>
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|50","margin":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80"}}},"className":"patterns-author-profile-01","layout":{"type":"default"}} -->
 <div class="wp-block-group patterns-author-profile-01" style="margin-top:var(--wp--preset--spacing--80);margin-bottom:var(--wp--preset--spacing--80)"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"constrained","contentSize":"480px"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center has-2-xs-font-size"><?php echo esc_html( __( 'Author', 'hakoniwa' ) ); ?></p>
+<p class="has-text-align-center has-2-xs-font-size"><?php echo esc_html( __('Author', 'hakoniwa' ) ); ?></p>
 <!-- /wp:paragraph -->
 <!-- wp:avatar {"size":80,"align":"center","style":{"border":{"radius":"100px"}}} /-->
 <!-- wp:post-author-name {"textAlign":"center","isLink":true,"linkTarget":"_blank"} /-->

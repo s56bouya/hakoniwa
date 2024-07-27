@@ -3,7 +3,11 @@
  * Title: Featured Content 01
  * Slug: hakoniwa/featured-content-01
  * Categories: Hakoniwa
+ *
+ * @package Hakoniwa
+ * @since 1.0.0
  */
+
 ?>
 <!-- wp:cover {"overlayColor":"tertiary","isDark":false,"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","right":"var:preset|spacing|50","bottom":"var:preset|spacing|70","left":"var:preset|spacing|50"}}}} -->
 <div class="wp-block-cover alignfull is-light" style="padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--50)"><span aria-hidden="true" class="wp-block-cover__background has-tertiary-background-color has-background-dim-100 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->

@@ -1489,7 +1489,7 @@ p.has-background {
   padding: 1em var(--wp--style--root--padding-right) 1em var(--wp--style--root--padding-left);
 }
 p.has-background[class*=is-style-hakoniwa-symbol] {
-  padding: 1em 2em 1em 4.5em;
+  padding: 1em 2em 1em 6em;
 }
 
 p.has-background:not([class*=is-style-hakoniwa-symbol]) {
@@ -1894,7 +1894,7 @@ ul[class*=is-style-hakoniwa-list].is-style-hakoniwa-list-arrow-02 li::before {
 }
 
 [class*=is-style-hakoniwa-symbol] {
-  padding: 1em 2em 1em 4.5em;
+  padding: 1em 2em 1em 6em;
   position: relative;
 }
 [class*=is-style-hakoniwa-symbol]::before {
@@ -1905,7 +1905,7 @@ ul[class*=is-style-hakoniwa-list].is-style-hakoniwa-list-arrow-02 li::before {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  left: calc(var(--wp--style--root--padding-left) - 4px);
+  left: 2em;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);

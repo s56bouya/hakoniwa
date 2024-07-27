@@ -3,7 +3,11 @@
  * Title: Call To Action 02
  * Slug: hakoniwa/call-to-action-02
  * Categories: call-to-action,Hakoniwa
-*/
+ *
+ * @package Hakoniwa
+ * @since 1.0.0
+ */
+
 ?>
 <!-- wp:group {"align":"full","style":{"color":{"background":"#b2babf"},"spacing":{"blockGap":"0","padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"is-style-hakoniwa-background-stripe-01","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull is-style-hakoniwa-background-stripe-01 has-background" style="background-color:#b2babf;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:cover {"dimRatio":50,"overlayColor":"tertiary","isDark":false,"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","right":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50"}}},"layout":{"type":"default"}} -->

@@ -3,7 +3,11 @@
  * Title: Latest Posts 01
  * Slug: hakoniwa/latest-posts-01
  * Categories: Hakoniwa
+ *
+ * @package Hakoniwa
+ * @since 1.0.0
  */
+
 ?>
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"right":"2rem","left":"2rem","top":"var:preset|spacing|80","bottom":"var:preset|spacing|80"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--80);padding-right:2rem;padding-bottom:var(--wp--preset--spacing--80);padding-left:2rem"><!-- wp:heading {"textAlign":"center","className":"is-style-default","fontSize":"2xl"} -->
