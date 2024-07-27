@@ -35,7 +35,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:social-links {"style":{"spacing":{"blockGap":{"top":"var:preset|spacing|30","left":"var:preset|spacing|30"}}},"className":"is-style-logos-only","layout":{"type":"flex","orientation":"horizontal"}} -->
-<ul class="wp-block-social-links is-style-logos-only"><!-- wp:social-link {"url":"#","service":"twitter"} /-->
+<ul class="wp-block-social-links is-style-logos-only"><!-- wp:social-link {"url":"#","service":"x"} /-->
 
 <!-- wp:social-link {"url":"#","service":"facebook"} /-->
 

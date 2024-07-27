@@ -1,0 +1,16 @@
+<?php
+/**
+ * Title: Sidebar
+ * Slug: hakoniwa/sidebar
+ * Categories: Hakoniwa
+*/
+?>
+<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Categories</h3>
+<!-- /wp:heading -->
+
+<!-- wp:categories {"showHierarchy":true} /--></div>
+<!-- /wp:group -->
+
+<!-- wp:calendar /-->

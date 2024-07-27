@@ -514,44 +514,14 @@
 			"area": "header"
 		},
 		{
-			"name": "header-wide",
-			"title": "Header (Wide)",
-			"area": "header"
-		},
-		{
-			"name": "header-dark",
-			"title": "Header (Dark)",
-			"area": "header"
-		},
-		{
-			"name": "header-center",
-			"title": "Header Center",
-			"area": "header"
-		},
-		{
-			"name": "header-button",
-			"title": "Header Button",
-			"area": "header"
-		},
-		{
-			"name": "header-wide-and-search-button",
-			"title": "Header wide and search button",
-			"area": "header"
-		},
-		{
 			"name": "footer",
 			"title": "Footer",
 			"area": "footer"
 		},
 		{
-			"name": "footer-2-columns",
-			"title": "Footer 2 Columns",
-			"area": "footer"
-		},
-		{
-			"name": "footer-3-columns",
-			"title": "Footer 3 Columns",
-			"area": "footer"
+			"area": "uncategorized",
+			"name": "sidebar",
+			"title": "Sidebar"
 		}
 	]
 }
