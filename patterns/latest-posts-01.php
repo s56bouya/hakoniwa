@@ -2,7 +2,7 @@
 /**
  * Title: Latest Posts 01
  * Slug: hakoniwa/latest-posts-01
- * Categories: Hakoniwa
+ * Categories: query, posts, Hakoniwa
  *
  * @package Hakoniwa
  * @since 1.0.0

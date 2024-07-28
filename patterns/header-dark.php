@@ -2,7 +2,7 @@
 /**
  * Title: Header(Dark)
  * Slug: hakoniwa/header-dark
- * Categories: header,Hakoniwa
+ * Categories: header, Hakoniwa
  *
  * @package Hakoniwa
  * @since 1.0.0

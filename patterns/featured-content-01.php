@@ -2,7 +2,7 @@
 /**
  * Title: Featured Content 01
  * Slug: hakoniwa/featured-content-01
- * Categories: Hakoniwa
+ * Categories: featured, Hakoniwa
  *
  * @package Hakoniwa
  * @since 1.0.0
@@ -19,8 +19,8 @@
 <div class="wp-block-columns alignwide"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"className":"is-style-hakoniwa-hover-box-shadow-03","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-hakoniwa-hover-box-shadow-03"><!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:image {"id":770,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/sample/image01.jpg" alt="" class="wp-image-770"/></figure>
+<div class="wp-block-group"><!-- wp:image -->
+<figure class="wp-block-image"><img alt=""/></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30","padding":{"top":"var:preset|spacing|50","right":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50"}}},"backgroundColor":"base","layout":{"type":"default"}} -->
@@ -40,8 +40,8 @@
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"className":"is-style-hakoniwa-hover-box-shadow-03","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-hakoniwa-hover-box-shadow-03"><!-- wp:image {"id":770,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/sample/image01.jpg" alt="" class="wp-image-770"/></figure>
+<div class="wp-block-group is-style-hakoniwa-hover-box-shadow-03"><!-- wp:image -->
+<figure class="wp-block-image"><img alt=""/></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30","padding":{"top":"var:preset|spacing|50","right":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50"}}},"backgroundColor":"base","layout":{"type":"default"}} -->
@@ -60,8 +60,8 @@
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"className":"is-style-hakoniwa-hover-box-shadow-03","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-hakoniwa-hover-box-shadow-03"><!-- wp:image {"id":770,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/sample/image01.jpg" alt="" class="wp-image-770"/></figure>
+<div class="wp-block-group is-style-hakoniwa-hover-box-shadow-03"><!-- wp:image -->
+<figure class="wp-block-image"><img alt=""/></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30","padding":{"top":"var:preset|spacing|50","right":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50"}}},"backgroundColor":"base","layout":{"type":"default"}} -->

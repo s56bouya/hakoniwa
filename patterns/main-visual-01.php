@@ -2,7 +2,7 @@
 /**
  * Title: Main Visual 01
  * Slug: hakoniwa/main-visual-01
- * Categories: Hakoniwa
+ * Categories: featured, Hakoniwa
  *
  * @package Hakoniwa
  * @since 1.0.0

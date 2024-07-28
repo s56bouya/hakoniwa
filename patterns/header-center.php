@@ -2,7 +2,7 @@
 /**
  * Title: Header(Center)
  * Slug: hakoniwa/header-center
- * Categories: header,Hakoniwa
+ * Categories: header, Hakoniwa
  *
  * @package Hakoniwa
  * @since 1.0.0

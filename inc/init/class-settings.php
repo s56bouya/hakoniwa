@@ -62,6 +62,15 @@ class Settings {
 		$block_pattern_categories = array(
 			'Hakoniwa' => array( 
 				'label' => __( 'Hakoniwa Theme', 'hakoniwa' )
+			),
+			'profile' => array( 
+				'label' => __( 'Profile', 'hakoniwa' )
+			),
+			'author' => array( 
+				'label' => __( 'Author', 'hakoniwa' )
+			),
+			'sidebar' => array( 
+				'label' => __( 'Sidebar', 'hakoniwa' )
 			)
 		);
 	

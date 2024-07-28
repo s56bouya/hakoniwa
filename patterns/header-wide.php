@@ -2,7 +2,7 @@
 /**
  * Title: Header(Wide)
  * Slug: hakoniwa/header-wide
- * Categories: header,Hakoniwa
+ * Categories: header, Hakoniwa
  *
  * @package Hakoniwa
  * @since 1.0.0

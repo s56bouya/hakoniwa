@@ -2,7 +2,8 @@
 /**
  * Title: Sidebar
  * Slug: hakoniwa/sidebar
- * Categories: Hakoniwa
+ * Categories: sidebar, Hakoniwa
+ * Viewport width: 960
  *
  * @package Hakoniwa
  * @since 1.0.0

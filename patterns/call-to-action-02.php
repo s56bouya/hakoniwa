@@ -2,7 +2,7 @@
 /**
  * Title: Call To Action 02
  * Slug: hakoniwa/call-to-action-02
- * Categories: call-to-action,Hakoniwa
+ * Categories: call-to-action, Hakoniwa
  *
  * @package Hakoniwa
  * @since 1.0.0

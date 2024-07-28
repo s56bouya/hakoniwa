@@ -523,5 +523,22 @@
 			"name": "sidebar",
 			"title": "Sidebar"
 		}
+	],
+	"customTemplates": [
+		{
+			"name": "single-without-title",
+			"postTypes": ["post","page"],
+			"title": "Single widthout title"
+		},
+		{
+			"name": "single-2-columns",
+			"postTypes": ["post","page"],
+			"title": "Single with Sidebar"
+		},
+		{
+			"name": "content-only",
+			"postTypes": ["post","page"],
+			"title": "Content only"
+		}
 	]
 }

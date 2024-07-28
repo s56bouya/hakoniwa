@@ -2,7 +2,7 @@
 /**
  * Title: Featured Content 02
  * Slug: hakoniwa/featured-content-02
- * Categories: Hakoniwa
+ * Categories: featured, Hakoniwa
  *
  * @package Hakoniwa
  * @since 1.0.0

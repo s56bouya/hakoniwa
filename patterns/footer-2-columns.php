@@ -2,7 +2,7 @@
 /**
  * Title: Footer 2 Columns
  * Slug: hakoniwa/footer-2-columns
- * Categories: footer,Hakoniwa
+ * Categories: footer, Hakoniwa
  *
  * @package Hakoniwa
  * @since 1.0.0

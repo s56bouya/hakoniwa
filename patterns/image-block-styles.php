@@ -2,7 +2,7 @@
 /**
  * Title: Image Block Styles
  * Slug: hakoniwa/image-block-styles
- * Categories: gallery,Hakoniwa
+ * Categories: gallery, Hakoniwa
  *
  * @package Hakoniwa
  * @since 1.0.0

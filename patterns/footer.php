@@ -2,7 +2,7 @@
 /**
  * Title: Footer
  * Slug: hakoniwa/footer
- * Categories: footer,Hakoniwa
+ * Categories: footer, Hakoniwa
  * Description: A simple footer.
  *
  * @package Hakoniwa

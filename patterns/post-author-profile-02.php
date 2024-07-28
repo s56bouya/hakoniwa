@@ -2,7 +2,7 @@
 /**
  * Title: Post Author Profile 02
  * Slug: hakoniwa/post-author-profile-02
- * Categories: Hakoniwa
+ * Categories: author, profile, Hakoniwa
  *
  * @package Hakoniwa
  * @since 1.0.0

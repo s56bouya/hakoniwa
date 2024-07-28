@@ -2,7 +2,7 @@
 /**
  * Title: Paragraph Block Styles
  * Slug: hakoniwa/paragraph-block-styles
- * Categories: text,Hakoniwa
+ * Categories: text, Hakoniwa
  *
  * @package Hakoniwa
  * @since 1.0.0
