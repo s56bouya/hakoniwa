@@ -26,6 +26,22 @@ $heading_array = array(
 		'label' => __( 'Border 06', 'hakoniwa' ),
 	),
 	array(
+		'name'  => 'border-07',
+		'label' => __( 'Border 07', 'hakoniwa' ),
+	),
+	array(
+		'name'  => 'border-08',
+		'label' => __( 'Border 08', 'hakoniwa' ),
+	),
+	array(
+		'name'  => 'square-01',
+		'label' => __( 'Square 01', 'hakoniwa' ),
+	),
+	array(
+		'name'  => 'square-02',
+		'label' => __( 'Square 02', 'hakoniwa' ),
+	),
+	array(
 		'name'  => 'bracket-01',
 		'label' => __( 'Bracket 01', 'hakoniwa' ),
 	),

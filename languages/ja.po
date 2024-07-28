@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AnimaGate, Inc.\n"
-"POT-Creation-Date: 2024-07-28 09:22+0900\n"
-"PO-Revision-Date: 2024-07-28 09:23+0900\n"
+"POT-Creation-Date: 2024-07-29 08:25+0900\n"
+"PO-Revision-Date: 2024-07-29 08:25+0900\n"
 "Last-Translator: \n"
 "Language-Team: Tetsuya Imamura <wpdev@animagate.com>\n"
 "Language: ja\n"
@@ -122,10 +122,26 @@ msgid "Border 06"
 msgstr "ボーダー 06"
 
 #: inc/blocks/styles/heading.php:30
+msgid "Border 07"
+msgstr "ボーダー 07"
+
+#: inc/blocks/styles/heading.php:34
+msgid "Border 08"
+msgstr "ボーダー 08"
+
+#: inc/blocks/styles/heading.php:38
+msgid "Square 01"
+msgstr "四角 01"
+
+#: inc/blocks/styles/heading.php:42
+msgid "Square 02"
+msgstr "四角 02"
+
+#: inc/blocks/styles/heading.php:46
 msgid "Bracket 01"
 msgstr "カッコ 01"
 
-#: inc/blocks/styles/heading.php:34
+#: inc/blocks/styles/heading.php:50
 msgid "Bracket 02"
 msgstr "カッコ 02"
 
