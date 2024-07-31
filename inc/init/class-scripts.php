@@ -12,7 +12,8 @@ class Scripts {
 
 		add_action( 'wp_enqueue_scripts', [ $this, 'read_scripts' ] );
 		
-		add_action( 'after_setup_theme', [ $this, 'add_editor_styles' ], 10 );
+//		add_action( 'after_setup_theme', [ $this, 'add_editor_styles' ], 100 );
+		add_action( 'enqueue_block_editor_assets', [ $this, 'add_editor_styles' ], 10 );
 
 	}
 
@@ -52,12 +53,24 @@ class Scripts {
 	/**
 	 * Enqueue Back End Styles
 	 */
-	function add_editor_styles() {
+	function add_editor_styles_bk() {
 
 		$stylesheet_path = './assets/css/back-end.css';
 
 		add_editor_style( $stylesheet_path );
 
+	}
+
+	/**
+	 * Enqueue Back End Styles
+	 */
+	public function add_editor_styles() {
+		wp_enqueue_style(
+			Define::value( 'theme_name' ) . '-editor',
+			get_template_directory_uri() . '/assets/css/back-end.css',
+			array(),
+			'1.0'
+		);
 	}
 
 }

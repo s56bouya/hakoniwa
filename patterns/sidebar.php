@@ -15,7 +15,7 @@
 <h3 class="wp-block-heading">Categories</h3>
 <!-- /wp:heading -->
 
-<!-- wp:categories {"showHierarchy":true} /--></div>
-<!-- /wp:group -->
-
+<!-- wp:categories {"showHierarchy":true} /-->
 <!-- wp:calendar /-->
+</div>
+<!-- /wp:group -->

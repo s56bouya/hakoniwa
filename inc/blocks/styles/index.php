@@ -27,6 +27,8 @@ class Register {
 
 		require_once 'list.php';
 
+		require_once 'cover.php';
+
 		require_once 'button.php';
 
 		require_once 'box-shadow.php';
@@ -49,6 +51,9 @@ class Register {
 
 		// list
 		$this->register_blocks_styles( 'core/list', $list_array );
+
+		// list
+		$this->register_blocks_styles( 'core/cover', $cover_array );
 
 		// Button
 		$this->register_blocks_styles( 'core/button', $button_array );
