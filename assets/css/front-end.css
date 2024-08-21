@@ -1278,8 +1278,11 @@ nav.wp-block-query-pagination {
 .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item.has-child.open-on-hover-click.wp-block-navigation-submenu {
   gap: 0.5rem;
 }
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .has-child .wp-block-navigation__submenu-container {
+  padding: 0 0 0 1rem;
+}
 
-.wp-block-navigation .wp-block-navigation__submenu-icon {
+.wp-block-navigation__responsive-container-content .has-child .wp-block-navigation__submenu-container .wp-block-navigation .wp-block-navigation__submenu-icon {
   width: auto;
   height: auto;
   line-height: inherit;
