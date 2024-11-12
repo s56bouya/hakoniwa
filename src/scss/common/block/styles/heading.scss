@@ -45,12 +45,12 @@
 	align-items: center;
 	gap:0.5em;
 	align-items: baseline;
-	flex: none;
 
     &::before{
 		content: "";
 		width: 0.75em;
 	    height: 0.75em;
+		flex: none;
 		background-color: currentColor;
 	    background-size: 4px 4px;
 		display: inline-block;
@@ -63,12 +63,12 @@
 	align-items: center;
 	gap:0.5em;
 	align-items: baseline;
-	flex: none;
 
     &::before{
 		content: "";
 		width: 0.75em;
 	    height: 0.75em;
+		flex: none;
 		background-image: linear-gradient(-45deg, transparent 25%, currentColor 25%, currentColor 50%, transparent 50%, transparent 75%, currentColor 75%, currentColor);
 	    background-size: 4px 4px;
 		display: inline-block;

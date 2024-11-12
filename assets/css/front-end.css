@@ -1327,12 +1327,12 @@ nav.wp-block-query-pagination {
   align-items: center;
   gap: 0.5em;
   align-items: baseline;
-  flex: none;
 }
 .is-style-hakoniwa-square-01:not(.block-editor-block-list__layout)::before {
   content: "";
   width: 0.75em;
   height: 0.75em;
+  flex: none;
   background-color: currentColor;
   background-size: 4px 4px;
   display: inline-block;
@@ -1343,12 +1343,12 @@ nav.wp-block-query-pagination {
   align-items: center;
   gap: 0.5em;
   align-items: baseline;
-  flex: none;
 }
 .is-style-hakoniwa-square-02:not(.block-editor-block-list__layout)::before {
   content: "";
   width: 0.75em;
   height: 0.75em;
+  flex: none;
   background-image: linear-gradient(-45deg, transparent 25%, currentColor 25%, currentColor 50%, transparent 50%, transparent 75%, currentColor 75%, currentColor);
   background-size: 4px 4px;
   display: inline-block;
