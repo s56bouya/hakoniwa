@@ -25,7 +25,7 @@
 		<!-- wp:buttons -->
 		<div class="wp-block-buttons">
 			<!-- wp:button {"className":"is-style-fill"} -->
-			<div class="wp-block-button is-style-fill"><a class="wp-block-button__link wp-element-button" href="<?php echo get_admin_url( null, '/site-editor.php?postType=wp_template&postId=hakoniwa//front-page' ); ?>"><?php echo esc_html_x( 'Edit Top Page', 'Pattern:Main Visual 01', 'hakoniwa' ); ?></a></div>
+			<div class="wp-block-button is-style-fill"><a class="wp-block-button__link wp-element-button" href="<?php echo get_admin_url( null, '/site-editor.php?postType=wp_template&postId=hakoniwa//front-page&canvas=edit' ); ?>"><?php echo esc_html_x( 'Edit Top Page', 'Pattern:Main Visual 01', 'hakoniwa' ); ?></a></div>
 			<!-- /wp:button -->
 		</div>
 		<!-- /wp:buttons -->

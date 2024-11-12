@@ -11,18 +11,10 @@
   box-sizing: border-box;
 }
 
-@keyframes smoothscroll1 {
-  from, to {
-    scroll-behavior: smooth;
-  }
-}
-@keyframes smoothscroll2 {
-  from, to {
-    scroll-behavior: smooth;
-  }
-}
+@keyframes smoothscroll1 {}
+@keyframes smoothscroll2 {}
 html {
-  animation: smoothscroll1 1s;
+  scroll-behavior: smooth;
 }
 
 html:focus-within {
@@ -1334,6 +1326,8 @@ nav.wp-block-query-pagination {
   display: flex;
   align-items: center;
   gap: 0.5em;
+  align-items: baseline;
+  flex: none;
 }
 .is-style-hakoniwa-square-01:not(.block-editor-block-list__layout)::before {
   content: "";
@@ -1348,6 +1342,8 @@ nav.wp-block-query-pagination {
   display: flex;
   align-items: center;
   gap: 0.5em;
+  align-items: baseline;
+  flex: none;
 }
 .is-style-hakoniwa-square-02:not(.block-editor-block-list__layout)::before {
   content: "";
@@ -1426,6 +1422,7 @@ nav.wp-block-query-pagination {
   display: flex;
   align-items: center;
   gap: 0.5em;
+  align-items: baseline;
 }
 .is-style-hakoniwa-border-07:not(.block-editor-block-list__layout)::before {
   content: "";
@@ -1440,6 +1437,7 @@ nav.wp-block-query-pagination {
   display: flex;
   align-items: center;
   gap: 0.5em;
+  align-items: baseline;
 }
 .is-style-hakoniwa-border-08:not(.block-editor-block-list__layout)::before {
   content: "";
