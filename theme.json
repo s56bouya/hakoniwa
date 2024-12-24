@@ -106,7 +106,7 @@
 				},
 				{
 					"name": "Medium(Hakoniwa)",
-					"slug": "nishiki-pro-shadow-md",
+					"slug": "hakoniwa-shadow",
 					"shadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1)"
 				},
 				{
@@ -478,8 +478,7 @@
 							"margin": {
 								"top": "var(--wp--preset--spacing--80)"
 							}
-						},
-						"className": "is-style-hakoniwa-border-02"
+						}
                     },
                     "h3": {
                         "typography": {

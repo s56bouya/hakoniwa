@@ -10,6 +10,7 @@ dist/* export-ignore
 /package-lock.json export-ignore
 
 .gitignore export-ignore
+.github/* export-ignore
 /.babelrc export-ignore
 /.browserslistrc export-ignore
 /.eslintignore export-ignore

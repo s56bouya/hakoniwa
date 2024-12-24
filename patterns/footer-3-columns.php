@@ -2,6 +2,7 @@
 /**
  * Title: Footer 3 Columns
  * Slug: hakoniwa/footer-3-columns
+ * Block Types: core/template-part/footer
  * Categories: footer, Hakoniwa
  *
  * @package Hakoniwa

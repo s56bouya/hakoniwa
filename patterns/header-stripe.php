@@ -2,6 +2,7 @@
 /**
  * Title: Header(Stripe)
  * Slug: hakoniwa/header-stripe
+ * Block Types: core/template-part/header
  * Categories: header, Hakoniwa
  *
  * @package Hakoniwa

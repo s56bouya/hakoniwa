@@ -2,6 +2,7 @@
 /**
  * Title: Header(Wide)
  * Slug: hakoniwa/header-wide
+ * Block Types: core/template-part/header
  * Categories: header, Hakoniwa
  *
  * @package Hakoniwa

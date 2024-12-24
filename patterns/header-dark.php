@@ -2,6 +2,7 @@
 /**
  * Title: Header(Dark)
  * Slug: hakoniwa/header-dark
+ * Block Types: core/template-part/header
  * Categories: header, Hakoniwa
  *
  * @package Hakoniwa

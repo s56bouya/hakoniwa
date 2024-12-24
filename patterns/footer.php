@@ -2,6 +2,7 @@
 /**
  * Title: Footer
  * Slug: hakoniwa/footer
+ * Block Types: core/template-part/footer
  * Categories: footer, Hakoniwa
  * Description: A simple footer.
  *
