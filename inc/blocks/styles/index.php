@@ -52,7 +52,7 @@ class Register {
 		// list
 		$this->register_blocks_styles( 'core/list', $list_array );
 
-		// list
+		// Cover
 		$this->register_blocks_styles( 'core/cover', $cover_array );
 
 		// Button
