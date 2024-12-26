@@ -32,7 +32,6 @@ body:
     attributes:
       label: WordPress version
       placeholder: ex. 6.7.1
-      value: ""
     validations:
       required: true
   - type: textarea
@@ -40,7 +39,6 @@ body:
     attributes:
       label: PHP version
       placeholder: ex. 7.4
-      value: ""
     validations:
       required: true
   - type: checkboxes
@@ -63,7 +61,6 @@ body:
     id: disable-all-plugins
     attributes:
       label: Before reporting this issue, have you tried disabling all of your plugins and testing them ?
-      description: "" 
       options:
         - label: Yes
           required: true
