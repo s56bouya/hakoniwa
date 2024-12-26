@@ -17,7 +17,7 @@ body:
       value: "A bug happened!"
     validations:
       required: true
-    - type: textarea
+  - type: textarea
     attributes:
       label: Steps To Reproduce
       description: Steps to reproduce the behavior.
