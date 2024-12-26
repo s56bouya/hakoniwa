@@ -1,5 +1,5 @@
 name: Bug Report(draft)
-description: File a bug/issue
+description: Create a report to help us improve
 title: "[Bug]: "
 labels: ["bug"]
 body:
@@ -19,22 +19,25 @@ body:
   - type: textarea
     attributes:
       label: Steps To Reproduce
-      description: Steps to reproduce the behavior.
+      description: Please write the steps needed to reproduce the bug.
       placeholder: |
-        1. In this environment...
-        2. With this config...
-        3. Run '...'
-        4. See error...
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
     validations:
       required: true
   - type: textarea
+    attributes:
+      label: Screenshots, screen recording, code snippet
+      description: If applicable, add screenshots, screen recording, code snippet to help explain your problem.
+  - type: input
     id: wordpress-version
     attributes:
       label: WordPress version
       placeholder: ex. 6.7.1
     validations:
       required: true
-  - type: textarea
+  - type: input
     id: php-version
     attributes:
       label: PHP version
@@ -50,13 +53,6 @@ body:
         - label: "Chrome"
         - label: "Safari"
         - label: "Microsoft Edge"
-          required: true
-  - type: textarea
-    id: logs
-    attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
   - type: checkboxes
     id: disable-all-plugins
     attributes:
