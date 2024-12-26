@@ -46,10 +46,10 @@ body:
     attributes:
       label: What browsers are you seeing the problem on?
       options:
-        - label: Firefox
-        - label: Chrome
-        - label: Safari
-        - label: Microsoft Edge
+        - label: "Firefox"
+        - label: "Chrome"
+        - label: "Safari"
+        - label: "Microsoft Edge"
           required: true
   - type: textarea
     id: logs
@@ -62,5 +62,5 @@ body:
     attributes:
       label: Before reporting this issue, have you tried disabling all of your plugins and testing them ?
       options:
-        - label: Yes
+        - label: "Yes"
           required: true
