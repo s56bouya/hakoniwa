@@ -15,8 +15,8 @@
 <div class="wp-block-group alignfull has-base-color has-primary-background-color has-text-color has-background has-link-color" style="padding-top:0.25rem;padding-bottom:0.25rem"><!-- wp:site-tagline {"align":"wide","fontSize":"2xs"} /--></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","justifyContent":"space-between"}} -->
-<div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:group {"style":{"spacing":{"blockGap":"1.5em"}},"layout":{"type":"flex"}} -->
+<!-- wp:group {"align":"wide","className":"hakoniwa-header-main-content","layout":{"type":"flex","justifyContent":"space-between"}} -->
+<div class="wp-block-group alignwide hakoniwa-header-main-content"><!-- wp:group {"style":{"spacing":{"blockGap":"1.5em"}},"layout":{"type":"flex"}} -->
 <div class="wp-block-group"><!-- wp:site-logo {"width":64} /-->
 
 <!-- wp:site-title /--></div>

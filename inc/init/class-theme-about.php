@@ -41,7 +41,7 @@ class ThemeAbout {
 
 		/* translators: %1$s: theme name %2$s: about page url */
 		$message = sprintf( __( 'Welcome and thanks for choosing %1$s theme.', 'hakoniwa' ), esc_attr( $theme_data->name ) );
-		printf( '<div class="updated notice notice-success notice-alt is-dismissible"><p>%s</p><p><a class="button button-primary" href="https://hakoniwa.animagate.com/" target="_blank">' . __( 'Theme support page', 'hakoniwa' ) . '</a></p></div>', wp_kses_post( $message ) );
+		printf( '<div class="updated notice notice-success notice-alt is-dismissible hakoniwa-notice"><p>%s</p><p><a class="button button-primary" href="https://hakoniwa.animagate.com/" target="_blank">' . __( 'Theme support page', 'hakoniwa' ) . '</a></p></div>', wp_kses_post( $message ) );
 
 	}
 
@@ -85,6 +85,7 @@ class ThemeAbout {
 			<div class="wrap about-wrap">
 				<h1><?php printf( esc_html__( 'Welcome to %1$1s - Version %2$2s', 'hakoniwa' ), esc_html( $theme_name ), esc_html( $theme_data->version ) ); ?></h1>
 				<div class="about-text"><?php echo wp_kses_post( $message ); ?></div>
+				<p><a class="button button-primary" href="https://hakoniwa.animagate.com/" target="_blank"><?php _e( 'Theme support page', 'hakoniwa' ); ?></a></p>
 				<hr>
 				<?php
 				do_action( Define::value( 'theme_name' ) . '_theme_about_before' );

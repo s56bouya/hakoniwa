@@ -10,10 +10,10 @@
  */
 
 ?>
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}},"layout":{"inherit":true,"type":"constrained"}} -->
-<div id="header" class="wp-block-group" style="padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)">
-	<!-- wp:group {"align":"wide","layout":{"type":"flex","justifyContent":"space-between"}} -->
-	<div class="wp-block-group alignwide">
+<!-- wp:group {"className":"hakoniwa-header-wide","layout":{"inherit":true,"type":"constrained"}} -->
+<div id="header" class="wp-block-group hakoniwa-header-wide">
+	<!-- wp:group {"align":"wide","className":"hakoniwa-header-main-content","layout":{"type":"flex","justifyContent":"space-between"}} -->
+	<div class="wp-block-group alignwide hakoniwa-header-main-content">
 		<!-- wp:group {"style":{"spacing":{"blockGap":"1.5em"}},"layout":{"type":"flex"}} -->
 		<div class="wp-block-group">
 			<!-- wp:site-logo {"width":64} /-->
