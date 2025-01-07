@@ -11,7 +11,7 @@
 	}
 
 	ul,ol{
-		&:not(.wp-block-navigation, .wp-block-social-links, .is-layout-flex){
+		&:not(.wp-block-navigation, .wp-block-navigation-submenu, .wp-block-social-links, .is-layout-flex){
 			li{
 				&:not(:last-child){
 					margin-bottom:calc( var(--wp--custom--style--block-gap ) / 2 );
