@@ -15,31 +15,34 @@
 			margin: auto;
 		}
 
-		.wp-block-navigation-item.has-child.open-on-hover-click.wp-block-navigation-submenu{
-			gap:0.5rem;
+		.wp-block-navigation__submenu-container{
+			li{
+				a::before{
+					content: '-';
+					display: inline-block;
+					margin-right:0.25em;
+				}
+			}
 		}
 
 		.wp-block-navigation__responsive-container-content .has-child .wp-block-navigation__submenu-container{
 			padding:0 0 0 1rem;
 		}
 	}
+
+	.wp-block-navigation-item.has-child.open-on-hover-click.wp-block-navigation-submenu{
+		gap:0.5rem;
+	}
 }
 
 .wp-block-navigation{
-	.wp-block-navigation__submenu-container{
-		li{
-			a::before{
-				content: '-';
-				display: inline-block;
-				margin-right:0.25em;
-			}
-		}
-	}
-
+	
 	.wp-block-navigation__submenu-icon{
 		width: auto;
 		height: auto;
 		line-height:inherit;
+		display: flex;
+	    align-items: center;
 
 		svg{
 			margin-top:0;
