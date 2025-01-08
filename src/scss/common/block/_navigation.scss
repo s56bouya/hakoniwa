@@ -4,11 +4,20 @@
 @use "../variables" as *;
 
 .wp-block-navigation__responsive-container{
+	// メニューオープン時
 	&.is-menu-open{
-		padding:var(--wp--custom--style--block-gap,2rem);
+		padding:var(--wp--custom--style--block-gap, 2rem);
 
-		.wp-block-navigation__responsive-container-content .wp-block-navigation__submenu-container{
-			padding-top:inherit;
+		.wp-block-navigation__responsive-container-content{
+			.wp-block-navigation__submenu-container{
+				padding-top:inherit;
+			}
+
+			.has-child{
+				.wp-block-navigation__submenu-container{
+					padding:0 0 0 1rem;
+				}
+			}
 		}
 
 		.wp-block-navigation__container{
@@ -21,17 +30,21 @@
 					content: '-';
 					display: inline-block;
 					margin-right:0.25em;
+					opacity: 0.5;
 				}
 			}
 		}
 
-		.wp-block-navigation__responsive-container-content .has-child .wp-block-navigation__submenu-container{
-			padding:0 0 0 1rem;
+		.wp-block-navigation-item{
+			&.has-child{
+				&.open-on-hover-click{
+					&.wp-block-navigation-submenu,
+					&.wp-block-pages-list__item{
+						gap:0.5rem;
+					}
+				}
+			}
 		}
-	}
-
-	.wp-block-navigation-item.has-child.open-on-hover-click.wp-block-navigation-submenu{
-		gap:0.5rem;
 	}
 }
 
@@ -56,4 +69,6 @@
 			}
 		}
 	}
+
+	
 }
