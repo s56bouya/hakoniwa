@@ -18,7 +18,7 @@
 			bottom:0;
 			left:0;
 			position: absolute;
-			background-image: linear-gradient(-45deg, #fff 25%, #ebebeb00 25%, #ebebeb00 50%, #fff 50%, #fff 75%, #ebebeb00 75%, #ebebeb00);
+			background-image: linear-gradient( -45deg, transparent 25%, #ebebeb50 25%, #ebebeb50 50%, transparent 50%, transparent 75%, #ebebeb50 75%, #ebebeb50);
 			background-size: 4px 4px;
 			mix-blend-mode: screen;
 		}	
@@ -35,7 +35,7 @@
 			bottom:0;
 			left:0;
 			position: absolute;
-			background-image: linear-gradient(0deg, #fff 25%, #ebebeb00 25%, #ebebeb00 50%, #fff 50%, #fff 75%, #ebebeb00 75%, #ebebeb00);
+			background-image: linear-gradient(0deg, transparent 25%, #ebebeb00 25%, #ebebeb00 50%, transparent 50%, transparent 75%, #ebebeb00 75%, #ebebeb00);
 			background-size: 4px 4px;
 			mix-blend-mode: screen;
 		}	
@@ -52,7 +52,7 @@
 			bottom:0;
 			left:0;
 			position: absolute;
-			background-image: linear-gradient(90deg, #fff 25%, #ebebeb00 25%, #ebebeb00 50%, #fff 50%, #fff 75%, #ebebeb00 75%, #ebebeb00);
+			background-image: linear-gradient(90deg, transparent 25%, #ebebeb00 25%, #ebebeb00 50%, transparent 50%, transparent 75%, #ebebeb00 75%, #ebebeb00);
 			background-size: 4px 4px;
 			mix-blend-mode: screen;
 		}	

@@ -163,12 +163,12 @@
 				},
 				{
 					"fluid": {
-						"min": "0.9rem",
-						"max": "1rem"
+						"min": "1rem",
+						"max": "1.125rem"
 					},
 					"name": "main-content",
 					"slug": "main-content",
-					"size": "1rem"
+					"size": "1.125rem"
 				},
 				{
 					"fluid": {

@@ -9,6 +9,10 @@
 				border-bottom: 1px solid color-mix(in srgb, currentColor 8%, transparent);
 			}
 		}
+		
+		a{
+			line-height:1;
+		}
 
 		.is-menu-open{
 			.wp-block-navigation__submenu-container{
@@ -75,7 +79,7 @@
 
 				.wp-block-navigation-item{
 					.wp-block-navigation-item__content{
-						padding: 0.5em 1em;
+						padding: 1em;
 					}	
 				}
 			}	
