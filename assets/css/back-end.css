@@ -1276,15 +1276,13 @@ nav.wp-block-query-pagination {
   opacity: 0.5;
 }
 .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item.has-child.open-on-hover-click.wp-block-navigation-submenu, .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item.has-child.open-on-hover-click.wp-block-pages-list__item {
-  gap: 0.5rem;
+  gap: 0.75rem;
 }
 
 .wp-block-navigation .wp-block-navigation__submenu-icon {
   width: auto;
   height: auto;
-  line-height: inherit;
-  display: flex;
-  align-items: center;
+  line-height: 1;
 }
 .wp-block-navigation .wp-block-navigation__submenu-icon svg {
   margin-top: 0;
@@ -1292,9 +1290,30 @@ nav.wp-block-query-pagination {
 .wp-block-navigation .has-child .wp-block-navigation__submenu-container .wp-block-navigation__submenu-icon {
   margin-right: 1em;
 }
+.wp-block-navigation:not(.has-background) .wp-block-navigation__submenu-container {
+  background-color: var(--wp--preset--color--base);
+  color: var(--wp--preset--color--contrast);
+}
 
 :where(.wp-block-group.has-background) {
   padding: 1em var(--wp--style--root--padding-right) 1em var(--wp--style--root--padding-left);
+}
+
+.wp-block-table td,
+.wp-block-table th {
+  border-color: color-mix(in srgb, currentColor 20%, transparent);
+  padding: 1em;
+}
+.wp-block-table thead {
+  border-bottom: 1px solid;
+}
+.wp-block-table tfoot {
+  border-top: 1px solid;
+}
+.wp-block-table thead,
+.wp-block-table tfoot {
+  background-color: var(--wp--preset--color--tertiary);
+  border-color: color-mix(in srgb, currentColor 20%, transparent);
 }
 
 .is-style-hakoniwa-border-01 {
@@ -1618,7 +1637,7 @@ ul[class*=is-style-hakoniwa-list].is-style-hakoniwa-list-arrow-02 li::before {
   bottom: 0;
   left: 0;
   position: absolute;
-  background-image: linear-gradient(-45deg, #fff 25%, #ebebeb00 25%, #ebebeb00 50%, #fff 50%, #fff 75%, #ebebeb00 75%, #ebebeb00);
+  background-image: linear-gradient(-45deg, transparent 25%, #ebebeb50 25%, #ebebeb50 50%, transparent 50%, transparent 75%, #ebebeb50 75%, #ebebeb50);
   background-size: 4px 4px;
   mix-blend-mode: screen;
 }
@@ -1631,7 +1650,7 @@ ul[class*=is-style-hakoniwa-list].is-style-hakoniwa-list-arrow-02 li::before {
   bottom: 0;
   left: 0;
   position: absolute;
-  background-image: linear-gradient(0deg, #fff 25%, #ebebeb00 25%, #ebebeb00 50%, #fff 50%, #fff 75%, #ebebeb00 75%, #ebebeb00);
+  background-image: linear-gradient(0deg, transparent 25%, #ebebeb00 25%, #ebebeb00 50%, transparent 50%, transparent 75%, #ebebeb00 75%, #ebebeb00);
   background-size: 4px 4px;
   mix-blend-mode: screen;
 }
@@ -1644,7 +1663,7 @@ ul[class*=is-style-hakoniwa-list].is-style-hakoniwa-list-arrow-02 li::before {
   bottom: 0;
   left: 0;
   position: absolute;
-  background-image: linear-gradient(90deg, #fff 25%, #ebebeb00 25%, #ebebeb00 50%, #fff 50%, #fff 75%, #ebebeb00 75%, #ebebeb00);
+  background-image: linear-gradient(90deg, transparent 25%, #ebebeb00 25%, #ebebeb00 50%, transparent 50%, transparent 75%, #ebebeb00 75%, #ebebeb00);
   background-size: 4px 4px;
   mix-blend-mode: screen;
 }
@@ -2061,6 +2080,10 @@ ul[class*=is-style-hakoniwa-list].is-style-hakoniwa-list-arrow-02 li::before {
 [class*=hakoniwa-blocks-header] .wp-block-navigation .wp-block-navigation__submenu-container .wp-block-navigation-item:not(:last-child) {
   border-bottom: 1px solid color-mix(in srgb, currentColor 8%, transparent);
 }
+[class*=hakoniwa-header] .wp-block-navigation a,
+[class*=hakoniwa-blocks-header] .wp-block-navigation a {
+  line-height: 1;
+}
 [class*=hakoniwa-header] .wp-block-navigation .is-menu-open .wp-block-navigation__submenu-container,
 [class*=hakoniwa-blocks-header] .wp-block-navigation .is-menu-open .wp-block-navigation__submenu-container {
   box-shadow: none;
@@ -2107,7 +2130,7 @@ ul[class*=is-style-hakoniwa-list].is-style-hakoniwa-list-arrow-02 li::before {
   }
   [class*=hakoniwa-header] .wp-block-navigation__container .wp-block-navigation__submenu-container .wp-block-navigation-item .wp-block-navigation-item__content,
 [class*=hakoniwa-blocks-header] .wp-block-navigation__container .wp-block-navigation__submenu-container .wp-block-navigation-item .wp-block-navigation-item__content {
-    padding: 0.5em 1em;
+    padding: 1em;
   }
   [class*=hakoniwa-header] .wp-block-navigation .wp-block-page-list,
 [class*=hakoniwa-header] .wp-block-navigation__responsive-close,

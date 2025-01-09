@@ -1,0 +1,22 @@
+.wp-block-table{
+	td,
+	th{
+		border-color:color-mix(in srgb, currentColor 20%, transparent);
+		padding:1em;
+	}
+
+	thead{
+		border-bottom: 1px solid;
+	}
+
+	tfoot{
+		border-top: 1px solid;
+	}
+
+	thead,
+	tfoot{
+	    background-color: var(--wp--preset--color--tertiary);
+		border-color:color-mix(in srgb, currentColor 20%, transparent);		
+	}
+
+}
