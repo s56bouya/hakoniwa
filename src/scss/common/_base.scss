@@ -1,7 +1,7 @@
 /* Common Styles */
 @use "sass:map";
 @use "sass:meta";
-@use "../global/breakpoint";
+@use "./breakpoint";
 
 *{
     box-sizing: border-box;
@@ -186,5 +186,23 @@ h1.wp-block-site-title{
 		&:hover{
 			transform: scale(1.05);
 		}
+	}
+}
+
+@media #{map.get(breakpoint.$breakpoints, "desktop")} {
+	.is-hakoniwa-desktop-hidden{
+		display:none;
+	}
+}
+
+@media #{map.get(breakpoint.$breakpoints, "tablet")} {
+	.is-hakoniwa-tablet-hidden{
+		display:none;
+	}
+}
+
+@media #{map.get(breakpoint.$breakpoints, "smartphone")} {
+	.is-hakoniwa-smartphone-hidden{
+		display:none;
 	}
 }

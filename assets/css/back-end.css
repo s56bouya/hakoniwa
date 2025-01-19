@@ -1,10 +1,14 @@
 /*-----------------------------
 * Responsive Breakpoints
-* 783px + 			Tablet +
-* 0px - 782px       Tablet
-* 601px - 782px     SmartPhone - Tablet
-* 601px +           SmartPhone +
-* 0px - 600px       SmartPhone
+* 961px +           Desktop+
+* 769px +           Tablet+
+* 681px +           SmartPhone+
+* 769px - 960px     Tablet - Desktop
+* 681px - 960px     SmartPhone - Desktop
+* 681px - 768px     SmartPhone - Tablet
+* 0px - 960px       Desktop
+* 0px - 768px       Tablet
+* 0px - 680px       SmartPhone
 ------------------------------*/
 /* Common Styles */
 * {
@@ -161,6 +165,21 @@ h1.wp-block-site-title {
   transform: scale(1.05);
 }
 
+@media only screen and (max-width:960px) {
+  .is-hakoniwa-desktop-hidden {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .is-hakoniwa-tablet-hidden {
+    display: none;
+  }
+}
+@media only screen and (max-width:680px) {
+  .is-hakoniwa-smartphone-hidden {
+    display: none;
+  }
+}
 .has-custom-0-line-height {
   line-height: var(--wp--custom--line-height--0);
 }
@@ -1244,15 +1263,6 @@ nav.wp-block-query-pagination {
   margin-bottom: calc(var(--wp--custom--style--block-gap) / 4);
 }
 
-/*-----------------------------
-* Responsive Breakpoints
-* 1001px +          Desktop+
-* 0px - 1000px      SmartPhone - Tablet - Desktop
-* 769px - 1000px    Tablet - Desktop
-* 0px - 768px       Tablet
-* 681px - 768px     SmartPhone - Tablet
-* 0px - 680px       SmartPhone
-------------------------------*/
 .wp-block-navigation__responsive-container.is-menu-open {
   padding: var(--wp--custom--style--block-gap, 2rem);
 }
@@ -2165,6 +2175,14 @@ ul[class*=is-style-hakoniwa-list].is-style-hakoniwa-list-arrow-02 li::before {
     align-items: flex-start !important;
   }
 }
+/*-----------------------------
+* Responsive Breakpoints
+* 783px + 			Tablet +
+* 0px - 782px       Tablet
+* 601px - 782px     SmartPhone - Tablet
+* 601px +           SmartPhone +
+* 0px - 600px       SmartPhone
+------------------------------*/
 /* Common Styles */
 input[type=button] {
   border: none;
@@ -2209,10 +2227,6 @@ input[type=email]:focus, input[type=number]:focus, input[type=password]:focus, i
   outline-color: var(--wp--preset--color--primary);
   outline-offset: -2px;
 }
-input[type=search] {
-  background-color: transparent;
-  color: var(--wp--preset--color--contrast);
-}
 input[type=search]:focus {
   outline: solid;
   outline-width: 2px;
@@ -2249,6 +2263,8 @@ input[type=checkbox]:checked:before, input[type=radio]:checked:before {
           mask-position: center;
   width: 100%;
   height: 100%;
+  left: 0;
+  margin: 0;
 }
 input[type=radio] {
   border-radius: 50%;
@@ -2280,10 +2296,6 @@ select:focus {
   outline-color: var(--wp--preset--color--primary);
   outline-width: 2px;
   outline-offset: -2px;
-}
-
-fieldset {
-  border: 1px solid color-mix(in srgb, currentColor 30%, transparent);
 }
 
 legend {

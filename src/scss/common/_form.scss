@@ -62,8 +62,6 @@ input{
 	}
 
 	&[type="search"]{
-		background-color:transparent;
-		color:var(--wp--preset--color--contrast);
 
 		&:focus{
 			outline: solid;
@@ -99,6 +97,8 @@ input{
 				mask-position: center;
 				width: 100%;
 			    height: 100%;
+				left:0;
+				margin:0;
 			}
 		}
 
@@ -151,10 +151,6 @@ option{
 
 label{
 
-}
-
-fieldset{
-	border: 1px solid color-mix(in srgb, currentColor 30%, transparent);
 }
 
 legend{
