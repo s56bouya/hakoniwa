@@ -191,18 +191,18 @@ h1.wp-block-site-title{
 
 @media #{map.get(breakpoint.$breakpoints, "desktop")} {
 	.is-hakoniwa-desktop-hidden{
-		display:none;
+		display:none !important;
 	}
 }
 
 @media #{map.get(breakpoint.$breakpoints, "tablet")} {
 	.is-hakoniwa-tablet-hidden{
-		display:none;
+		display:none !important;
 	}
 }
 
 @media #{map.get(breakpoint.$breakpoints, "smartphone")} {
 	.is-hakoniwa-smartphone-hidden{
-		display:none;
+		display:none !important;
 	}
 }

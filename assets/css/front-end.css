@@ -167,17 +167,17 @@ h1.wp-block-site-title {
 
 @media only screen and (max-width:960px) {
   .is-hakoniwa-desktop-hidden {
-    display: none;
+    display: none !important;
   }
 }
 @media only screen and (max-width: 768px) {
   .is-hakoniwa-tablet-hidden {
-    display: none;
+    display: none !important;
   }
 }
 @media only screen and (max-width:680px) {
   .is-hakoniwa-smartphone-hidden {
-    display: none;
+    display: none !important;
   }
 }
 .has-custom-0-line-height {
