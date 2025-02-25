@@ -10,6 +10,7 @@
 		&[type="button"]{
 			border:none;
 			padding: 0.75em 1.5em;
+			letter-spacing: 0.07rem;
 		}
 	
 		&[type="submit"]{
@@ -19,7 +20,8 @@
 			cursor: pointer;
 			padding: 0.75em 1.5em;
 			transition: color .3s ease,background-color .3s ease,border-color;
-	
+			letter-spacing: 0.07rem;
+
 			&:hover{
 				background-color: var(--wp--preset--color--secondary);
 				border:1px solid var(--wp--preset--color--secondary);	
@@ -32,6 +34,7 @@
 			cursor: pointer;
 			color:var(--wp--preset--color--contranst);
 			padding: 0.75em 1.5em;
+			letter-spacing: 0.07rem;
 		}
 	
 		&[type="file"]{
@@ -53,6 +56,7 @@
 			padding: 0 1em;
 			min-height: 2.75em;
 			width: 100%;
+			letter-spacing: 0.07rem;
 	
 			&:focus{
 				outline: solid;
@@ -81,7 +85,7 @@
 			width: 20px;
 			height: 20px;
 			margin: 0 0.25rem 0 0;
-			border: 1px solid color-mix(in srgb, var(--wp--preset--color--contrast) 70%, transparent);
+			border: 1px solid color-mix(in srgb, var(--wp--preset--color--contrast) 30%, transparent);
 			outline: 0;
 			vertical-align: middle;
 			top: -2px;
@@ -125,7 +129,8 @@
 		width: 100%;
 		min-height: 7em;
 		resize: vertical;
-	
+		letter-spacing: 0.07rem;
+
 		&:focus{
 			outline: solid;
 			outline-color: var(--wp--preset--color--primary);
@@ -138,6 +143,7 @@
 		font-size: var(--wp--preset--font-size--2-xs);
 		border:1px solid color-mix(in srgb, currentColor 30%, transparent);
 		height: 2.75em;
+		letter-spacing: 0.07rem;
 	
 		&:focus{
 			outline: solid;
@@ -150,13 +156,14 @@
 	select{
 		cursor: pointer;
 		appearance: none;
-		background: #fff url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M5%206l5%205%205-5%202%201-7%207-7-7%202-1z%22%20fill%3D%22%23555%22%2F%3E%3C%2Fsvg%3E) no-repeat right 1em top 55%;
+		background: transparent url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M5%206l5%205%205-5%202%201-7%207-7-7%202-1z%22%20fill%3D%22%23555%22%2F%3E%3C%2Fsvg%3E) no-repeat right 1em top 55%;
 		background-size: 16px 16px;
 		box-shadow: none;
 		min-height: 30px;
-		padding: 0 1em;
+		padding: 0 3em 0 1em;
 		vertical-align: middle;
 		min-width: 10em;
+		color: currentColor;
 	}
 	
 	label{

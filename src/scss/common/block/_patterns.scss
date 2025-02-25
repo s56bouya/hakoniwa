@@ -63,12 +63,12 @@
 				cursor: pointer;
 
 				.wp-block-navigation-item__content{
-					padding: 1.5em 1em;
+					padding: 1.5em 0;
 				}
 
 				&.has-child{
 					.wp-block-navigation-item__content{
-						padding: 1.5em 0.5em 1.5em 1em;
+//						padding: 1.5em 0.5em 1.5em 1em;
 					}
 				}
 			}
@@ -91,7 +91,7 @@
 		.wp-block-navigation__responsive-container,
 		.wp-block-navigation__responsive-container-content,
 		.wp-block-navigation__responsive-dialog{
-			gap:0;
+//			gap:0;
 		}
 
 		.wp-block-navigation-item.open-on-click .wp-block-navigation-submenu__toggle+.wp-block-navigation__submenu-icon{

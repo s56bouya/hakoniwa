@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AnimaGate, Inc.\n"
-"POT-Creation-Date: 2024-07-29 08:25+0900\n"
-"PO-Revision-Date: 2024-07-29 08:25+0900\n"
+"POT-Creation-Date: 2025-02-06 11:38+0900\n"
+"PO-Revision-Date: 2025-02-06 11:38+0900\n"
 "Last-Translator: \n"
 "Language-Team: Tetsuya Imamura <wpdev@animagate.com>\n"
 "Language: ja\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.4.4\n"
+"X-Generator: Poedit 3.5\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html__;esc_attr__;esc_attr_e;_n;"
 "_nx;esc_html_x:1,2c;esc_attr_x:1,2c\n"
@@ -25,11 +25,11 @@ msgstr ""
 "検索結果が見つかりませんでした。下の検索フォームからもう一度試してみてくださ"
 "い。"
 
-#: inc/blocks/styles/background.php:5
+#: inc/blocks/styles/background.php:5 inc/blocks/styles/cover.php:10
 msgid "Stripe"
 msgstr "ストライプ"
 
-#: inc/blocks/styles/background.php:9
+#: inc/blocks/styles/background.php:9 inc/blocks/styles/cover.php:6
 msgid "Dot"
 msgstr "ドット"
 
@@ -95,6 +95,18 @@ msgstr ""
 
 #: inc/blocks/styles/button.php:14
 msgid "Tertiary Outline"
+msgstr ""
+
+#: inc/blocks/styles/cover.php:14
+msgid "Stripe(vertical)"
+msgstr ""
+
+#: inc/blocks/styles/cover.php:18
+msgid "Stripe(horizontal)"
+msgstr ""
+
+#: inc/blocks/styles/cover.php:22
+msgid "Zoom"
 msgstr ""
 
 #: inc/blocks/styles/heading.php:6
@@ -239,6 +251,7 @@ msgstr "プロフィール"
 
 #: inc/init/class-settings.php:70 patterns/post-author-profile-01.php:15
 #: patterns/post-author-profile-02.php:17
+#: patterns/sidebar-author-profile.php:17
 msgid "Author"
 msgstr "著者"
 
@@ -251,7 +264,7 @@ msgstr "サイドバー"
 msgid "Welcome and thanks for choosing %1$s theme."
 msgstr "%1$s をご利用いただきありがとうございます。"
 
-#: inc/init/class-theme-about.php:44
+#: inc/init/class-theme-about.php:44 inc/init/class-theme-about.php:88
 msgid "Theme support page"
 msgstr "テーマ サポートページ"
 
@@ -278,8 +291,8 @@ msgid ""
 "email, or other content that prompts the reader or viewer to take a specific "
 "action."
 msgstr ""
-"Call To Action（CTA）は、広告、ウェブサイト、メールなどのコンテンツで読者や視"
-"聴者に対して特定の行動を促す文句や要素のことを指します。"
+"Call To Action（CTA:行動喚起）は、広告、ウェブサイト、メールなどのコンテンツ"
+"で読者や視聴者に対して特定の行動を促す文句や要素のことを指します。"
 
 #: patterns/call-to-action-01.php:23 patterns/call-to-action-02.php:24
 msgctxt "Pattern:Call To Action"
@@ -289,9 +302,9 @@ msgid ""
 "effectively, CTAs are designed to make it easy for visitors to take the next "
 "step."
 msgstr ""
-"例えば、「今すぐ購入する」「無料トライアルを始める」「お問合せはこちら」など"
-"のアクションを起こすよう促すフレーズやボタンが CTA です。CTA を効果的に使用す"
-"ることで、訪問者が次のステップを取りやすいように設計されています。"
+"例えば、「今すぐ購入する」「無料トライアルを始める」「お問合せをする」などの"
+"アクションを起こすよう促すフレーズやボタンが CTA です。CTA を効果的に使用する"
+"ことで、訪問者が次のステップを取りやすいように設計されています。"
 
 #: patterns/call-to-action-01.php:26 patterns/call-to-action-02.php:27
 msgctxt "Pattern:Call To Action"
@@ -396,6 +409,10 @@ msgctxt "Pattern:Media Text 01"
 msgid "Read more"
 msgstr "もっと見る"
 
+#~ msgctxt "Pattern:Call To Action"
+#~ msgid "Call To Action"
+#~ msgstr "行動喚起"
+
 #~ msgid "[Hakoniwa]:Content only"
 #~ msgstr "[Hakoniwa]:本文のみ"
 
@@ -439,9 +456,7 @@ msgstr "もっと見る"
 #~ "や視聴者に対して特定の行動を促す文句や要素のことを指します。例えば、「今す"
 #~ "ぐ購入する」、「無料トライアルを始める」などのアクションを起こすよう促すフ"
 #~ "レーズやボタンが CTA です。CTA を効果的に使用することで、訪問者が次のス"
-#~ "テップを取りやすいように設計されています。CTA を配置する目的は、ユーザーに"
-#~ "特定の行動を起こさせることであり、マーケティングやコンバージョンの観点から"
-#~ "重要な役割を果たします。"
+#~ "テップを取りやすいように設計されています。"
 
 #~ msgctxt "Pattern:Media Text 01"
 #~ msgid ""
