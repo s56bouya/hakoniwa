@@ -6,4 +6,11 @@
     .wp-block-post-featured-image{
         margin-bottom:0.5em;
     }
+
+	.wp-block-post-template{
+		a{
+			text-decoration: none;
+			color: currentColor;
+		}	
+	}
 }

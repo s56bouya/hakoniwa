@@ -15,36 +15,88 @@
 
 			.has-child{
 				.wp-block-navigation__submenu-container{
-					padding:0 0 0 1rem;
+					width:100%;
+					padding:0;
 				}
 			}
+		}
+
+		.wp-block-navigation__container,
+		.wp-block-navigation__submenu-container{
+
+			width:100%;
+			max-width:400px;
+			margin: auto;
+			gap:0 !important;
+
+			.wp-block-navigation-item{
+				width:inherit;				
+			}
+
+			// button, a
+			.wp-block-navigation-item__content{
+				width:inherit;
+				padding:0.75em 0;
+
+				// 個別のナビゲーション
+				.wp-block-navigation-item__label{
+					display: block;
+				}
+			}
+
 		}
 
 		.wp-block-navigation__container{
 			margin: auto;
+
+			// 第一階層で下の階層がある場合
+			.wp-block-navigation-item{
+				border-bottom: 1px solid color-mix(in srgb, currentColor 30%, transparent);
+
+				&.has-child{
+					border-bottom:none;
+
+					.wp-block-navigation__submenu-container{
+						.wp-block-navigation-submenu{
+							border-top: 1px solid color-mix(in srgb, currentColor 30%, transparent);		
+						}
+	
+					}
+		
+				}
+			}
+
 		}
 
 		.wp-block-navigation__submenu-container{
-			li{
-				a::before{
-					content: '-';
-					display: inline-block;
-					margin-right:0.25em;
-					opacity: 0.5;
+			.wp-block-navigation-item__content{
+				padding-left:1em;
+			}
+
+			.wp-block-navigation__submenu-container{
+
+				.wp-block-navigation-item__content{
+					padding-left:2em;
 				}
 			}
 		}
 
-		.wp-block-navigation-item{
-			&.has-child{
-				&.open-on-hover-click{
-					&.wp-block-navigation-submenu,
-					&.wp-block-pages-list__item{
-						gap:0.75rem;
+
+		.wp-block-navigation-submenu{
+
+			.wp-block-navigation-item{
+
+				.wp-block-navigation-item__content{
+					&::before{
+						content: '-';
+						display: inline-block;
+						margin-right:0.25em;
+						opacity: 0.5;
 					}
 				}
 			}
 		}
+
 	}
 }
 

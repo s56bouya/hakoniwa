@@ -47,22 +47,12 @@ pre{
 
 button{
     cursor: pointer;
+	letter-spacing: 0.07rem;
 }
 
 main{
 	&.wp-block-group{
 		margin:0;
-	}
-}
-
-.home{
-	.wp-block-query{
-		.wp-block-post-template{
-			a{
-				text-decoration: none;
-				color: currentColor;
-			}	
-		}
 	}
 }
 
