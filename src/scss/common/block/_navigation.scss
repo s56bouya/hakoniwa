@@ -22,7 +22,8 @@
 		}
 
 		.wp-block-navigation__container,
-		.wp-block-navigation__submenu-container{
+		.wp-block-navigation__submenu-container,
+		.wp-block-page-list{
 
 			width:100%;
 			max-width:400px;
@@ -57,10 +58,7 @@
 					border-bottom:none;
 
 					.wp-block-navigation__submenu-container{
-						.wp-block-navigation-submenu{
-							border-top: 1px solid color-mix(in srgb, currentColor 30%, transparent);		
-						}
-	
+						border-top: 1px solid color-mix(in srgb, currentColor 30%, transparent);	
 					}
 		
 				}
@@ -74,15 +72,10 @@
 			}
 
 			.wp-block-navigation__submenu-container{
-
 				.wp-block-navigation-item__content{
 					padding-left:2em;
 				}
 			}
-		}
-
-
-		.wp-block-navigation-submenu{
 
 			.wp-block-navigation-item{
 
