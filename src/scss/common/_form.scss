@@ -23,8 +23,8 @@
 			letter-spacing: 0.07rem;
 
 			&:hover{
-				background-color: var(--wp--preset--color--secondary);
-				border:1px solid var(--wp--preset--color--secondary);	
+				background-color: color-mix(in srgb, var(--wp--preset--color--primary) 80%, #222);
+				border:1px solid color-mix(in srgb, var(--wp--preset--color--primary) 80%, #222);	
 			}
 		}
 	
