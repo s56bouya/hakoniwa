@@ -12,7 +12,7 @@ $sizes: (
 );
 
 @each $key, $size in $sizes {
-    @if $size == 1 {
+    @if $size == 8 {
         $selector: ".backdrop-blur";
     }
 
@@ -26,7 +26,7 @@ $sizes: (
 }
 
 @each $key, $size in $sizes {
-    @if $size == 1 {
+    @if $size == 8 {
         $selector: "backdrop-blur:hover";
     }
 

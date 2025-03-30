@@ -1,0 +1,47 @@
+/* Common Styles */
+@use "sass:map";
+@use "sass:meta";
+@use "./breakpoint";
+
+$prefix: "is-hakoniwa";
+
+$styles: (
+    flex-row:row,
+    flex-row-reverse:row-reverse,
+    flex-col:column,
+    flex-col-reverse:column-reverse
+);
+
+@each $key, $style in $styles {
+    .#{$key} {
+        flex-direction: #{$style} !important;
+    }
+}
+
+@media #{map.get(breakpoint.$breakpoints, "desktop")} {
+
+	@each $key, $style in $styles {
+		.#{$prefix}-desktop-#{$key} {
+			flex-direction: #{$style} !important;
+		}
+	}
+}
+
+@media #{map.get(breakpoint.$breakpoints, "tablet")} {
+
+	@each $key, $style in $styles {
+		.#{$prefix}-tablet-#{$key} {
+			flex-direction: #{$style} !important;
+		}
+	}
+}
+
+@media #{map.get(breakpoint.$breakpoints, "smartphone")} {
+
+	@each $key, $style in $styles {
+		.#{$prefix}-smartphone-#{$key} {
+			flex-direction: #{$style} !important;
+		}
+	}
+
+}
