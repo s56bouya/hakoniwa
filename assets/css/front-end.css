@@ -461,7 +461,7 @@ h1.wp-block-site-title {
           backdrop-filter: blur(4px);
 }
 
-.backdrop-blur- {
+.backdrop-blur {
   -webkit-backdrop-filter: blur(8px);
           backdrop-filter: blur(8px);
 }
@@ -501,7 +501,7 @@ h1.wp-block-site-title {
           backdrop-filter: blur(4px);
 }
 
-.hover\:backdrop-blur-:hover {
+.hover\:backdrop-blur:hover {
   -webkit-backdrop-filter: blur(8px);
           backdrop-filter: blur(8px);
 }
@@ -2378,6 +2378,74 @@ ul[class*=is-style-hakoniwa-list].is-style-hakoniwa-list-arrow-02 li::before {
   border: 1px solid color-mix(in srgb, currentColor 30%, transparent);
 }
 
+/* Common Styles */
+.flex-row {
+  flex-direction: row !important;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse !important;
+}
+
+.flex-col {
+  flex-direction: column !important;
+}
+
+.flex-col-reverse {
+  flex-direction: column-reverse !important;
+}
+
+@media only screen and (max-width:960px) {
+  .is-hakoniwa-desktop-flex-row {
+    flex-direction: row !important;
+  }
+
+  .is-hakoniwa-desktop-flex-row-reverse {
+    flex-direction: row-reverse !important;
+  }
+
+  .is-hakoniwa-desktop-flex-col {
+    flex-direction: column !important;
+  }
+
+  .is-hakoniwa-desktop-flex-col-reverse {
+    flex-direction: column-reverse !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .is-hakoniwa-tablet-flex-row {
+    flex-direction: row !important;
+  }
+
+  .is-hakoniwa-tablet-flex-row-reverse {
+    flex-direction: row-reverse !important;
+  }
+
+  .is-hakoniwa-tablet-flex-col {
+    flex-direction: column !important;
+  }
+
+  .is-hakoniwa-tablet-flex-col-reverse {
+    flex-direction: column-reverse !important;
+  }
+}
+@media only screen and (max-width:680px) {
+  .is-hakoniwa-smartphone-flex-row {
+    flex-direction: row !important;
+  }
+
+  .is-hakoniwa-smartphone-flex-row-reverse {
+    flex-direction: row-reverse !important;
+  }
+
+  .is-hakoniwa-smartphone-flex-col {
+    flex-direction: column !important;
+  }
+
+  .is-hakoniwa-smartphone-flex-col-reverse {
+    flex-direction: column-reverse !important;
+  }
+}
 nav.wp-block-navigation ul.wp-block-page-list li, nav.wp-block-navigation ol.wp-block-page-list li {
   margin-bottom: 0;
 }
