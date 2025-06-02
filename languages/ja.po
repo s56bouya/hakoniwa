@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AnimaGate, Inc.\n"
-"POT-Creation-Date: 2025-02-06 11:38+0900\n"
-"PO-Revision-Date: 2025-02-06 11:38+0900\n"
+"POT-Creation-Date: 2025-06-01 20:54+0900\n"
+"PO-Revision-Date: 2025-06-01 20:59+0900\n"
 "Last-Translator: \n"
 "Language-Team: Tetsuya Imamura <wpdev@animagate.com>\n"
 "Language: ja\n"
@@ -10,10 +10,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.5\n"
+"X-Generator: Poedit 3.6\n"
 "X-Poedit-Basepath: ..\n"
-"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html__;esc_attr__;esc_attr_e;_n;"
-"_nx;esc_html_x:1,2c;esc_attr_x:1,2c\n"
+"X-Poedit-KeywordsList: "
+"__;_e;esc_html_e;esc_html__;esc_attr__;esc_attr_e;_n;_nx;esc_html_x:1,2c;esc_attr_x:1,2c\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: node_modules\n"
 
@@ -259,30 +259,169 @@ msgstr "著者"
 msgid "Sidebar"
 msgstr "サイドバー"
 
-#: inc/init/class-theme-about.php:43
+#: inc/init/class-theme-about.php:44
 #, php-format
-msgid "Welcome and thanks for choosing %1$s theme."
-msgstr "%1$s をご利用いただきありがとうございます。"
+msgid ""
+"Welcome and thanks for choosing %1$s theme. See the support page for tips on "
+"how to get the most out of the theme."
+msgstr ""
+"%1$s をお選びいただきありがとうございます。テーマを最大限に活用するコツはサ"
+"ポートページをご覧ください。"
 
-#: inc/init/class-theme-about.php:44 inc/init/class-theme-about.php:88
+#: inc/init/class-theme-about.php:45
 msgid "Theme support page"
 msgstr "テーマ サポートページ"
 
-#: inc/init/class-theme-about.php:62
+#: inc/init/class-theme-about.php:63
 msgid "About Theme"
-msgstr ""
+msgstr "テーマについて"
 
-#: inc/init/class-theme-about.php:81
+#: inc/init/class-theme-about.php:82
 #, php-format
 msgid ""
 "%1$s is a block theme that allows you to use blocks anywhere on your website."
 msgstr ""
 "%1$s は、ウェブサイトのあらゆる場所でブロックが使用できるブロックテーマです。"
 
-#: inc/init/class-theme-about.php:86
+#: inc/init/class-theme-about.php:91
 #, php-format
 msgid "Welcome to %1$1s - Version %2$2s"
 msgstr ""
+
+#: inc/init/class-theme-about.php:94
+msgid "Plugins: Maximize the potential of your theme"
+msgstr "プラグインでテーマのポテンシャルを最大限に引き出そう"
+
+#: inc/init/class-theme-about.php:99
+msgid "20+ high-quality, powerful blocks"
+msgstr "20 種類以上の高品質で強力なブロック"
+
+#: inc/init/class-theme-about.php:103 inc/init/class-theme-about.php:119
+msgid "installed"
+msgstr "インストール済み"
+
+#: inc/init/class-theme-about.php:107 inc/init/class-theme-about.php:123
+msgid "Install Plugin"
+msgstr "プラグインをインストール"
+
+#: inc/init/class-theme-about.php:115
+msgid "All-in-one plugins” with all the functions you need to run your website"
+msgstr "ウェブサイト運営に必要な機能が搭載された「オールインワン・プラグイン」"
+
+#: inc/init/class-theme-about.php:129
+msgid "Why Choose Hakoniwa?"
+msgstr "Hakoniwa が選ばれる理由は？"
+
+#: inc/init/class-theme-about.php:133
+msgid "Simple and modern design"
+msgstr "シンプルでモダンなデザイン"
+
+#: inc/init/class-theme-about.php:137
+msgid "Mobile Friendly"
+msgstr "モバイルフレンドリー"
+
+#: inc/init/class-theme-about.php:141
+msgid "Fast page speed"
+msgstr "高速なページ表示速度"
+
+#: inc/init/class-theme-about.php:145
+msgid "SEO Ready"
+msgstr "SEO に配慮したコード設計"
+
+#: inc/init/class-theme-about.php:149
+msgid "Full Site Editing support"
+msgstr "フルサイト編集対応"
+
+#: inc/init/class-theme-about.php:153
+msgid "Abundant Patterns"
+msgstr "豊富なパターン"
+
+#: inc/init/class-theme-about.php:157
+msgid "Translation Ready"
+msgstr "翻訳対応"
+
+#: inc/init/class-theme-about.php:160
+msgid "Customize Manual"
+msgstr "カスタマイズ マニュアル"
+
+#: inc/init/class-theme-about.php:163
+msgid "What is a site editor?"
+msgstr "サイトエディターとは？"
+
+#: inc/init/class-theme-about.php:164 inc/init/class-theme-about.php:168
+#: inc/init/class-theme-about.php:172 inc/init/class-theme-about.php:176
+#: inc/init/class-theme-about.php:180 inc/init/class-theme-about.php:184
+#: inc/init/class-theme-about.php:188 inc/init/class-theme-about.php:192
+#: inc/init/class-theme-about.php:196
+msgid "View"
+msgstr "開く"
+
+#: inc/init/class-theme-about.php:167
+msgid "What is a template?"
+msgstr "テンプレートとは？"
+
+#: inc/init/class-theme-about.php:171
+msgid "What are template parts?"
+msgstr "テンプレートパーツとは？"
+
+#: inc/init/class-theme-about.php:175
+msgid "Customize Top Page"
+msgstr "トップページをカスタマイズ"
+
+#: inc/init/class-theme-about.php:179
+msgid "How to Use Patterns"
+msgstr "パターンの使い方"
+
+#: inc/init/class-theme-about.php:183
+msgid "Change Header"
+msgstr "ヘッダーの変更"
+
+#: inc/init/class-theme-about.php:187
+msgid "Change Footer"
+msgstr "フッターの変更"
+
+#: inc/init/class-theme-about.php:191
+msgid "Add a sidebar to the page"
+msgstr "ページにサイドバーをつける"
+
+#: inc/init/class-theme-about.php:195
+msgid "How do I undo a customization?"
+msgstr "カスタマイズを元に戻すには？"
+
+#: inc/init/class-theme-about.php:205
+msgid ""
+"Streamline content and page creation in web production, including corporate "
+"sites, branding sites, and landing pages (LPs)! We carefully select and "
+"distribute high-quality, highly practical “ready-to-use patterns”."
+msgstr ""
+"コーポレートサイト、ブランディングサイト、LP（ランディングページ）など、ウェ"
+"ブ制作におけるコンテンツやページ作成を効率化！高品質で実用性の高い「すぐに使"
+"えるパターン」を厳選して配布しています。"
+
+#: inc/init/class-theme-about.php:210
+msgid "Support & Forum"
+msgstr "サポート＆フォーラム"
+
+#: inc/init/class-theme-about.php:211
+msgid "Join the Discord user community for support and forums."
+msgstr ""
+"Discord のユーザーコミュニティに参加して、サポートやフォーラムを利用してくだ"
+"さい。"
+
+#: inc/init/class-theme-about.php:212
+msgid "Join Discord"
+msgstr "Discord に参加する"
+
+#: inc/init/class-theme-about.php:250
+msgid "Follow AnimaGate, Inc."
+msgstr "株式会社 AnimaGate をフォローする"
+
+#: inc/init/class-theme-about.php:251
+msgid ""
+"The latest product news and additional features are distributed through our "
+"official account."
+msgstr ""
+"製品の最新ニュースや追加機能などの情報を公式アカウントで配信しています。"
 
 #: patterns/call-to-action-01.php:20 patterns/call-to-action-02.php:21
 msgctxt "Pattern:Call To Action"
@@ -408,6 +547,10 @@ msgstr ""
 msgctxt "Pattern:Media Text 01"
 msgid "Read more"
 msgstr "もっと見る"
+
+#, php-format
+#~ msgid "Welcome and thanks for choosing %1$s theme."
+#~ msgstr "%1$s をご利用いただきありがとうございます。"
 
 #~ msgctxt "Pattern:Call To Action"
 #~ msgid "Call To Action"

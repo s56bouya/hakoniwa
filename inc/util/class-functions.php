@@ -56,4 +56,23 @@ class Functions {
 
 	}
 
+	/**
+	 * Plugin Active Check
+	 */
+	public static function is_plugin_active( $plugin_file = '' ) {
+		if ( ! function_exists( 'get_plugins' ) ) {
+			require_once ABSPATH . 'wp-admin/includes/plugin.php';
+		}
+
+		// インストールされているプラグイン一覧を取得
+		$all_plugins = get_plugins();
+
+		// チェック
+		if ( array_key_exists( $plugin_file, $all_plugins ) ) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
 }
