@@ -21,7 +21,7 @@
     "watch:css:front-end": "watch 'run-s css:scss:front-end css:postcss:front-end css:postcss:min:front-end copy:css' ./src/scss",
     "watch:css:back-end": "watch 'run-s css:scss:back-end css:postcss:back-end css:postcss:min:back-end copy:css' ./src/scss",
     "watch:js": "watch 'run-s js:minify copy:js' ./src/js",
-    "watch:css-all": "run-p watch:css:front-end watch:css:back-end",
+    "watch:css-all": "run-p watch:css:front-end watch:css:back-end watch:css:admin",
     "lint:js": "npx eslint './src/js/**/*.js'",
     "lint-fix:js": "npx eslint './src/js/**/*.js' --fix",
     "lint:scss": "npx stylelint './src/scss/**/*.scss'",

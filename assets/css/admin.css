@@ -1,0 +1,113 @@
+a[href="themes.php?page=about"] {
+  color: #111 !important;
+  background: #eee !important;
+}
+
+.hakoniwa-about-wrap {
+  margin: 2em 20px 2em 0;
+}
+.hakoniwa-about-wrap .cols {
+  display: flex;
+  gap: 2em;
+  margin-bottom: 2em;
+}
+.hakoniwa-about-wrap .left-col {
+  flex-basis: 70%;
+  background: #fff;
+  padding: 2em;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+}
+.hakoniwa-about-wrap .right-col {
+  flex-basis: 30%;
+  display: flex;
+  gap: 2em;
+  flex-direction: column;
+}
+.hakoniwa-about-wrap .about-main-visual {
+  background: #fff;
+  padding: 50px 40px;
+  border-radius: 4px;
+  margin-bottom: 2em;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.hakoniwa-about-wrap .about-main-visual h1 {
+  color: currentColor;
+  margin: 0 0 1rem;
+  line-height: normal;
+}
+.hakoniwa-about-wrap .about-main-visual img {
+  width: 8em;
+  height: auto;
+  margin-bottom: 2em;
+}
+.hakoniwa-about-wrap .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2em;
+  margin-bottom: 3em;
+}
+.hakoniwa-about-wrap .cards svg {
+  width: 3em;
+  height: auto;
+}
+.hakoniwa-about-wrap .cards svg.official {
+  width: 5em;
+}
+.hakoniwa-about-wrap .cards .installed {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  justify-content: center;
+  color: #3ba74a;
+  font-weight: bold;
+}
+.hakoniwa-about-wrap .cards .installed svg {
+  width: inherit;
+  height: auto;
+}
+.hakoniwa-about-wrap .hakoniwa-about-card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 2em;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+.hakoniwa-about-wrap .hakoniwa-about-card.featured {
+  background: #19a1de;
+  border-color: #6f96bf;
+  color: #fff;
+}
+.hakoniwa-about-wrap .hakoniwa-about-card.featured h2, .hakoniwa-about-wrap .hakoniwa-about-card.featured h3 {
+  color: currentColor;
+}
+.hakoniwa-about-wrap .hakoniwa-about-card.featured img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+.hakoniwa-about-wrap .hakoniwa-about-card ul a {
+  color: currentColor;
+  display: inline-block;
+}
+.hakoniwa-about-wrap .hakoniwa-about-card ul svg {
+  width: 2em;
+}
+.hakoniwa-about-wrap .button-hakoniwa-secondary {
+  color: #fff;
+  background: #111;
+  border: #111 1px solid;
+}
+.hakoniwa-about-wrap .button-hakoniwa-secondary:hover, .hakoniwa-about-wrap .button-hakoniwa-secondary:active, .hakoniwa-about-wrap .button-hakoniwa-secondary:focus {
+  background: #333;
+  color: #fff;
+}
+.hakoniwa-about-wrap .main-title {
+  margin-top: 0;
+  font-size: 1.5em;
+}

@@ -1,3 +1,11 @@
+@use "sass:map";
+@use "sass:meta";
+@use "../global/breakpoint";
+
+
+//変数
+$sm:'sm\\:';
+$md:'md\\:';
 
 @mixin margin( $size : '' ) {
 	// margin auto
@@ -31,7 +39,7 @@
 		margin-bottom: auto;
 	}
 
-	$array: 0.5,1,1.5,2,2.5,3,3.5,4,5,6,7,8,9,10,11,12,14,16,20,24,28,32,36,40,44,48,52,56,60,64,68,72,80,96;
+	$array: 0,0.5,1,1.5,2,2.5,3,3.5,4,5,6,7,8,9,10,11,12,14,16,20,24,28,32,36,40,44,48,52,56,60,64,68,72,80,96;
 
 	@each $val in $array {
 		$num :$val;
@@ -125,5 +133,586 @@
 
 }
 
+@mixin width( $size : '' ) {
+	// Width
+	.#{ $size }w-full{
+		width:100%;
+	}
+
+	.#{ $size }w-auto{
+		width:auto;
+	}
+
+	@for $i from 0 through 10 {
+		.#{ $size }w-#{ $i } {
+			width: $i * 0.25rem;
+		}
+	}
+
+	@for $i from 1 through 1 {
+		.#{ $size }w-#{ $i }\/2 {
+			width: calc( 100% * #{ $i } / 2 );
+		}
+	}
+
+	@for $i from 1 through 2 {
+		.#{ $size }w-#{ $i }\/3 {
+			width: calc( 100% * #{ $i } / 3 );
+		}
+	}
+
+	@for $i from 1 through 3 {
+		.#{ $size }w-#{ $i }\/4 {
+			width: calc( 100% * #{ $i } / 4 );
+		}
+	}
+
+	@for $i from 1 through 4 {
+		.#{ $size }w-#{ $i }\/5 {
+			width: calc( 100% * #{ $i } / 5 );
+		}
+	}
+
+	@for $i from 1 through 5 {
+		.#{ $size }w-#{ $i }\/6 {
+			width: calc( 100% * #{ $i } / 6 );
+		}
+	}
+
+	@for $i from 1 through 11 {
+		.#{ $size }w-#{ $i }\/12 {
+			width: calc( 100% * #{ $i } / 12 );
+		}
+	}
+}
+
+@mixin height( $size : '' ) {
+	// Height
+	.#{ $size }h-full{
+		height:100%;
+	}
+
+	.#{ $size }h-auto{
+		height:auto;
+	}
+
+	@for $i from 0 through 10 {
+		.#{ $size }h-#{ $i } {
+			height: $i * 0.25rem;
+		}
+	}
+
+	@for $i from 1 through 1 {
+		.#{ $size }h-#{ $i }\/2 {
+			height: calc( 100% * #{ $i } / 2 );
+		}
+	}
+
+	@for $i from 1 through 2 {
+		.#{ $size }h-#{ $i }\/3 {
+			height: calc( 100% * #{ $i } / 3 );
+		}
+	}
+
+	@for $i from 1 through 3 {
+		.#{ $size }h-#{ $i }\/4 {
+			height: calc( 100% * #{ $i } / 4 );
+		}
+	}
+
+	@for $i from 1 through 4 {
+		.#{ $size }h-#{ $i }\/5 {
+			height: calc( 100% * #{ $i } / 5 );
+		}
+	}
+
+	@for $i from 1 through 5 {
+		.#{ $size }h-#{ $i }\/6 {
+			height: calc( 100% * #{ $i } / 6 );
+		}
+	}
+
+	@for $i from 1 through 11 {
+		.#{ $size }h-#{ $i }\/12 {
+			height: calc( 100% * #{ $i } / 12 );
+		}
+	}
+}
+
+@mixin position( $size : '' ) {
+
+	.#{ $size }static{
+		position:static;
+	}
+	
+	.#{ $size }fixed{
+		position:fixed;
+	}
+	
+	.#{ $size }absolute{
+		position:absolute;
+	}
+	
+	.#{ $size }relative{
+		position:relative;
+	}
+	
+	.#{ $size }sticky{
+		position:sticky;
+	}
+}
+
+@mixin top( $size : '' ) {
+	// Top
+	.#{ $size }top-full{
+		top: 100%;
+	}
+
+	.#{ $size }top-auto{
+		top: auto;
+	}
+	
+	.#{ $size }top-px{
+		top: 1px;
+	}
+
+	@for $i from 0 through 10 {
+		.#{ $size }top-#{ $i } {
+			top: $i * 0.25rem;
+		}
+	}
+
+	@for $i from 0 through 10 {
+		.#{ $size }-top-#{ $i } {
+			top: -$i * 0.25rem;
+		}
+	}
+
+	@for $i from 1 through 1 {
+		.#{ $size }top-#{ $i }\/2 {
+			top: calc( 100% * #{ $i } / 2 );
+		}
+	}
+
+	@for $i from 1 through 1 {
+		.#{ $size }-top-#{ $i }\/2 {
+			top: calc( -100% * #{ $i } / 2 );
+		}
+	}
+
+	@for $i from 1 through 2 {
+		.#{ $size }top-#{ $i }\/3 {
+			top: calc( 100% * #{ $i } / 3 );
+		}
+	}
+
+	@for $i from 1 through 2 {
+		.#{ $size }-top-#{ $i }\/3 {
+			top: calc( -100% * #{ $i } / 3 );
+		}
+	}
+
+	@for $i from 1 through 3 {
+		.#{ $size }top-#{ $i }\/4 {
+			top: calc( 100% * #{ $i } / 4 );
+		}
+	}
+
+	@for $i from 1 through 3 {
+		.#{ $size }-top-#{ $i }\/4 {
+			top: calc( -100% * #{ $i } / 4 );
+		}
+	}
+
+	@for $i from 1 through 4 {
+		.#{ $size }top-#{ $i }\/5 {
+			top: calc( 100% * #{ $i } / 5 );
+		}
+	}
+
+	@for $i from 1 through 4 {
+		.#{ $size }-top-#{ $i }\/5 {
+			top: calc( -100% * #{ $i } / 5 );
+		}
+	}
+
+	@for $i from 1 through 5 {
+		.#{ $size }top-#{ $i }\/6 {
+			top: calc( 100% * #{ $i } / 6 );
+		}
+	}
+
+	@for $i from 1 through 5 {
+		.#{ $size }-top-#{ $i }\/6 {
+			top: calc( -100% * #{ $i } / 6 );
+		}
+	}
+
+	@for $i from 1 through 11 {
+		.#{ $size }top-#{ $i }\/12 {
+			top: calc( 100% * #{ $i } / 12 );
+		}
+	}
+
+	@for $i from 1 through 11 {
+		.#{ $size }-top-#{ $i }\/12 {
+			top: calc( -100% * #{ $i } / 12 );
+		}
+	}
+}
+
+@mixin right( $size : '' ) {
+	// Right
+	.#{ $size }right-full{
+		right: 100%;
+	}
+
+	.#{ $size }right-auto{
+		right: auto;
+	}
+
+	.#{ $size }right-px{
+		right: 1px;
+	}
+
+	@for $i from 0 through 10 {
+		.#{ $size }right-#{ $i } {
+			right: $i * 0.25rem;
+		}
+	}
+
+	@for $i from 0 through 10 {
+		.#{ $size }-right-#{ $i } {
+			right: -$i * 0.25rem;
+		}
+	}
+
+	@for $i from 1 through 1 {
+		.#{ $size }right-#{ $i }\/2 {
+			right: calc( 100% * #{ $i } / 2 );
+		}
+	}
+
+	@for $i from 1 through 1 {
+		.#{ $size }-right-#{ $i }\/2 {
+			right: calc( -100% * #{ $i } / 2 );
+		}
+	}	
+
+	@for $i from 1 through 2 {
+		.#{ $size }right-#{ $i }\/3 {
+			right: calc( 100% * #{ $i } / 3 );
+		}
+	}
+
+	@for $i from 1 through 2 {
+		.#{ $size }-right-#{ $i }\/3 {
+			right: calc( -100% * #{ $i } / 3 );
+		}
+	}
+
+	@for $i from 1 through 3 {
+		.#{ $size }right-#{ $i }\/4 {
+			right: calc( 100% * #{ $i } / 4 );
+		}
+	}
+
+	@for $i from 1 through 3 {
+		.#{ $size }-right-#{ $i }\/4 {
+			right: calc( -100% * #{ $i } / 4 );
+		}
+	}
+
+	@for $i from 1 through 4 {
+		.#{ $size }right-#{ $i }\/5 {
+			right: calc( 100% * #{ $i } / 5 );
+		}
+	}
+
+	@for $i from 1 through 4 {
+		.#{ $size }-right-#{ $i }\/5 {
+			right: calc( -100% * #{ $i } / 5 );
+		}
+	}
+
+	@for $i from 1 through 5 {
+		.#{ $size }right-#{ $i }\/6 {
+			right: calc( 100% * #{ $i } / 6 );
+		}
+	}
+
+	@for $i from 1 through 5 {
+		.#{ $size }-right-#{ $i }\/6 {
+			right: calc( -100% * #{ $i } / 6 );
+		}
+	}
+
+	@for $i from 1 through 11 {
+		.#{ $size }right-#{ $i }\/12 {
+			right: calc( 100% * #{ $i } / 12 );
+		}
+	}
+
+	@for $i from 1 through 11 {
+		.#{ $size }-right-#{ $i }\/12 {
+			right: calc( -100% * #{ $i } / 12 );
+		}
+	}
+}
+
+@mixin bottom( $size : '' ) {
+	// Bottom
+	.#{ $size }bottom-full{
+		bottom: 100%;
+	}
+
+	.#{ $size }bottom-auto{
+		bottom: auto;
+	}
+
+	.#{ $size }bottom-px{
+		bottom: 1px;
+	}
+
+	@for $i from 0 through 10 {
+		.#{ $size }bottom-#{ $i } {
+			bottom: $i * 0.25rem;
+		}
+	}
+
+	@for $i from 0 through 10 {
+		.#{ $size }-bottom-#{ $i } {
+			bottom: -$i * 0.25rem;
+		}
+	}
+
+	@for $i from 1 through 1 {
+		.#{ $size }bottom-#{ $i }\/2 {
+			bottom: calc( 100% * #{ $i } / 2 );
+		}
+	}
+
+	@for $i from 1 through 1 {
+		.#{ $size }-bottom-#{ $i }\/2 {
+			bottom: calc( -100% * #{ $i } / 2 );
+		}
+	}
+
+	@for $i from 1 through 2 {
+		.#{ $size }bottom-#{ $i }\/3 {
+			bottom: calc( 100% * #{ $i } / 3 );
+		}
+	}
+
+	@for $i from 1 through 2 {
+		.#{ $size }-bottom-#{ $i }\/3 {
+			bottom: calc( -100% * #{ $i } / 3 );
+		}
+	}
+
+	@for $i from 1 through 3 {
+		.#{ $size }bottom-#{ $i }\/4 {
+			bottom: calc( 100% * #{ $i } / 4 );
+		}
+	}
+
+	@for $i from 1 through 3 {
+		.#{ $size }-bottom-#{ $i }\/4 {
+			bottom: calc( -100% * #{ $i } / 4 );
+		}
+	}
+
+	@for $i from 1 through 4 {
+		.#{ $size }bottom-#{ $i }\/5 {
+			bottom: calc( 100% * #{ $i } / 5 );
+		}
+	}
+
+	@for $i from 1 through 4 {
+		.#{ $size }-bottom-#{ $i }\/5 {
+			bottom: calc( -100% * #{ $i } / 5 );
+		}
+	}
+
+	@for $i from 1 through 5 {
+		.#{ $size }bottom-#{ $i }\/6 {
+			bottom: calc( 100% * #{ $i } / 6 );
+		}
+	}
+
+	@for $i from 1 through 5 {
+		.#{ $size }-bottom-#{ $i }\/6 {
+			bottom: calc( -100% * #{ $i } / 6 );
+		}
+	}
+
+	@for $i from 1 through 11 {
+		.#{ $size }bottom-#{ $i }\/12 {
+			bottom: calc( 100% * #{ $i } / 12 );
+		}
+	}
+
+	@for $i from 1 through 11 {
+		.#{ $size }-bottom-#{ $i }\/12 {
+			bottom: calc( -100% * #{ $i } / 12 );
+		}
+	}
+}
+
+@mixin left( $size : '' ) {
+	// Left
+	.#{ $size }left-full{
+		left: 100%;
+	}
+
+	.#{ $size }left-auto{
+		left: auto;
+	}
+
+	.#{ $size }left-px{
+		left: 1px;
+	}
+
+	@for $i from 0 through 10 {
+		.#{ $size }left-#{ $i } {
+			left: $i * 0.25rem;
+		}
+	}
+
+	@for $i from 0 through 10 {
+		.#{ $size }-left-#{ $i } {
+			left: -$i * 0.25rem;
+		}
+	}
+
+	@for $i from 1 through 1 {
+		.#{ $size }left-#{ $i }\/2 {
+			left: calc( 100% * #{ $i } / 2 );
+		}
+	}
+
+	@for $i from 1 through 1 {
+		.#{ $size }-left-#{ $i }\/2 {
+			left: calc( -100% * #{ $i } / 2 );
+		}
+	}
+
+	@for $i from 1 through 2 {
+		.#{ $size }left-#{ $i }\/3 {
+			left: calc( 100% * #{ $i } / 3 );
+		}
+	}
+
+	@for $i from 1 through 2 {
+		.#{ $size }-left-#{ $i }\/3 {
+			left: calc( -100% * #{ $i } / 3 );
+		}
+	}
+
+	@for $i from 1 through 3 {
+		.#{ $size }left-#{ $i }\/4 {
+			left: calc( 100% * #{ $i } / 4 );
+		}
+	}
+
+	@for $i from 1 through 3 {
+		.#{ $size }-left-#{ $i }\/4 {
+			left: calc( -100% * #{ $i } / 4 );
+		}
+	}
+
+	@for $i from 1 through 4 {
+		.#{ $size }left-#{ $i }\/5 {
+			left: calc( 100% * #{ $i } / 5 );
+		}
+	}
+
+	@for $i from 1 through 4 {
+		.#{ $size }-left-#{ $i }\/5 {
+			left: calc( -100% * #{ $i } / 5 );
+		}
+	}
+
+	@for $i from 1 through 5 {
+		.#{ $size }left-#{ $i }\/6 {
+			left: calc( 100% * #{ $i } / 6 );
+		}
+	}
+
+	@for $i from 1 through 5 {
+		.#{ $size }-left-#{ $i }\/6 {
+			left: calc( -100% * #{ $i } / 6 );
+		}
+	}
+
+	@for $i from 1 through 11 {
+		.#{ $size }left-#{ $i }\/12 {
+			left: calc( 100% * #{ $i } / 12 );
+		}
+	}
+
+	@for $i from 1 through 11 {
+		.#{ $size }-left-#{ $i }\/12 {
+			left: calc( -100% * #{ $i } / 12 );
+		}
+	}
+	
+}
+
 /*----- Margin */
-//@include margin();
+@include margin();
+
+/*----- Position */
+@include position();
+@include top();
+@include right();
+@include bottom();
+@include left();
+
+/*----- Width */
+@include width();
+
+/*----- Height */
+@include height();
+
+@media #{map.get(breakpoint.$breakpoints, "tablet")} {
+
+	/*----- Margin */
+	@include margin($md);
+
+	/*----- Position */
+	@include position($md);
+	@include top($md);
+	@include right($md);
+	@include bottom($md);
+	@include left($md);
+
+	/*----- Width */
+	@include width($md);
+
+	/*----- Height */
+	@include height($md);
+
+}
+
+
+@media #{map.get(breakpoint.$breakpoints, "smartphone")} {
+
+	/*----- Margin */
+	@include margin($md);
+
+	/*----- Position */
+	@include position($sm);
+	@include top($sm);
+	@include right($sm);
+	@include bottom($sm);
+	@include left($sm);
+
+	/*----- Width */
+	@include width($sm);
+
+	/*----- Height */
+	@include height($sm);
+
+}
+

@@ -1,0 +1,145 @@
+a[href="themes.php?page=about"] {
+  color: #111 !important;
+  background:#eee !important;
+}
+
+.hakoniwa-about-wrap{
+	margin:2em 20px 2em 0;
+
+	.cols{
+		display:flex;
+		gap:2em;
+		margin-bottom:2em;
+	}
+
+	.left-col{
+		flex-basis: 70%;
+		background: #fff;
+		padding:2em;
+		border-radius: 4px;
+		border: 1px solid #e0e0e0;
+	}
+
+	.right-col{
+		flex-basis: 30%;
+		display:flex;
+		gap:2em;
+		flex-direction: column;
+	}
+
+	.about-main-visual{
+		background: #fff;
+		padding: 50px 40px;
+		border-radius: 4px;
+		margin-bottom: 2em;
+		text-align: center;
+		position: relative;
+		overflow: hidden;
+
+		h1{
+			color:currentColor;
+			margin:0 0 1rem;
+			line-height: normal;
+		}
+
+		img{
+			width:8em;
+			height: auto;
+			margin-bottom:2em;
+		}
+	}
+
+	.cards{
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+		gap: 2em;
+		margin-bottom:3em;
+
+		svg{
+			width: 3em;
+			height: auto;
+
+			&.official{
+				width:5em;
+			}
+		}
+
+		.installed{
+			display: flex;
+			align-items: center;
+			gap: 0.5em;
+			justify-content: center;
+			color: #3ba74a;
+		    font-weight: bold;
+
+			svg{
+				width: inherit;
+				height: auto;
+			}
+		}
+	}
+
+	.hakoniwa-about-card{
+		background: #fff;
+		border: 1px solid #e0e0e0;
+		border-radius: 4px;
+		padding: 2em;
+		text-align: center;
+		transition: all 0.3s ease;
+		position: relative;
+		overflow: hidden;
+
+		&.featured{
+			background: #19a1de;
+		    border-color: #6f96bf;
+			color:#fff;
+
+			h2,h3{
+				color:currentColor;
+			}
+
+			img{
+				width:100%;
+				height: auto;
+				border-radius:4px;
+			}
+		}
+
+		ul{
+			a{
+				color:currentColor;
+				display: inline-block;
+			}
+
+			svg{
+				width: 2em;
+			}
+		}
+	}
+
+	.button-hakoniwa-secondary{
+		color: #fff;
+	    background: #111;
+		border:#111 1px solid;
+
+		&:hover,
+		&:active,
+		&:focus{
+		    background: #333;
+			color: #fff;
+		}
+	}
+
+	.main-title{
+		margin-top:0;
+		font-size:1.5em;
+	}
+
+	.card-title{
+
+	}
+
+	.card-description{
+
+	}
+}
