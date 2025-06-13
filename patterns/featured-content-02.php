@@ -10,10 +10,7 @@
 
 ?>
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80","left":"2rem","right":"2rem"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--80);padding-right:2rem;padding-bottom:var(--wp--preset--spacing--80);padding-left:2rem"><!-- wp:heading {"textAlign":"center","className":"is-style-default","fontSize":"2xl"} -->
-	<h2 class="wp-block-heading has-text-align-center is-style-default has-2-xl-font-size">Featured</h2>
-	<!-- /wp:heading -->
-
+<div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--80);padding-right:2rem;padding-bottom:var(--wp--preset--spacing--80);padding-left:2rem">
 	<!-- wp:columns {"align":"wide"} -->
 	<div class="wp-block-columns alignwide"><!-- wp:column -->
 	<div class="wp-block-column"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"default"}} -->
