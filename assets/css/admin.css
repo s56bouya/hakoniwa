@@ -1,6 +1,5 @@
 a[href="themes.php?page=about"] {
-  color: #111 !important;
-  background: #eee !important;
+  color: #1dfa0f !important;
 }
 
 .hakoniwa-about-wrap {
@@ -110,4 +109,21 @@ a[href="themes.php?page=about"] {
 .hakoniwa-about-wrap .main-title {
   margin-top: 0;
   font-size: 1.5em;
+}
+.hakoniwa-about-wrap .dashicons-admin-network {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.hakoniwa-about-wrap .dashicons-admin-network.active::before {
+  color: #61ad73;
+}
+.hakoniwa-about-wrap .dashicons-admin-network.active input {
+  background: #99e0aa;
+}
+.hakoniwa-about-wrap .dashicons-admin-network.deactive::before {
+  color: #ddcf00;
+}
+.hakoniwa-about-wrap .dashicons-admin-network.deactive input {
+  background: #ece02e;
 }

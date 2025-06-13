@@ -1,6 +1,5 @@
 a[href="themes.php?page=about"] {
-  color: #111 !important;
-  background:#eee !important;
+  color: #1dfa0f !important;
 }
 
 .hakoniwa-about-wrap{
@@ -135,11 +134,30 @@ a[href="themes.php?page=about"] {
 		font-size:1.5em;
 	}
 
-	.card-title{
+	.dashicons-admin-network{
+		display: flex;
+		align-items: center;
+		gap: 0.5em;
 
-	}
+		&.active{
+			&::before{
+				color:#61ad73;
+			}
+			
+			input{
+				background:#99e0aa;
+			}
+		}
 
-	.card-description{
+		&.deactive{
+			&::before{
+				color:#ddcf00;
+			}
+
+			input{
+				background:#ece02e;
+			}
+		}
 
 	}
 }

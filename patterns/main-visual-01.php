@@ -20,12 +20,15 @@
 		<h1 class="wp-block-heading is-style-default has-4-xl-font-size"><?php echo esc_html_x( 'Welcome to Block Theme Hakoniwa', 'Pattern:Main Visual 01', 'hakoniwa' ); ?></h1>
 		<!-- /wp:heading -->
 		<!-- wp:paragraph -->
-		<p><?php echo esc_html_x( 'Use the blocks to create the website you want. First, use the site editor to customize the top page.', 'Pattern:Main Visual 01', 'hakoniwa' ); ?></p>
+		<p><?php echo esc_html_x( 'Use the blocks to create the website you want. First, use the site editor to customize the top page. Then, use the high-quality, highly practical “Hakoniwa Patterns” to streamline your content creation.', 'Pattern:Main Visual 01', 'hakoniwa' ); ?></p>
 		<!-- /wp:paragraph -->
 		<!-- wp:buttons -->
 		<div class="wp-block-buttons">
 			<!-- wp:button {"className":"is-style-fill"} -->
 			<div class="wp-block-button is-style-fill"><a class="wp-block-button__link wp-element-button" href="<?php echo get_admin_url( null, '/site-editor.php?postType=wp_template&postId=hakoniwa//front-page&canvas=edit' ); ?>"><?php echo esc_html_x( 'Edit Top Page', 'Pattern:Main Visual 01', 'hakoniwa' ); ?></a></div>
+			<!-- /wp:button -->
+			<!-- wp:button {"backgroundColor":"contrast","className":"is-style-fill"} -->
+			<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-contrast-background-color has-background wp-element-button" href="https://hakoniwa.animagate.com/patterns/" target="_blank" rel="noreferrer noopener">Hakoniwa Patterns</a></div>
 			<!-- /wp:button -->
 		</div>
 		<!-- /wp:buttons -->
