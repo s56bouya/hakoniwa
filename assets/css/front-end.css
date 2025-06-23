@@ -55,6 +55,14 @@ main.wp-block-group {
   margin: 0;
 }
 
+.alignright {
+  float: right;
+}
+
+.alignleft {
+  float: left;
+}
+
 .wp-block-post-featured-image a {
   vertical-align: middle;
   display: flex;
@@ -13672,10 +13680,6 @@ ul {
 
 ol {
   list-style-type: decimal;
-}
-
-main {
-  font-size: var(--wp--preset--font-size--main-content);
 }
 
 .has-block-gap > * {
