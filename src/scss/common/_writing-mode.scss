@@ -1,0 +1,47 @@
+@use "sass:map";
+@use "sass:meta";
+@use "../global/breakpoint";
+
+
+//変数
+$sm:'sm\\:';
+$md:'md\\:';
+
+@mixin writingMode( $size : '' ) {
+	.#{ $size }writing-horizontal-tb{
+		writing-mode: horizontal-tb;
+	}
+
+	.#{ $size }writing-vertical-lr{
+		writing-mode: vertical-lr;
+	}
+
+	.#{ $size }writing-vertical-rl{
+		writing-mode: vertical-rl;
+	}
+
+	.#{ $size }writing-sideways-rl{
+		writing-mode: sideways-rl;
+	}
+
+	.#{ $size }writing-sideways-lr{
+		writing-mode: sideways-lr;
+	}
+
+}
+
+@include writingMode();
+
+@media #{map.get(breakpoint.$breakpoints, "tablet")} {
+
+	@include writingMode($md);
+
+}
+
+
+@media #{map.get(breakpoint.$breakpoints, "smartphone")} {
+
+	@include writingMode($sm);
+
+}
+
