@@ -699,7 +699,7 @@ $md:'md\\:';
 @media #{map.get(breakpoint.$breakpoints, "smartphone")} {
 
 	/*----- Margin */
-	@include margin($md);
+	@include margin($sm);
 
 	/*----- Position */
 	@include position($sm);
