@@ -13721,6 +13721,116 @@ ul[class*=is-style-hakoniwa-list].is-style-hakoniwa-list-arrow-02 li::before {
     writing-mode: sideways-lr;
   }
 }
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.justify-stretch {
+  justify-content: stretch;
+}
+
+.justify-baseline {
+  justify-content: baseline;
+}
+
+.justify-normal {
+  justify-content: normal;
+}
+
+@media only screen and (max-width: 782px) {
+  .md\:justify-start {
+    justify-content: flex-start;
+  }
+
+  .md\:justify-end {
+    justify-content: flex-end;
+  }
+
+  .md\:justify-center {
+    justify-content: center;
+  }
+
+  .md\:justify-between {
+    justify-content: space-between;
+  }
+
+  .md\:justify-around {
+    justify-content: space-around;
+  }
+
+  .md\:justify-evenly {
+    justify-content: space-evenly;
+  }
+
+  .md\:justify-stretch {
+    justify-content: stretch;
+  }
+
+  .md\:justify-baseline {
+    justify-content: baseline;
+  }
+
+  .md\:justify-normal {
+    justify-content: normal;
+  }
+}
+@media only screen and (max-width:600px) {
+  .sm\:justify-start {
+    justify-content: flex-start;
+  }
+
+  .sm\:justify-end {
+    justify-content: flex-end;
+  }
+
+  .sm\:justify-center {
+    justify-content: center;
+  }
+
+  .sm\:justify-between {
+    justify-content: space-between;
+  }
+
+  .sm\:justify-around {
+    justify-content: space-around;
+  }
+
+  .sm\:justify-evenly {
+    justify-content: space-evenly;
+  }
+
+  .sm\:justify-stretch {
+    justify-content: stretch;
+  }
+
+  .sm\:justify-baseline {
+    justify-content: baseline;
+  }
+
+  .sm\:justify-normal {
+    justify-content: normal;
+  }
+}
 body {
   line-height: 1.5;
 }

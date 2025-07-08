@@ -463,6 +463,11 @@
 					}
                 }
 			},
+			"core/separator": {
+				"border": {
+					"width": "1px"
+				}
+			},
 			"core/post-content": {
 				"elements": {
 					"h1": {

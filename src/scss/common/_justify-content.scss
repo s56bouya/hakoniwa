@@ -1,0 +1,62 @@
+@use "sass:map";
+@use "sass:meta";
+@use "../global/breakpoint";
+
+
+//変数
+$sm:'sm\\:';
+$md:'md\\:';
+
+@mixin justifyContent( $size : '' ) {
+	.#{ $size }justify-start{
+		justify-content: flex-start;
+	}
+
+	.#{ $size }justify-end{
+		justify-content: flex-end;
+	}
+
+	.#{ $size }justify-center{
+		justify-content: center;
+	}
+
+	.#{ $size }justify-between{
+		justify-content: space-between;
+	}
+
+	.#{ $size }justify-around{
+		justify-content: space-around;
+	}
+
+	.#{ $size }justify-evenly{
+		justify-content: space-evenly;
+	}
+
+	.#{ $size }justify-stretch{
+		justify-content: stretch;
+	}
+
+	.#{ $size }justify-baseline{
+		justify-content: baseline;
+	}
+
+	.#{ $size }justify-normal{
+		justify-content: normal;
+	}
+}
+
+@include justifyContent();
+
+@media #{map.get(breakpoint.$breakpoints, "tablet")} {
+
+	@include justifyContent($md);
+
+}
+
+
+@media #{map.get(breakpoint.$breakpoints, "smartphone")} {
+
+	@include justifyContent($sm);
+
+}
+
