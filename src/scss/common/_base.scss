@@ -183,6 +183,17 @@ h1.wp-block-site-title{
 	}
 }
 
+.hakoniwa-blocks-inline-icons{
+    width: 1em;
+	height: 1em;
+    vertical-align: middle;
+
+	svg{
+		width: 1em;
+		height: 1em;
+	}
+}
+
 
 @media #{map.get(breakpoint.$breakpoints, "desktop")} {
 	.is-hakoniwa-desktop-hidden{

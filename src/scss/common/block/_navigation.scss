@@ -39,10 +39,7 @@
 				width:inherit;
 				padding:0.75em 0;
 
-				// 個別のナビゲーション
-				.wp-block-navigation-item__label{
-					display: block;
-				}
+				
 			}
 
 		}
@@ -118,5 +115,16 @@
 			background-color:var(--wp--preset--color--base);
 			color:var(--wp--preset--color--contrast);
 		}
-	} 
+	}
+}
+
+// 個別のナビゲーション
+.wp-block-navigation-item__label{
+	display: inline-flex;
+	gap:5px;
+
+	svg{
+		width: 1em;
+		height: 1em;
+	}
 }
