@@ -122,9 +122,5 @@
 .wp-block-navigation-item__label{
 	display: inline-flex;
 	gap:5px;
-
-	svg{
-		width: 1em;
-		height: 1em;
-	}
+	align-items: center;
 }
