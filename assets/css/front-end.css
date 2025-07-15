@@ -166,13 +166,17 @@ h1.wp-block-site-title {
 }
 
 .hakoniwa-blocks-inline-icons {
-  width: 1em;
-  height: 1em;
+  display: inline-block;
   vertical-align: middle;
+  line-height: inherit;
 }
 .hakoniwa-blocks-inline-icons svg {
   width: 1em;
   height: 1em;
+}
+
+.wp-element-button .hakoniwa-blocks-inline-icons {
+  line-height: normal;
 }
 
 @media only screen and (max-width:960px) {
@@ -12454,10 +12458,7 @@ nav.wp-block-query-pagination {
 .wp-block-navigation-item__label {
   display: inline-flex;
   gap: 5px;
-}
-.wp-block-navigation-item__label svg {
-  width: 1em;
-  height: 1em;
+  align-items: center;
 }
 
 :where(.wp-block-group.has-background) {
