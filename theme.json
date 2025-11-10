@@ -200,7 +200,7 @@
 				},
 				{
 					"fluid": {
-						"min": "1.15rem",
+						"min": "1.2rem",
 						"max": "1.75rem"
 					},
 					"name": "2XL",
@@ -209,7 +209,7 @@
 				},
 				{
 					"fluid": {
-						"min": "1.1rem",
+						"min": "1.15rem",
 						"max": "1.4rem"
 					},
 					"name": "XL",
@@ -218,7 +218,7 @@
 				},
 				{
 					"fluid": {
-						"min": "1rem",
+						"min": "1.1rem",
 						"max": "1.25rem"
 					},
 					"name": "Large",
@@ -227,12 +227,12 @@
 				},
 				{
 					"fluid": {
-						"min": "0.9rem",
-						"max": "1.1rem"
+						"min": "1.05rem",
+						"max": "1.15rem"
 					},
 					"name": "Medium",
 					"slug": "md",
-					"size": "1.1rem"
+					"size": "1.15rem"
 				},
 				{
 					"fluid": {
