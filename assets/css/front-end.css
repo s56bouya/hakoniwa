@@ -51,6 +51,9 @@ button {
   letter-spacing: 0.07rem;
 }
 
+main {
+  font-size: var(--wp--preset--font-size--main-content);
+}
 main.wp-block-group {
   margin: 0;
 }
@@ -12480,6 +12483,13 @@ nav.wp-block-query-pagination {
 .wp-block-table tfoot {
   background-color: var(--wp--preset--color--tertiary);
   border-color: color-mix(in srgb, currentColor 20%, transparent);
+}
+
+.wp-block-embed-twitter.aligncenter .wp-block-embed__wrapper > * {
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  display: flex;
 }
 
 .is-style-hakoniwa-border-01 {

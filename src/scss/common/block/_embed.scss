@@ -1,0 +1,13 @@
+
+.wp-block-embed-twitter{
+	&.aligncenter{
+		.wp-block-embed__wrapper{
+			> *{
+				margin-left: auto;
+				margin-right: auto;
+				width: 500px;
+			    display: flex;
+			}
+		}		
+	}
+}
