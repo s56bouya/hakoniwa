@@ -4,6 +4,7 @@
 		"useRootPaddingAwareAlignments": true,
 		"appearanceTools": true,
 		"color": {
+			"defaultPalette": false,
 			"gradients": [],
 			"palette": [
 				{
@@ -87,7 +88,6 @@
 		"blocks": {
 			"core/image": {
 				"lightbox": {
-					"enabled": false,
 					"allowEditing": true
 				}
 			}
@@ -157,6 +157,7 @@
 			],
 			"fontSizes": [
 				{
+					"fluid": false,
 					"name": "1rem",
 					"slug": "1rem",
 					"size": "1rem"

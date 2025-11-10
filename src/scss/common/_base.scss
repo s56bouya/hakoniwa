@@ -51,6 +51,7 @@ button{
 }
 
 main{
+	font-size: var(--wp--preset--font-size--main-content);
 	&.wp-block-group{
 		margin:0;
 	}
