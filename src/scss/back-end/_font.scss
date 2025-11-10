@@ -2,8 +2,8 @@ body{
     line-height:1.5;
 }
 
-body.block-editor-writing-flow{
-    font-size: var(--wp--preset--font-size--main-content);
+.is-root-container{
+	font-size: var(--wp--preset--font-size--main-content);
 }
 
 h1{

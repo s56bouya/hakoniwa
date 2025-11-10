@@ -13860,7 +13860,7 @@ body {
   line-height: 1.5;
 }
 
-body.block-editor-writing-flow {
+.is-root-container {
   font-size: var(--wp--preset--font-size--main-content);
 }
 
