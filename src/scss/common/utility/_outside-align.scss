@@ -1,0 +1,56 @@
+@use "sass:map";
+@use "sass:meta";
+@use "../../global/breakpoint";
+
+
+//変数
+$sm:'sm\\:';
+$md:'md\\:';
+$lg:'lg\\:';
+
+@mixin outsideAlign( $size : '' ) {
+
+	.wp-block-group.#{ $size }outside-left{
+		> * {
+			max-width: none !important;
+		    margin-left: calc(50% - 50vw) !important;
+
+			img{
+				width: 100% !important;
+			}
+		}
+	}
+
+	.wp-block-group.#{ $size }outside-right{
+		> * {
+			max-width: none !important;
+		    margin-right: calc(50% - 50vw) !important;
+
+			img{
+				width: 100% !important;
+			}
+		}
+	}
+
+}
+
+@include outsideAlign();
+
+@media #{map.get(breakpoint.$breakpoints, "tablet+")} {
+
+	@include outsideAlign($lg);
+
+}
+
+@media #{map.get(breakpoint.$breakpoints, "smartphone_tablet")} {
+
+	@include outsideAlign($md);
+
+}
+
+
+@media #{map.get(breakpoint.$breakpoints, "smartphone")} {
+
+	@include outsideAlign($sm);
+
+}

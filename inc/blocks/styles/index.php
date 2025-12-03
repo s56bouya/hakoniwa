@@ -33,6 +33,8 @@ class Register {
 
 		require_once 'box-shadow.php';
 
+		require_once 'accordion.php';
+
 		// heading
 		$this->register_blocks_styles( 'core/heading', $heading_array );
 
@@ -59,6 +61,8 @@ class Register {
 		$this->register_blocks_styles( 'core/button', $button_array );
 		$this->register_blocks_styles( 'core/button', $box_shadow_array );
 		
+		// Accordion
+		$this->register_blocks_styles( 'core/accordion', $accordion_array );
 	}
 
 	/**

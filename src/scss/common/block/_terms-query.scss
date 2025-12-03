@@ -1,0 +1,25 @@
+@use "sass:map";
+@use "sass:meta";
+@use "../../global/breakpoint";
+
+.wp-block-term,
+.wp-block-term-name{
+	margin:0;
+}
+
+.wp-block-term-template {
+	&.is-layout-grid{
+		li{
+			margin-bottom:0 !important;
+		}
+	}
+}
+
+@media #{map.get(breakpoint.$breakpoints, "smartphone")} {
+	.wp-block-term-template{
+		&.is-layout-grid{
+			display: flex;
+		    flex-direction: column;
+		}
+	}
+}

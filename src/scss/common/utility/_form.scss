@@ -1,7 +1,7 @@
 /* Common Styles */
 @use "sass:map";
 @use "sass:meta";
-@use "../global/breakpoint";
+@use "../../global/breakpoint";
 
 .wp-site-blocks,
 .editor-styles-wrapper{
