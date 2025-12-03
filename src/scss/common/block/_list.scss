@@ -1,0 +1,24 @@
+/* リスト関係 */
+
+.wp-block-post-content{
+	.wp-block-term-template,
+	.wp-block-archives,
+	.wp-block-categories,
+	.wp-block-latest-posts,
+	.wp-block-page-list{
+		padding-left:0;
+		list-style: none;
+
+		li{
+			margin-top:0 !important;
+			margin-bottom:0 !important;
+			border-bottom:1px dotted color-mix(in srgb, var(--wp--preset--color--contrast) 50%, transparent);
+
+			a{
+				display: block;;
+				text-decoration:none;
+				padding:calc(var(--wp--custom--style--block-gap) / 2.5) 0;
+			}
+		}
+	}
+}

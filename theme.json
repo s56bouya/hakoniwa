@@ -561,6 +561,12 @@
 						}
 					}	
 				}
+			},
+			"core/term-template": {
+				"css": "& .wp-block-term > .wp-block-group{ gap:var(--wp--preset--spacing--20); } & li{ margin:0; }"
+			},
+			"core/post-terms": {
+				"css": "& a{ text-decoration:none; }"
 			}
 		}
 	},

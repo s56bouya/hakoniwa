@@ -1,0 +1,46 @@
+.wp-block-accordion{
+	.wp-block-accordion-item{
+
+		.wp-block-accordion-heading{
+			background-color: var(--wp--preset--color--tertiary);
+
+			.wp-block-accordion-heading__toggle{
+				padding: 1em;
+				cursor: pointer;
+				display: flex;
+				list-style: none;
+				position: relative;
+			}
+			
+			.wp-block-accordion-heading__toggle-title{
+				text-decoration: none;
+			}
+		}
+
+	}
+
+	&.is-style-hakoniwa-border{
+		.wp-block-accordion-item{
+			border: 1px solid color-mix(in srgb, var(--wp--preset--color--contrast) 20%, transparent);
+
+			.wp-block-accordion-heading{
+				background:transparent;
+			}
+
+			.wp-block-accordion-panel{
+				border-top: 1px dotted color-mix(in srgb, var(--wp--preset--color--contrast) 20%, transparent);
+			    margin: 0 1em;
+				padding: 1em 0;
+			}
+		}
+	}
+
+	&.is-style-hakoniwa-primary-color{
+		.wp-block-accordion-item{
+			.wp-block-accordion-heading{
+				background-color: var(--wp--preset--color--primary);
+			    color: var(--wp--preset--color--base);
+			}
+		}
+	}
+}
