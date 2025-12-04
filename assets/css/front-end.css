@@ -12953,15 +12953,25 @@ h1.wp-block-site-title {
 }
 
 nav.wp-block-query-pagination {
+  line-height: 1;
   gap: 1em;
+}
+nav.wp-block-query-pagination a {
+  text-decoration: none;
 }
 
 .wp-block-query-pagination-numbers {
   display: flex;
-  gap: 0.5em;
+  gap: 1em;
+  align-items: center;
 }
 .wp-block-query-pagination-numbers .current {
-  font-weight: bold;
+  height: 2em;
+  width: 2em;
+  text-align: center;
+  padding: 0.5em;
+  border-radius: 4px;
+  background-color: var(--wp--preset--color--tertiary);
 }
 
 .has-drop-cap:not(:focus):first-letter {
