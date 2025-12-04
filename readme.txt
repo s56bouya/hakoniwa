@@ -1,7 +1,7 @@
 === Hakoniwa ===
 
 Contributors: s56bouya
-Requires at least: 6.5
+Requires at least: 6.7
 Tested up to: 6.9
 Requires PHP: 7.4
 Repository: https://github.com/s56bouya/hakoniwa
