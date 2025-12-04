@@ -285,6 +285,14 @@
 			"letterSpacing":"0.07rem"
 		},
 		"elements": {
+			"link": {
+				"color": {
+					"text": "var(--wp--preset--color--contrast)"
+				},
+				"typography": {
+					"textDecoration": "none"
+				}
+			},
 			"heading":{
 				"typography": {
 					"fontWeight": "normal",
@@ -323,11 +331,6 @@
 						"background": "color-mix(in srgb, var(--wp--preset--color--primary) 80%, #222)",
 						"text": "var(--wp--preset--color--base)"
 					}
-				}
-			},
-			"link": {
-				"color": {
-					"text": "var(--wp--preset--color--contrast)"
 				}
 			}
 		},
