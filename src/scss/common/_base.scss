@@ -7,26 +7,16 @@
     box-sizing: border-box;
 }
 
-@keyframes smoothscroll1 {
-//	from, to { scroll-behavior: smooth; }
-}
-
-@keyframes smoothscroll2 {
-//	from, to { scroll-behavior: smooth; }
-}
-
 html {
-//	animation: smoothscroll1 1s;
 	scroll-behavior: smooth;
 }
 
 html:focus-within {
-	animation-name: smoothscroll2;
 	scroll-behavior: smooth;
 }
 
 body{
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 
 a{

@@ -46,7 +46,7 @@ class Scripts {
 
 		$front_end_js = apply_filters( Define::value( 'theme_name' ) . '_enqueue_front_end_js', get_template_directory_uri() . '/assets/js/front-end.js' );
 
-//		wp_register_script( Define::value( 'theme_name' ) . '-front-end', $front_end_js, [], $version_string, true );
+//		wp_register_script( Define::value( 'theme_name' ) . '-front-end', $front_end_js, [], self::theme_version(), true );
 //		wp_enqueue_script( Define::value( 'theme_name' ) . '-front-end' );
 
 	}

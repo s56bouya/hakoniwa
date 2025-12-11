@@ -5,6 +5,7 @@
 		.wp-block-navigation__submenu-container{
 			box-shadow: 2px 7px 10px -10px color-mix(in srgb, currentColor 20%, transparent);
 //			border-color:transparent;
+			font-size:var(--wp--preset--font-size--sm);
 
 			.wp-block-navigation-item:not(:last-child) {
 				border-bottom: 1px solid color-mix(in srgb, currentColor 8%, transparent);
@@ -48,7 +49,7 @@
 		// 常時アイコンで開閉ナビゲーション
 		.hidden-by-default{
 			.wp-block-navigation__container{
-				gap:1em !important;
+//				gap:1em !important;
 
 				.wp-block-navigation-item{
 					.wp-block-navigation-item__content{
@@ -82,14 +83,13 @@
 			
 			.wp-block-navigation__submenu-container{
 				border-color:transparent;
-				font-size:var(--wp--preset--font-size--2-xs);
 
 				.wp-block-navigation-item{
 					.wp-block-navigation-item__content{
 						padding: 1em;
 					}	
 				}
-			}	
+			}
 		}
 
 		.wp-block-navigation-item.open-on-click .wp-block-navigation-submenu__toggle+.wp-block-navigation__submenu-icon{
