@@ -5,6 +5,9 @@ a[href="themes.php?page=about"] {
 .hakoniwa-about-wrap {
   margin: 2em 20px 2em 0;
 }
+.hakoniwa-about-wrap .description {
+  margin-bottom: 1em;
+}
 .hakoniwa-about-wrap .cols {
   display: flex;
   gap: 2em;
