@@ -85,11 +85,26 @@ class ThemeAbout {
 		?>
 			<div class="hakoniwa-about-wrap">
 				<div class="cols">
-					<div class="left-col">
+					<div class="left-col">						
 						<div class="about-main-visual">
 							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/hakoniwa-logo.svg' ); ?>" alt="Hakoniwa">
 							<h1><?php printf( esc_html__( 'Welcome to %1$1s - Version %2$2s', 'hakoniwa' ), esc_html( $theme_name ), esc_html( $theme_data->version ) ); ?></h1>
 							<div class="description"><?php echo wp_kses_post( $message ); ?></div>
+							<div class="review">
+								<?php
+								printf(
+									esc_html__(
+										'Please leave a review on %1$s and let us know what you think.',
+										'hakoniwa'
+									),
+									sprintf(
+										'<a href="%s" target="_blank" rel="noopener noreferrer">%s</a>',
+										esc_url( 'https://wordpress.org/support/theme/hakoniwa/reviews/' ),
+										'WordPress.org'
+									)
+								);
+								?>
+							</div>
 						</div>
 						<h2 class="main-title"><?php _e( 'Plugins: Maximize the potential of your theme', 'hakoniwa' ); ?></h2>
 						<div class="cards">

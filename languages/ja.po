@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AnimaGate, Inc.\n"
-"POT-Creation-Date: 2025-06-13 13:49+0900\n"
-"PO-Revision-Date: 2025-06-13 13:49+0900\n"
+"POT-Creation-Date: 2025-12-23 21:15+0900\n"
+"PO-Revision-Date: 2025-12-23 21:16+0900\n"
 "Last-Translator: \n"
 "Language-Team: Tetsuya Imamura <wpdev@animagate.com>\n"
 "Language: ja\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.6\n"
+"X-Generator: Poedit 3.8\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: "
 "__;_e;esc_html_e;esc_html__;esc_attr__;esc_attr_e;_n;_nx;esc_html_x:1,2c;esc_attr_x:1,2c\n"
@@ -24,6 +24,14 @@ msgid ""
 msgstr ""
 "検索結果が見つかりませんでした。下の検索フォームからもう一度試してみてくださ"
 "い。"
+
+#: inc/blocks/styles/accordion.php:6
+msgid "Border"
+msgstr ""
+
+#: inc/blocks/styles/accordion.php:10
+msgid "Primary Color"
+msgstr ""
 
 #: inc/blocks/styles/background.php:5 inc/blocks/styles/cover.php:10
 msgid "Stripe"
@@ -288,107 +296,112 @@ msgstr ""
 msgid "Welcome to %1$1s - Version %2$2s"
 msgstr ""
 
-#: inc/init/class-theme-about.php:94
+#: inc/init/class-theme-about.php:97
+#, php-format
+msgid "Please leave a review on %1$s and let us know what you think."
+msgstr "よろしければ %1$s のレビューでご意見をお聞かせください。"
+
+#: inc/init/class-theme-about.php:109
 msgid "Plugins: Maximize the potential of your theme"
 msgstr "プラグインでテーマのポテンシャルを最大限に引き出そう"
 
-#: inc/init/class-theme-about.php:99
+#: inc/init/class-theme-about.php:114
 msgid "20+ high-quality, powerful blocks"
 msgstr "20 種類以上の高品質で強力なブロック"
 
-#: inc/init/class-theme-about.php:103 inc/init/class-theme-about.php:119
+#: inc/init/class-theme-about.php:118 inc/init/class-theme-about.php:134
 msgid "installed"
 msgstr "インストール済み"
 
-#: inc/init/class-theme-about.php:107 inc/init/class-theme-about.php:123
+#: inc/init/class-theme-about.php:122 inc/init/class-theme-about.php:138
 msgid "Install Plugin"
 msgstr "プラグインをインストール"
 
-#: inc/init/class-theme-about.php:115
+#: inc/init/class-theme-about.php:130
 msgid "All-in-one plugins” with all the functions you need to run your website"
 msgstr "ウェブサイト運営に必要な機能が搭載された「オールインワン・プラグイン」"
 
-#: inc/init/class-theme-about.php:129
+#: inc/init/class-theme-about.php:144
 msgid "Why Choose Hakoniwa?"
 msgstr "Hakoniwa が選ばれる理由は？"
 
-#: inc/init/class-theme-about.php:133
+#: inc/init/class-theme-about.php:148
 msgid "Simple and modern design"
 msgstr "シンプルでモダンなデザイン"
 
-#: inc/init/class-theme-about.php:137
+#: inc/init/class-theme-about.php:152
 msgid "Mobile Friendly"
 msgstr "モバイルフレンドリー"
 
-#: inc/init/class-theme-about.php:141
+#: inc/init/class-theme-about.php:156
 msgid "Fast page speed"
 msgstr "高速なページ表示速度"
 
-#: inc/init/class-theme-about.php:145
+#: inc/init/class-theme-about.php:160
 msgid "SEO Ready"
 msgstr "SEO に配慮したコード設計"
 
-#: inc/init/class-theme-about.php:149
+#: inc/init/class-theme-about.php:164
 msgid "Full Site Editing support"
 msgstr "フルサイト編集対応"
 
-#: inc/init/class-theme-about.php:153
+#: inc/init/class-theme-about.php:168
 msgid "Abundant Patterns"
 msgstr "豊富なパターン"
 
-#: inc/init/class-theme-about.php:157
+#: inc/init/class-theme-about.php:172
 msgid "Translation Ready"
 msgstr "翻訳対応"
 
-#: inc/init/class-theme-about.php:160
+#: inc/init/class-theme-about.php:175
 msgid "Customize Manual"
 msgstr "カスタマイズ マニュアル"
 
-#: inc/init/class-theme-about.php:163
+#: inc/init/class-theme-about.php:178
 msgid "What is a site editor?"
 msgstr "サイトエディターとは？"
 
-#: inc/init/class-theme-about.php:164 inc/init/class-theme-about.php:168
-#: inc/init/class-theme-about.php:172 inc/init/class-theme-about.php:176
-#: inc/init/class-theme-about.php:180 inc/init/class-theme-about.php:184
-#: inc/init/class-theme-about.php:188 inc/init/class-theme-about.php:192
-#: inc/init/class-theme-about.php:196
+#: inc/init/class-theme-about.php:179 inc/init/class-theme-about.php:183
+#: inc/init/class-theme-about.php:187 inc/init/class-theme-about.php:191
+#: inc/init/class-theme-about.php:195 inc/init/class-theme-about.php:199
+#: inc/init/class-theme-about.php:203 inc/init/class-theme-about.php:207
+#: inc/init/class-theme-about.php:211
 msgid "View"
 msgstr "開く"
 
-#: inc/init/class-theme-about.php:167
+#: inc/init/class-theme-about.php:182
 msgid "What is a template?"
 msgstr "テンプレートとは？"
 
-#: inc/init/class-theme-about.php:171
+#: inc/init/class-theme-about.php:186
 msgid "What are template parts?"
 msgstr "テンプレートパーツとは？"
 
-#: inc/init/class-theme-about.php:175
+#: inc/init/class-theme-about.php:190
 msgid "Customize Top Page"
 msgstr "トップページをカスタマイズ"
 
-#: inc/init/class-theme-about.php:179
+#: inc/init/class-theme-about.php:194
 msgid "How to Use Patterns"
 msgstr "パターンの使い方"
 
-#: inc/init/class-theme-about.php:183
+#: inc/init/class-theme-about.php:198
 msgid "Change Header"
 msgstr "ヘッダーの変更"
 
-#: inc/init/class-theme-about.php:187
+#: inc/init/class-theme-about.php:202
 msgid "Change Footer"
 msgstr "フッターの変更"
 
-#: inc/init/class-theme-about.php:191
+#: inc/init/class-theme-about.php:206
 msgid "Add a sidebar to the page"
 msgstr "ページにサイドバーをつける"
 
-#: inc/init/class-theme-about.php:195
+#: inc/init/class-theme-about.php:210
 msgid "How do I undo a customization?"
 msgstr "カスタマイズを元に戻すには？"
 
-#: inc/init/class-theme-about.php:205
+#: inc/init/class-theme-about.php:220
 msgid ""
 "Streamline content and page creation in web production, including corporate "
 "sites, branding sites, and landing pages (LPs)! We carefully select and "
@@ -398,25 +411,25 @@ msgstr ""
 "ブ制作におけるコンテンツやページ作成を効率化！高品質で実用性の高い「すぐに使"
 "えるパターン」を厳選して配布しています。"
 
-#: inc/init/class-theme-about.php:210
+#: inc/init/class-theme-about.php:225
 msgid "Support & Forum"
 msgstr "サポート＆フォーラム"
 
-#: inc/init/class-theme-about.php:211
+#: inc/init/class-theme-about.php:226
 msgid "Join the Discord user community for support and forums."
 msgstr ""
 "Discord のユーザーコミュニティに参加して、サポートやフォーラムを利用してくだ"
 "さい。"
 
-#: inc/init/class-theme-about.php:212
+#: inc/init/class-theme-about.php:227
 msgid "Join Discord"
 msgstr "Discord に参加する"
 
-#: inc/init/class-theme-about.php:250
+#: inc/init/class-theme-about.php:265
 msgid "Follow AnimaGate, Inc."
 msgstr "株式会社 AnimaGate をフォローする"
 
-#: inc/init/class-theme-about.php:251
+#: inc/init/class-theme-about.php:266
 msgid ""
 "The latest product news and additional features are distributed through our "
 "official account."
@@ -459,32 +472,32 @@ msgctxt "Pattern:Call To Action"
 msgid "Contact"
 msgstr "お問合せはこちら"
 
-#: patterns/featured-content-02.php:29
+#: patterns/featured-content-02.php:26
 msgctxt "Pattern:Featured Content 02"
 msgid "Build"
 msgstr "組み立て"
 
-#: patterns/featured-content-02.php:33
+#: patterns/featured-content-02.php:30
 msgctxt "Pattern:Featured Content 02"
 msgid "Can intuitively create content as you wish using full site editing."
 msgstr "フルサイト編集の機能を使って自由なコンテンツを作成できます。"
 
-#: patterns/featured-content-02.php:51
+#: patterns/featured-content-02.php:48
 msgctxt "Pattern:Featured Content 02"
 msgid "Design"
 msgstr "デザイン"
 
-#: patterns/featured-content-02.php:55
+#: patterns/featured-content-02.php:52
 msgctxt "Pattern:Featured Content 02"
 msgid "Various block patterns and block styles can be used."
 msgstr "さまざまなブロックパターンやブロックスタイルが使えます。"
 
-#: patterns/featured-content-02.php:73
+#: patterns/featured-content-02.php:70
 msgctxt "Pattern:Featured Content 02"
 msgid "Flexible"
 msgstr "柔軟さ"
 
-#: patterns/featured-content-02.php:77
+#: patterns/featured-content-02.php:74
 msgctxt "Pattern:Featured Content 02"
 msgid "Support for content that changes and updates quickly."
 msgstr "頻繁なコンテンツの変更に素早く対応できます。"
