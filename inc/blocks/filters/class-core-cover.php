@@ -19,7 +19,9 @@ class Cover {
 
 	public function render_block( $block_content, $block ) {
 
-		return preg_replace( '@<div[^>]*?class="no-image".*?>(.*?)</div>@s', '', $block_content );
+		if( isset( $block['attrs']['className'] ) && $block['attrs']['className'] === 'page-title' ){
+			return preg_replace( '@<div[^>]*?class="no-image".*?>(.*?)</div>@s', '', $block_content );
+		}
 
 		return $block_content;
 
