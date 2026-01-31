@@ -181,3 +181,6 @@ msgstr ""
 
 msgid "Manage your projects"
 msgstr ""
+
+msgid "No Marker"
+msgstr ""
