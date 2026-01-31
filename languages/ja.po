@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AnimaGate, Inc.\n"
-"POT-Creation-Date: 2025-12-23 21:15+0900\n"
-"PO-Revision-Date: 2025-12-23 21:16+0900\n"
+"POT-Creation-Date: 2026-01-31 16:10+0900\n"
+"PO-Revision-Date: 2026-01-31 16:10+0900\n"
 "Last-Translator: \n"
 "Language-Team: Tetsuya Imamura <wpdev@animagate.com>\n"
 "Language: ja\n"
@@ -208,6 +208,10 @@ msgstr "矢印 01"
 #: inc/blocks/styles/list.php:14
 msgid "Arrow 02"
 msgstr "矢印 02"
+
+#: inc/blocks/styles/list.php:18
+msgid "No Marker"
+msgstr "マーカーなし"
 
 #: inc/blocks/styles/symbol.php:5
 msgid "Info 01"
