@@ -12,5 +12,9 @@ $list_array = array(
 	array(
 		'name'  => 'list-arrow-02',
 		'label' => __( 'Arrow 02', 'hakoniwa' ),
+	),
+	array(
+		'name'  => 'list-no-marker',
+		'label' => __( 'No Marker', 'hakoniwa' ),
 	)
 );
