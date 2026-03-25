@@ -9,9 +9,9 @@ https://developer.wordpress.org/coding-standards/wordpress-coding-standards/
 # カラーピッカーのルール
 
 ## ルール
-管理画面にカラー設定を追加する場合、jQueryのwpColorPickerを使用すること。
+テーマやプラグインなどの独自の管理画面を作成してカラー設定を追加する場合、jQueryのwpColorPickerを使用すること。
 
-## 実装例
+## 参照 URL
 https://make.wordpress.org/core/2012/11/30/new-color-picker-in-wp-3-5/
 
 # SVGアイコンのルール
