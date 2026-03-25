@@ -29,8 +29,21 @@
 						border-bottom:none;
 					}
 				}
-			}	
+			}
+
+			.has-child{
+				.wp-block-navigation__submenu-container{
+					> .wp-block-navigation-item{
+						> .wp-block-navigation-item__content{
+							padding-top: inherit;
+							padding-bottom: inherit;
+						}
+					}
+				}
+			}
+
 		}
+		
 	}
 }
 
@@ -107,6 +120,7 @@
 		}
 
 		.wp-block-navigation,
+		.wp-block-navigation-submenu,
 		.wp-block-page-list{
 			gap:1em;
 			align-items: flex-start !important;
@@ -115,6 +129,8 @@
 		.wp-block-navigation-item{
 			align-items: flex-start !important;
 		}
+
+		
 	}	
 	
 }

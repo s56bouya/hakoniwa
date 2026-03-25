@@ -2,11 +2,11 @@
 @use "sass:map";
 @use "../breakpoint";
 @use "../variables" as *;
-
+/*
 .wp-block-navigation__responsive-container{
 	// メニューオープン時
 	&.is-menu-open{
-		padding:var(--wp--custom--style--block-gap, 2rem);
+//		padding:var(--wp--custom--style--block-gap, 2rem);
 
 		.wp-block-navigation__responsive-container-content{
 			.wp-block-navigation__submenu-container{
@@ -28,7 +28,7 @@
 			width:100%;
 			max-width:400px;
 			margin: auto;
-			gap:0 !important;
+//			gap:0 !important;
 
 			.wp-block-navigation-item{
 				width:inherit;				
@@ -36,10 +36,8 @@
 
 			// button, a
 			.wp-block-navigation-item__content{
-				width:inherit;
-				padding:0.75em 0 !important;
-
-				
+//				width:inherit;
+//				padding:0.75em 0 !important;
 			}
 
 		}
@@ -49,13 +47,13 @@
 
 			// 第一階層で下の階層がある場合
 			.wp-block-navigation-item{
-				border-bottom: 1px solid color-mix(in srgb, currentColor 30%, transparent);
+//				border-bottom: 1px solid color-mix(in srgb, currentColor 30%, transparent);
 
 				&.has-child{
 					border-bottom:none;
 
 					.wp-block-navigation__submenu-container{
-						border-top: 1px solid color-mix(in srgb, currentColor 30%, transparent);	
+//						border-top: 1px solid color-mix(in srgb, currentColor 30%, transparent);	
 					}
 		
 				}
@@ -124,3 +122,353 @@
 	gap:5px;
 	align-items: center;
 }
+*/
+
+/*
+テンプレなし
+
+オフ：
+nav
+wp-block-navigation is-layout-flex wp-container-core-navigation-is-layout-1e2f01a1 wp-block-navigation-is-layout-flex
+
+div なし
+
+ul
+wp-block-navigation__container  wp-block-navigation
+
+モバイル：
+nav
+is-responsive wp-block-navigation is-layout-flex wp-container-core-navigation-is-layout-1e2f01a1 wp-block-navigation-is-layout-flex
+
+div
+wp-block-navigation__responsive-container has-modal-open is-menu-open
+
+ul
+wp-block-navigation__container is-responsive wp-block-navigation
+
+常時：
+nav
+is-responsive wp-block-navigation is-layout-flex wp-container-core-navigation-is-layout-1e2f01a1 wp-block-navigation-is-layout-flex
+
+div
+wp-block-navigation__responsive-container hidden-by-default has-modal-open is-menu-open
+
+ul
+wp-block-navigation__container is-responsive wp-block-navigation
+
+テンプレあり
+
+モバイル
+nav
+is-responsive wp-block-navigation is-layout-flex wp-container-core-navigation-is-layout-1e2f01a1 wp-block-navigation-is-layout-flex
+
+div
+wp-block-navigation__responsive-container disable-default-overlay has-modal-open is-menu-open
+
+ul
+wp-block-navigation__container is-responsive wp-block-navigation
+
+常時：
+nav
+is-responsive wp-block-navigation is-layout-flex wp-container-core-navigation-is-layout-1e2f01a1 wp-block-navigation-is-layout-flex
+
+div
+wp-block-navigation__responsive-container hidden-by-default disable-default-overlay has-modal-open is-menu-open
+
+ul
+wp-block-navigation__container is-responsive wp-block-navigation
+
+*/
+
+/*
+全共通
+ul
+ wp-block-navigation__container wp-block-navigation
+
+ is-responsiveはモバイル・常時両方につくクラス。つまり、モバイル・常時両方に適用されるスタイルは、.is-responsiveを持つ要素に対して記述すれば良い。
+*/
+
+/*
+シャドウとパディングを付与する条件
+
+テンプレなし
+/オフ：全サイズ
+モバイル：600px以上
+
+テンプレあり
+モバイル：600px以上
+*/
+
+@mixin nav-common-style{
+	.wp-block-navigation__submenu-container {
+		border-color: transparent;
+	}
+
+	.wp-block-navigation__submenu-icon{
+		width: auto;
+		height: auto;
+		margin-right:3px;
+
+		svg{
+			margin-top:0;
+		}
+	}	
+}
+
+@mixin nav-style {
+
+	.wp-block-navigation-item{
+		cursor: pointer;
+
+		.wp-block-navigation-item__content {
+			padding-top: calc( var(--wp--custom--style--block-gap) );
+			padding-bottom: calc( var(--wp--custom--style--block-gap) );
+		}
+	}
+
+	.wp-block-navigation__submenu-container {
+		box-shadow: 2px 7px 10px -10px color-mix(in srgb, currentColor 20%, transparent);
+		font-size: var(--wp--preset--font-size--2-xs);
+		border-color: transparent;
+
+		.wp-block-navigation-item:has(+ .wp-block-navigation-item) {
+			border-bottom: 1px solid color-mix(in srgb, currentColor 8%, transparent);
+		}
+
+		.wp-block-navigation-item{
+			.wp-block-navigation-item__content {
+				padding: calc( var(--wp--custom--style--block-gap) / 2 );
+			}
+		}
+
+	}
+
+}
+
+@mixin nav-icon-style{
+	.has-child{
+		.wp-block-navigation__submenu-container{
+			.wp-block-navigation__submenu-icon{
+				margin-right:1em;
+			}
+		}
+	}
+}
+
+nav.wp-block-navigation{
+	// オフの時のみ
+	&:not(.is-responsive){
+		> .wp-block-navigation__container{
+			@include nav-style;
+			@include nav-icon-style;
+		}
+	}
+}
+
+.wp-block-navigation__overlay-container{
+	.wp-block-navigation{
+
+		> .wp-block-navigation__container{
+			width:100%;
+
+			.has-child .wp-block-navigation-submenu__toggle[aria-expanded=true]~.wp-block-navigation__submenu-container,
+			.wp-block-navigation-item{
+				width:inherit;
+			}
+		}
+
+		.wp-block-navigation-item.open-on-click .wp-block-navigation-submenu__toggle{
+			padding-right:1em;
+		}
+
+		.wp-block-navigation-item__content{
+			flex-grow: 1;
+		}
+
+		.open-on-click,
+		.open-on-hover-click{
+			&.wp-block-navigation-submenu{
+				flex-wrap: wrap;
+
+				.wp-block-navigation-submenu__toggle[aria-expanded=true]~.wp-block-navigation__submenu-container{
+					position: relative;
+					padding-top:var(--wp--custom--style--block-gap);
+					padding-left:var(--wp--custom--style--block-gap);
+				}
+
+			}
+		}
+
+		.has-child {
+			.wp-block-navigation-submenu__toggle[aria-expanded]~.wp-block-navigation__submenu-container{
+				//width:100%;
+				//position: unset;
+			}
+		}
+	}
+
+}
+
+
+// 全てのナビゲーション（オフ・モバイル・常時）には .wp-block-navigation クラスが付与される
+.wp-block-navigation{
+
+	// 共通スタイル
+	@include nav-common-style;
+
+
+
+	// メニューオープン時
+	.is-menu-open{
+		.wp-block-navigation__container{
+			.wp-block-navigation-item{
+				.wp-block-navigation-item__content{
+					padding:unset !important;
+				}
+			}
+
+			.wp-block-navigation__submenu-container{
+				box-shadow: unset !important;
+				font-size: unset;
+				border-color:transparent;
+				border:none;
+
+				.wp-block-navigation-item{
+					border-bottom: unset !important;
+				}
+			}
+		}
+
+
+		&:where(:not(.disable-default-overlay)) .wp-block-navigation__responsive-container-content .has-child .wp-block-navigation__submenu-container{
+			gap:var(--wp--custom--style--block-gap);
+			padding-left: var(--wp--style--block-gap, 2em);
+			padding-right: var(--wp--style--block-gap, 2em);
+		}
+
+		&:where(:not(.disable-default-overlay)) .wp-block-navigation__responsive-container-content .wp-block-navigation__submenu-container{
+//			padding-top:0;
+//			padding-left: var(--wp--style--block-gap, 2em);
+//			padding-right: var(--wp--style--block-gap, 2em);
+		}
+
+		.wp-block-navigation__container,
+		.wp-block-navigation__submenu-container{
+			gap:var(--wp--custom--style--block-gap);
+
+			.wp-block-navigation-item{
+				//gap:inherit;
+			}
+
+		}
+
+		.wp-block-navigation .has-child .wp-block-navigation__submenu-container>.wp-block-navigation-item>.wp-block-navigation-item__content{
+			padding:0;				
+		}
+
+		.wp-block-navigation__submenu-container{
+			.wp-block-navigation-item{
+
+				.wp-block-navigation-item__content{
+					&::before{
+						content: '-';
+						display: inline-block;
+						margin-right:0.25em;
+						opacity: 0.5;
+					}
+				}
+			}
+		}
+
+
+	}
+
+	//　開くボタン
+	.wp-block-navigation__responsive-container-open{
+		padding: calc( var(--wp--custom--style--block-gap) ) 0 !important;
+	}
+
+	.wp-block-navigation-overlay-close{
+		padding:0;
+	}
+
+}
+
+// 600px以上
+@media (min-width: 600px) {
+	.wp-block-navigation{
+		&.is-responsive{
+			.wp-block-navigation__responsive-container:not(.hidden-by-default){
+				@include nav-style;
+				@include nav-icon-style;
+			}
+		}
+	}
+}
+
+/*
+// オフの場合、パディングとシャドウを付与 
+
+// モバイル・常時の場合のみ
+nav.wp-block-navigation__responsive-container{
+
+	&:not(.disable-default-overlay){
+
+	}
+
+	&:not(.wp-block-navigation__overlay-container){
+		
+		//全てのナビゲーション（オフ・モバイル・常時）には .wp-block-navigation クラスが付与される
+		ul.wp-block-navigation__container{
+			// オフの時のみ
+			&:not(.is-responsive){
+				li{
+					a.wp-block-navigation-item__content{
+						padding:1.5rem 0;
+					}
+				}
+
+				ul.wp-block-navigation__submenu-container{
+					box-shadow: 2px 7px 10px -10px color-mix(in srgb, currentColor 20%, transparent);
+					font-size:var(--wp--preset--font-size--sm);
+					border-color:transparent;
+				}
+			}
+		}
+
+	}
+	
+}
+
+.wp-block-navigation__responsive-container{
+	&.is-menu-open:where(:not(.disable-default-overlay)){
+		.wp-block-navigation__responsive-container-content .wp-block-navigation__container,
+		.wp-block-navigation__container > .wp-block-navigation-submenu{
+			gap:0.5rem;
+		}
+	} 
+}
+
+// 600px以上
+@media (min-width: 600px) {
+	// オフ・常時共通
+	.wp-block-navigation__responsive-container{
+		&:not(.hidden-by-default){
+			ul.wp-block-navigation__container{
+				li{
+					a.wp-block-navigation-item__content{
+						padding:1.5rem 0;
+					}
+
+					ul.wp-block-navigation__submenu-container{
+						box-shadow: 2px 7px 10px -10px color-mix(in srgb, currentColor 20%, transparent);
+						font-size:var(--wp--preset--font-size--sm);
+						border-color:transparent;
+					}
+				}
+
+			}
+		}
+	}
+}
+*/

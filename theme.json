@@ -272,9 +272,9 @@
 		"spacing": {
 			"blockGap": "var(--wp--custom--style--block-gap)",
 			"padding": {
-                "top": "0",
+                "top": "0px",
                 "right": "2rem",
-                "bottom": "0",
+                "bottom": "0px",
                 "left": "2rem"
             }
 		},
@@ -588,6 +588,11 @@
 			"area": "uncategorized",
 			"name": "sidebar",
 			"title": "Sidebar"
-		}
+		},
+		{
+            "area": "navigation-overlay",
+            "name": "navigation-overlay",
+            "title": "[Hakoniwa] Navigation Overlay"
+        }
 	]
 }

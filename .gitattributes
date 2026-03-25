@@ -1,5 +1,6 @@
 .gitignore export-ignore
 .gitattributes export-ignore
+.claude export-ignore
 
 src export-ignore
 dist/* export-ignore
