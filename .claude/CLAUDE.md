@@ -9,6 +9,9 @@ https://ja.wordpress.org/themes/hakoniwa/
 - JS: assets/js/
 - 画像: assets/images/
 
+### 常時ルール
+- セキュリティ（PHP / JavaScript） → @.claude/rules/security.md
+
 ### 一時ルール（このプロジェクト限定）
 - WordPress 7.0 Beta 対応 → @.claude/rules/wp-7-0.md
 - WordPress 7.0 Beta 対応（ナビゲーション） → @.claude/rules/wp-7-0-navigation.md
