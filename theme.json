@@ -61,6 +61,25 @@
 				"unit": "rem"
 			}
 		},
+		"dimensions": {
+            "dimensionSizes": [
+                {
+                    "name": "Small",
+                    "slug": "small",
+                    "size": "240px"
+                },
+                {
+                    "name": "Medium",
+                    "slug": "medium",
+                    "size": "480px"
+                },
+                {
+                    "name": "Large",
+                    "slug": "large",
+                    "size": "720px"
+                }
+            ]
+        },
 		"custom": {
 			"gutter": "1rem",
 			"spacing":{
@@ -551,6 +570,9 @@
 						"top": "0.5rem"
 					}
 				}
+			},
+			"core/list": {
+				"css": "& li{margin-top: calc(var(--wp--custom--style--block-gap) / 6);}"
 			},
 			"core/query": {
 			},

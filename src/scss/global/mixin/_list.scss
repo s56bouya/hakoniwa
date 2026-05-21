@@ -10,14 +10,6 @@
 		}
 	}
 
-	.wp-block-list {
-		li {
-			&:not(:last-child) {
-				margin-bottom: calc( var(--wp--custom--style--block-gap) / 2 );
-			}
-		}
-	}
-
     ul,ol{
         padding-left:1.5em;
 
