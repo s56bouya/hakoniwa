@@ -12,6 +12,8 @@ class Settings {
 
 		add_action( 'after_setup_theme', [ $this, 'theme_support' ] );
 
+		add_action( 'init', [ $this, 'post_type_support' ] );
+
 		add_filter( 'post_thumbnail_html', [ $this, 'default_thumbnail' ], 10, 3 );
 
 		add_action( 'init', [ $this, 'register_pattern_categories' ] );
@@ -33,6 +35,13 @@ class Settings {
 		
 		add_theme_support( 'responsive-embeds' );
 
+	}
+
+	/**
+	 * Post Type Support
+	 */
+	public function post_type_support(){
+		add_post_type_support( 'page', 'excerpt' );
 	}
 
 	/**
