@@ -181,3 +181,6 @@ msgstr ""
 
 msgid "No Marker"
 msgstr ""
+
+msgid "We could not find any results. You can give it another try through the search form below."
+msgstr ""

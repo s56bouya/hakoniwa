@@ -1,7 +1,7 @@
 <?php
 /**
- * Title: Query No Results Content
- * Slug: hakoniwa/query-no-results
+ * Title: Not Found Content
+ * Slug: hakoniwa/not-found
  * Categories: Hakoniwa
  * 
  * @package Hakoniwa
