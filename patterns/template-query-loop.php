@@ -36,7 +36,7 @@
 		<!-- /wp:group -->
 	<!-- /wp:query-no-results -->
 
-	<!-- wp:query-pagination {"align":"wide","className":"pb-8","fontSize":"xs","layout":{"type":"flex","justifyContent":"center"}} -->
+	<!-- wp:query-pagination {"align":"wide","fontSize":"xs","layout":{"type":"flex","justifyContent":"center"}} -->
 		<!-- wp:query-pagination-previous /-->
 		<!-- wp:query-pagination-numbers /-->
 		<!-- wp:query-pagination-next /-->
