@@ -1,0 +1,12 @@
+name: Auto Label PR
+
+on:
+  pull_request:
+    types: [opened, edited, synchronize]
+
+permissions:
+  pull-requests: write
+
+jobs:
+  label:
+    uses: s56bouya/workflows/.github/workflows/auto-label.yml@main
