@@ -1,0 +1,26 @@
+changelog:
+  exclude:
+    labels:
+      - ignore-for-release
+    authors:
+      - dependabot
+      - github-actions[bot]
+  categories:
+    - title: 新機能 (Features)
+      labels:
+        - feature
+        - enhancement
+    - title: バグ修正 (Bug Fixes)
+      labels:
+        - bug
+        - fix
+    - title: ドキュメント (Documentation)
+      labels:
+        - documentation
+    - title: その他 (Chores)
+      labels:
+        - chore
+        - refactor
+    - title: 未分類 (Other)
+      labels:
+        - '*'
