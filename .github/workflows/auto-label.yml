@@ -9,4 +9,43 @@ permissions:
 
 jobs:
   label:
-    uses: s56bouya/workflows/.github/workflows/auto-label.yml@main
+    runs-on: ubuntu-latest
+    steps:
+      - name: Label based on PR title prefix
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = context.payload.pull_request.title;
+
+            const prefixMap = {
+              'feat':     'feature',
+              'feature':  'feature',
+              'fix':      'bug',
+              'bugfix':   'bug',
+              'docs':     'documentation',
+              'chore':    'chore',
+              'refactor': 'refactor',
+            };
+
+            const match = title.match(/^(\w+)(\(.+\))?:/);
+            if (!match) {
+              console.log('プレフィックスが見つかりませんでした。ラベル付けをスキップします。');
+              return;
+            }
+
+            const prefix = match[1].toLowerCase();
+            const label = prefixMap[prefix];
+
+            if (!label) {
+              console.log(`未対応のプレフィックス: ${prefix}`);
+              return;
+            }
+
+            await github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.pull_request.number,
+              labels: [label],
+            });
+
+            console.log(`ラベル "${label}" を付与しました。`);
