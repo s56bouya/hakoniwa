@@ -105,15 +105,28 @@ h1.wp-block-site-title{
     }
 }
 
-.comment-form{
-    > * {
-        margin:1.5rem 0;
-    }
+.wp-block-comments{
+	.comment-form{
+		> * {
+			margin:1.5rem 0;
+		}
 
-	textarea{
-		resize:vertical;
+		textarea{
+			resize:vertical;
+		}
+
+		.comment-form-cookies-consent{
+			input{
+				flex-shrink: 0;
+			}
+
+			label{
+				flex:1;
+			}
+		}
 	}
 }
+
 
 /* Post Template*/
 .wp-block-post-template{
