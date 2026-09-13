@@ -8,11 +8,16 @@
 }
 
 html {
+	scroll-padding-block-start: calc( var(--header-height, 0px ) + var(--wp--custom--style--block-gap) );
 	scroll-behavior: smooth;
 }
 
 html:focus-within {
 	scroll-behavior: smooth;
+}
+
+:focus-visible {
+  scroll-margin-block-start: calc( var(--header-height, 0px ) + var(--wp--custom--style--block-gap) );
 }
 
 body{
