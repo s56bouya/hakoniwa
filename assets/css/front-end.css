@@ -17,11 +17,16 @@
 }
 
 html {
+  scroll-padding-block-start: var(--header-height);
   scroll-behavior: smooth;
 }
 
 html:focus-within {
   scroll-behavior: smooth;
+}
+
+:focus-visible {
+  scroll-margin-block-start: var(--header-height);
 }
 
 body {
