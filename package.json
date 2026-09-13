@@ -33,6 +33,9 @@
   },
   "author": "",
   "license": "ISC",
+  "browserslist": [
+    "extends @wordpress/browserslist-config"
+  ],
   "devDependencies": {
     "@babel/cli": "^7.13.16",
     "@babel/core": "^7.13.16",
