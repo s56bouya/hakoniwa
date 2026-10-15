@@ -1,5 +1,5 @@
 {
-	"version": 2,
+	"version": 3,
 	"settings": {
 		"useRootPaddingAwareAlignments": true,
 		"appearanceTools": true,
@@ -126,12 +126,12 @@
 				},
 				{
 					"name": "Normal(Hakoniwa)",
-					"slug": "hakoniwa-shadow-md",
+					"slug": "hakoniwa-shadow",
 					"shadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1)"
 				},
 				{
 					"name": "Medium(Hakoniwa)",
-					"slug": "hakoniwa-shadow",
+					"slug": "hakoniwa-shadow-md",
 					"shadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1)"
 				},
 				{
@@ -153,6 +153,31 @@
 					"name": "inner(Hakoniwa)",
 					"slug": "hakoniwa-shadow-inner",
 					"shadow": "inset 0 2px 4px 0 rgba(0, 0, 0, 0.05)"
+				},
+				{
+					"name": "Soft(Hakoniwa)",
+					"slug": "hakoniwa-shadow-soft",
+					"shadow": "0 1px 4px 0 rgba(0, 0, 0, 0.03), 0 8px 24px 0 rgba(0, 0, 0, 0.07)"
+				},
+				{
+					"name": "Outline(Hakoniwa)",
+					"slug": "hakoniwa-shadow-outline",
+					"shadow": "0 0 0 1px rgba(0, 0, 0, 0.06), 0 1px 4px 0 rgba(0, 0, 0, 0.03), 0 10px 24px -8px rgba(0, 0, 0, 0.1)"
+				},
+				{
+					"name": "Bordered(Hakoniwa)",
+					"slug": "hakoniwa-shadow-bordered",
+					"shadow": "0 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.05)"
+				},
+				{
+					"name": "Float(Hakoniwa)",
+					"slug": "hakoniwa-shadow-float",
+					"shadow": "0 0 0 1px rgba(0, 0, 0, 0.05), 0 1px 4px 0 rgba(0, 0, 0, 0.03), 0 12px 32px -12px rgba(0, 0, 0, 0.14)"
+				},
+				{
+					"name": "Ambient(Hakoniwa)",
+					"slug": "hakoniwa-shadow-ambient",
+					"shadow": "0 0 0 1px color-mix(in srgb, currentColor 4%, transparent), 0 0.5rem 2rem color-mix(in srgb, currentColor 8%, transparent)"
 				}
 			]
 		},
