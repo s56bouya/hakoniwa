@@ -39,6 +39,7 @@
 			"wideSize": "960px"
 		},
 		"spacing": {
+			"defaultSpacingSizes": false,
 			"blockGap": "var(--wp--custom--style--block-gap)",
 			"customPadding": true,
 			"units": [
@@ -182,6 +183,7 @@
 			]
 		},
 		"typography": {
+			"defaultFontSizes": false,
 			"fluid": {
 				"maxViewportWidth": "1000px",
 				"minViewportWidth": "320px"
