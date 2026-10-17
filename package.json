@@ -24,8 +24,6 @@
     "watch:css-all": "run-p watch:css:front-end watch:css:admin",
     "lint:js": "npx eslint './src/js/**/*.js'",
     "lint-fix:js": "npx eslint './src/js/**/*.js' --fix",
-    "lint:scss": "npx stylelint './src/scss/**/*.scss'",
-    "lint-fix:scss": "npx stylelint './src/scss/**/*.scss' --fix",
     "copy:css": "npx cpx './dist/assets/css/*.css' ./assets/css",
     "copy:css:blocks": "npx cpx './dist/assets/css/blocks/**' ./assets/css/blocks",
     "copy:js": "npx cpx './dist/assets/js/*.js' ./assets/js",
@@ -59,8 +57,6 @@
     "rollup": "^2.45.2",
     "rollup-plugin-uglify": "^5.0.2",
     "sass": "~1.99.0",
-    "stylelint": "^13.12.0",
-    "stylelint-config-recommended-scss": "^4.2.0",
     "watch": "^0.13.0"
   }
 }
