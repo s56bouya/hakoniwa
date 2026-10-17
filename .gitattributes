@@ -14,10 +14,10 @@ dist/* export-ignore
 .github/* export-ignore
 /.babelrc export-ignore
 /.browserslistrc export-ignore
-/.eslintignore export-ignore
-/.eslintrc.js export-ignore
+/eslint.config.mjs export-ignore
 /.stylelintrc.json export-ignore
 
 /postcss.config.js export-ignore
 /rollup.config.js export-ignore
 /webpack.config.js export-ignore
+/.node-version export-ignore
