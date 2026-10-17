@@ -35,8 +35,7 @@ npm-debug.log
 #.gitignore
 #.babelrc
 #.browserslistrc
-#.eslintignore
-#.eslintrc.js
+#eslint.config.mjs
 #.stylelintrc.json
 #postcss.config.js
 #rollup.config.js
