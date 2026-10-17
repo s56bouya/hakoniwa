@@ -6,16 +6,18 @@ function hakoniwaSmoothScroll() {
 	( function (
 		window,
 		undefined,
-		getHeaderHeight // Code in a function to create an isolate scope
+		headerHeight // Code in a function to create an isolate scope
 	) {
 		'use strict';
 
-		let heightFixedHeader = getHeaderHeight, // For layout with header with position:fixed. Write here the height of your header for your anchor don't be hiden behind
-			href;
+		const heightFixedHeader = headerHeight; // For layout with header with position:fixed. Write here the height of your header for your anchor don't be hiden behind
+		let href;
 
 		const speed = 300,
 			movingFrequency = 10,
-			links = document.querySelectorAll( 'a:not(.noscroll):not(.skip-link.screen-reader-text)' );
+			links = document.querySelectorAll(
+				'a:not(.noscroll):not(.skip-link.screen-reader-text)'
+			);
 
 		const getUrl = window.location;
 		const baseUrl =
@@ -48,15 +50,16 @@ function hakoniwaSmoothScroll() {
 				scrollFlag === true
 			) {
 				links[ i ].onclick = function () {
-					let element,
-						href = this.attributes.href.nodeValue.toString(),
-						url = href.substring( 0, href.indexOf( '#' ) ),
-						id = href.substring( href.indexOf( '#' ) + 1 );
+					let element;
+					const linkHref = this.attributes.href.nodeValue.toString(),
+						url = linkHref.substring( 0, linkHref.indexOf( '#' ) ),
+						id = linkHref.substring( linkHref.indexOf( '#' ) + 1 );
 					if ( ( element = document.getElementById( id ) ) ) {
 						const hopCount =
 								( speed - ( speed % movingFrequency ) ) /
 								movingFrequency, // Always make an integer
-							getScrollTopDocumentAtBegin = getScrollTopDocument(),
+							getScrollTopDocumentAtBegin =
+								getScrollTopDocument(),
 							gap =
 								( getScrollTopElement( element ) -
 									getScrollTopDocumentAtBegin ) /
@@ -65,12 +68,13 @@ function hakoniwaSmoothScroll() {
 						if (
 							window.history &&
 							typeof window.history.pushState === 'function'
-						)
+						) {
 							window.history.pushState(
 								{},
 								undefined,
 								url + '#' + id
-							); // Change URL for modern browser
+							);
+						} // Change URL for modern browser
 
 						for ( let j = 1; j <= hopCount; j++ ) {
 							( function () {
@@ -103,9 +107,11 @@ function hakoniwaSmoothScroll() {
 		};
 
 		const getScrollTopDocument = function () {
-			return window.pageYOffset !== undefined
-				? window.pageYOffset
-				: document.documentElement.scrollTop !== undefined
+			if ( window.pageYOffset !== undefined ) {
+				return window.pageYOffset;
+			}
+
+			return document.documentElement.scrollTop !== undefined
 				? document.documentElement.scrollTop
 				: document.body.scrollTop;
 		};
