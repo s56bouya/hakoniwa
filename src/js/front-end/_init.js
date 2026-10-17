@@ -3,13 +3,11 @@ import { setupHeaderHeight } from './_header-height';
 
 /** Init */
 function hakoniwaInit() {
-
-//	// Smooth Scroll
-//	hakoniwaSmoothScroll();
+	//	// Smooth Scroll
+	//	hakoniwaSmoothScroll();
 
 	// Header Height
 	setupHeaderHeight();
-
 }
 
 export { hakoniwaInit };
