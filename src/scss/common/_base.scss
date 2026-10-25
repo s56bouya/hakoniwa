@@ -10,6 +10,7 @@
 html {
 	scroll-padding-block-start: calc( var(--header-height, 0px ) + var(--wp--custom--style--block-gap) );
 	scroll-behavior: smooth;
+	text-autospace: normal;
 }
 
 html:focus-within {
@@ -43,6 +44,10 @@ pre{
 button{
     cursor: pointer;
 	letter-spacing: 0.07rem;
+}
+
+code, kbd, samp, pre {
+	text-autospace: no-autospace;
 }
 
 main{
