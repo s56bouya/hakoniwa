@@ -10,7 +10,7 @@ changelog:
       labels:
         - feature
         - enhancement
-    - title: バグ修正 (Bug Fixes)
+    - title: 改善・調整 (Improvements)
       labels:
         - bug
         - fix
