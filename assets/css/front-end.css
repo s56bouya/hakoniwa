@@ -131,10 +131,6 @@ h1.wp-block-site-title {
 }
 .wp-block-post-template .detail {
   word-wrap: break-word;
-  margin-block-start: 0;
-}
-.wp-block-post-template .detail > * {
-  margin-block-start: 0.5em;
 }
 
 .no-image {
@@ -10965,9 +10961,6 @@ h1.wp-block-site-title {
 
 .wp-block-query .wp-block-post-title {
   margin: 0;
-}
-.wp-block-query .wp-block-post-featured-image {
-  margin-bottom: 0.5em;
 }
 .wp-block-query .wp-block-post-template a {
   text-decoration: none;
