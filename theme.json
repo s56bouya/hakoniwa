@@ -31,6 +31,11 @@
 					"color": "#f6f6f6",
 					"name": "Tertiary",
 					"slug": "tertiary"
+				},
+				{
+					"color": "color-mix(in srgb, currentColor 20%, transparent)",
+					"name": "Quaternary",
+					"slug": "quaternary"
 				}
 			]
 		},
