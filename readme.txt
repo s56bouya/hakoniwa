@@ -15,7 +15,3 @@ Hakoniwa partially uses the following third-party resources:
 tabler-icons - https://github.com/tabler/tabler-icons
 License: Distributed under the terms of the MIT License (https://github.com/tabler/tabler-icons/blob/master/LICENSE)
 Copyright 2018-2023 Tabler
-
-== Changelog ==
-
-See the release notes on GitHub: https://github.com/s56bouya/hakoniwa/releases
