@@ -9,7 +9,7 @@
  */
 
 ?>
-<!-- wp:query {"queryId":1,"query":{"perPage":6,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"excludeCurrent":null},"metadata":{"patternName":"hakoniwa/template-query-loop","name":"Template Query Loop Content","categories":["Hakoniwa"]},"align":"wide","layout":{"inherit":false}} -->
+<!-- wp:query {"query":{"perPage":6,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true,"excludeCurrent":null},"metadata":{"patternName":"hakoniwa/template-query-loop","name":"Template Query Loop Content","categories":["Hakoniwa"]},"align":"wide","layout":{"inherit":false}} -->
 <div class="wp-block-query alignwide"><!-- wp:post-template {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|60"}},"layout":{"type":"grid","columnCount":3,"minimumColumnWidth":"240px","autoFit":false}} -->
 <!-- wp:group {"style":{"spacing":{"blockGap":"0.5em"}},"fontSize":"card","layout":{"type":"grid","autoFit":true,"columnCount":1,"minimumColumnWidth":"240px"}} -->
 <div class="wp-block-group has-card-font-size"><!-- wp:post-featured-image {"isLink":true,"className":"aspect-ratio-16-9"} /-->
