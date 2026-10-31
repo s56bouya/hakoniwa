@@ -317,6 +317,18 @@
 					"name": "2XS",
 					"slug": "2xs",
 					"size": "0.875rem"
+				},
+				{
+					"fluid": false,
+					"name": "Card",
+					"slug": "card",
+					"size": "clamp(0.825rem, 0.5rem + 3cqi, 1rem)"
+				},
+				{
+					"fluid": false,
+					"name": "Card Title",
+					"slug": "card-title",
+					"size": "calc(var(--wp--preset--font-size--card) * 1.15)"
 				}
 			]
 		}
