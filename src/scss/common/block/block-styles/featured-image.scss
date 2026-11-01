@@ -1,0 +1,15 @@
+@use "../../variables" as *;
+
+.is-style-#{$product-name}-featured-image-effect-zoom{
+	img{
+		transition: all 300ms ease;
+		will-change: transform;
+		backface-visibility: hidden;
+	}
+
+	&:hover{
+		img{
+			transform: scale(1.05);
+		}
+	}
+}

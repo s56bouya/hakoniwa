@@ -35,6 +35,8 @@ class Register {
 
 		require_once 'accordion.php';
 
+		require_once 'featured-image.php';
+
 		// heading
 		$this->register_blocks_styles( 'core/heading', $heading_array );
 
@@ -63,6 +65,9 @@ class Register {
 		
 		// Accordion
 		$this->register_blocks_styles( 'core/accordion', $accordion_array );
+
+		// Post Featured Image
+		$this->register_blocks_styles( 'core/post-featured-image', $featured_image_array );
 	}
 
 	/**
