@@ -1,0 +1,43 @@
+@use "sass:map";
+@use "sass:meta";
+@use "../../global/breakpoint";
+
+
+//変数
+$sm:'sm\\:';
+$md:'md\\:';
+
+@mixin overflow( $size : '' ) {
+	.#{ $size }overflow-hidden{
+		overflow: hidden;
+	}
+
+	.#{ $size }overflow-clip{
+		overflow: clip;
+	}
+
+	.#{ $size }overflow-visible{
+		overflow: visible;
+	}
+
+	.#{ $size }overflow-scroll{
+		overflow: scroll;
+	}
+
+}
+
+@include overflow();
+
+@media #{map.get(breakpoint.$breakpoints, "tablet")} {
+
+	@include overflow($md);
+
+}
+
+
+@media #{map.get(breakpoint.$breakpoints, "smartphone")} {
+
+	@include overflow($sm);
+
+}
+
