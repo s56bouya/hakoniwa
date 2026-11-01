@@ -140,9 +140,6 @@ h1.wp-block-site-title{
 
 /* Post Template*/
 .wp-block-post-template{
-	.wp-block-post {
-		overflow: hidden;
-	}
 
     .detail{
 		word-wrap: break-word;
@@ -176,7 +173,6 @@ h1.wp-block-site-title{
 }
 
 .wp-block-post-featured-image{
-	overflow:hidden;
 	
 	img{
 		width: 100%;
@@ -185,10 +181,6 @@ h1.wp-block-site-title{
 	    will-change: transform;
 	    backface-visibility: hidden;
 	    object-fit: cover;
-
-		&:hover{
-			transform: scale(1.05);
-		}
 	}
 }
 

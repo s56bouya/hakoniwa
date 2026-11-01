@@ -322,13 +322,13 @@
 					"fluid": false,
 					"name": "Card",
 					"slug": "card",
-					"size": "clamp(0.825rem, 0.5rem + 3cqi, 1rem)"
+					"size": "clamp(0.825rem, 0.5rem + 3cqi, 1.15rem)"
 				},
 				{
 					"fluid": false,
 					"name": "Card Title",
 					"slug": "card-title",
-					"size": "calc(var(--wp--preset--font-size--card) * 1.15)"
+					"size": "calc(var(--wp--preset--font-size--card) * 1.1)"
 				}
 			]
 		}

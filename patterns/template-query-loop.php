@@ -9,10 +9,10 @@
  */
 
 ?>
-<!-- wp:query {"query":{"perPage":6,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true,"excludeCurrent":null},"metadata":{"patternName":"hakoniwa/template-query-loop","name":"Template Query Loop Content","categories":["Hakoniwa"]},"align":"wide","layout":{"inherit":false}} -->
-<div class="wp-block-query alignwide"><!-- wp:post-template {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|60"}},"layout":{"type":"grid","columnCount":3,"minimumColumnWidth":"240px","autoFit":false}} -->
-<!-- wp:group {"style":{"spacing":{"blockGap":"0.5em"}},"fontSize":"card","layout":{"type":"grid","autoFit":true,"columnCount":1,"minimumColumnWidth":"240px"}} -->
-<div class="wp-block-group has-card-font-size"><!-- wp:post-featured-image {"isLink":true,"className":"aspect-ratio-16-9"} /-->
+<!-- wp:query {"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true,"excludeCurrent":null},"metadata":{"patternName":"hakoniwa/template-query-loop","name":"Template Query Loop Content","categories":["Hakoniwa"]},"align":"wide","layout":{"inherit":false}} -->
+<div class="wp-block-query alignwide"><!-- wp:post-template {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|80"}},"layout":{"type":"grid","columnCount":2,"minimumColumnWidth":"280px","autoFit":false}} -->
+<!-- wp:group {"style":{"spacing":{"blockGap":"0.5em"}},"fontSize":"card","layout":{"type":"grid","autoFit":true,"columnCount":1,"minimumColumnWidth":"280px"}} -->
+<div class="wp-block-group has-card-font-size"><!-- wp:post-featured-image {"isLink":true,"aspectRatio":"16/9","className":"overflow-hidden is-style-hakoniwa-featured-image-effect-zoom"} /-->
 
 <!-- wp:group {"className":"detail","style":{"spacing":{"blockGap":"0.25em"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group detail"><!-- wp:post-title {"isLink":true,"fontSize":"card-title"} /-->
