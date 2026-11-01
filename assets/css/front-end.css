@@ -126,6 +126,9 @@ h1.wp-block-site-title {
 }
 
 /* Post Template*/
+.wp-block-post-template .wp-block-post {
+  overflow: hidden;
+}
 .wp-block-post-template .detail {
   word-wrap: break-word;
 }
@@ -155,6 +158,9 @@ h1.wp-block-site-title {
   z-index: 20;
 }
 
+.wp-block-post-featured-image {
+  overflow: hidden;
+}
 .wp-block-post-featured-image img {
   width: 100%;
   height: 100%;
@@ -162,6 +168,9 @@ h1.wp-block-site-title {
   will-change: transform;
   backface-visibility: hidden;
   object-fit: cover;
+}
+.wp-block-post-featured-image img:hover {
+  transform: scale(1.05);
 }
 
 .hakoniwa-blocks-inline-icons {
@@ -10902,50 +10911,6 @@ h1.wp-block-site-title {
     writing-mode: sideways-lr;
   }
 }
-.overflow-hidden {
-  overflow: hidden;
-}
-
-.overflow-clip {
-  overflow: clip;
-}
-
-.overflow-visible {
-  overflow: visible;
-}
-
-.overflow-scroll {
-  overflow: scroll;
-}
-
-@media only screen and (max-width: 782px) {
-  .md\:overflow-hidden {
-    overflow: hidden;
-  }
-  .md\:overflow-clip {
-    overflow: clip;
-  }
-  .md\:overflow-visible {
-    overflow: visible;
-  }
-  .md\:overflow-scroll {
-    overflow: scroll;
-  }
-}
-@media only screen and (max-width:600px) {
-  .sm\:overflow-hidden {
-    overflow: hidden;
-  }
-  .sm\:overflow-clip {
-    overflow: clip;
-  }
-  .sm\:overflow-visible {
-    overflow: visible;
-  }
-  .sm\:overflow-scroll {
-    overflow: scroll;
-  }
-}
 .wp-block-search.header-modal button {
   transition: none;
 }
@@ -11681,15 +11646,6 @@ ul[class*=is-style-hakoniwa-list].is-style-hakoniwa-list-no-marker {
   transform: scale(1.05);
   backface-visibility: hidden;
   will-change: transform;
-}
-
-.is-style-hakoniwa-featured-image-effect-zoom img {
-  transition: all 300ms ease;
-  will-change: transform;
-  backface-visibility: hidden;
-}
-.is-style-hakoniwa-featured-image-effect-zoom:hover img {
-  transform: scale(1.05);
 }
 
 .wp-block-button.is-style-outline > .wp-block-button__link:hover {
