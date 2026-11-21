@@ -38,3 +38,33 @@ $data: (
         box-shadow:#{$size};
     }
 }
+
+
+:where([style*="--hakoniwa-shadow-ambient)"]:not(img)) {
+	position: relative; // :where() で詳細度 0 にし、sticky 等のブロック側指定を優先させる
+}
+
+[style*="--hakoniwa-shadow-ambient)"]:not(img) {
+	&::after {
+		content: "";
+		position: absolute;
+		inset: 0;
+		border-radius: inherit;
+		box-shadow:
+			0 0 0 1px color-mix(in srgb, currentColor 2%, transparent),
+			0 1rem 3rem color-mix(in srgb, currentColor 4%, transparent);
+		opacity: 0;
+		transition: opacity 0.3s ease;
+		pointer-events: none;
+	}
+
+	&:hover::after {
+		opacity: 1;
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		&::after {
+			transition: none;
+		}
+	}
+}
